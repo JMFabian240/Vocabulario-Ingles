@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from './Layout';
-import { Volume2, Check, X } from 'lucide-react';
+import { Volume2, Check, X, ArrowLeft, ArrowRight } from 'lucide-react';
 
 const Glosario = () => {
   const { id } = useParams(); // temaId
@@ -10,16 +10,47 @@ const Glosario = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [sessionCompleted, setSessionCompleted] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [temaNombre, setTemaNombre] = useState('');
+  const [aciertos, setAciertos] = useState(0);
+  const [errores, setErrores] = useState(0);
 
   useEffect(() => {
     const fetchFlashcards = async () => {
       if (window.electronAPI) {
+        const temaRes = await window.electronAPI.invoke('api:getTema', parseInt(id));
+        if (temaRes.success && temaRes.data) {
+          setTemaNombre(temaRes.data.nombre);
+        }
+
         const res = await window.electronAPI.invoke('api:getGlosario', parseInt(id));
         if (res.success && res.data.length > 0) {
+          const progresoRes = await window.electronAPI.invoke('api:getProgresoFlashcards', parseInt(id));
+          let progresoAcumulado = { aciertos: 0, errores: 0 };
+          let idsCompletados = new Set();
+
+          if (progresoRes.success) {
+            progresoRes.data.forEach(p => {
+              if (p.estado === 'correcto') progresoAcumulado.aciertos++;
+              if (p.estado === 'incorrecto') progresoAcumulado.errores++;
+              if (p.estado === 'correcto' || p.estado === 'incorrecto') {
+                idsCompletados.add(p.flashcard_id);
+              }
+            });
+          }
+
+          setAciertos(progresoAcumulado.aciertos);
+          setErrores(progresoAcumulado.errores);
           setFlashcards(res.data);
-          // Shuffle deck for initial session
-          const shuffled = [...res.data].sort(() => Math.random() - 0.5);
-          setDeck(shuffled);
+
+          const pendingCards = res.data.filter(c => !idsCompletados.has(c.id));
+          
+          if (pendingCards.length === 0) {
+            setSessionCompleted(true);
+          } else {
+            const shuffled = pendingCards.sort(() => Math.random() - 0.5);
+            setDeck(shuffled);
+          }
         }
       }
     };
@@ -35,32 +66,105 @@ const Glosario = () => {
     }
   };
 
-  const handleCorrect = (e) => {
-    e.stopPropagation();
-    setIsFlipped(false);
+  const changeCardWithAnimation = (action) => {
+    if (isAnimating) return;
     
-    // Si quedan cartas
-    if (currentIndex < deck.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+    if (isFlipped) {
+      setIsAnimating(true);
+      setIsFlipped(false);
+      // Esperar a que la tarjeta esté a 90 grados (invisible) para cambiar el contenido
+      setTimeout(() => {
+        action();
+        // Esperar a que termine la animación de volteo
+        setTimeout(() => setIsAnimating(false), 300);
+      }, 300);
     } else {
-      setSessionCompleted(true);
+      action();
     }
   };
 
-  const handleIncorrect = (e) => {
-    e.stopPropagation();
-    setIsFlipped(false);
-    
-    // Enviar carta al final del mazo
-    const currentCard = deck[currentIndex];
-    const newDeck = [...deck, currentCard];
-    setDeck(newDeck);
-    setCurrentIndex(currentIndex + 1);
+  const handlePrev = (e) => {
+    if (e) e.stopPropagation();
+    if (currentIndex > 0) {
+      changeCardWithAnimation(() => setCurrentIndex(currentIndex - 1));
+    }
   };
+
+  const handleNext = (e) => {
+    if (e) e.stopPropagation();
+    if (currentIndex < deck.length - 1) {
+      changeCardWithAnimation(() => setCurrentIndex(currentIndex + 1));
+    }
+  };
+
+  const handleCorrect = (e) => {
+    if (e) e.stopPropagation();
+    changeCardWithAnimation(async () => {
+      const currentCard = deck[currentIndex];
+      setAciertos(prev => prev + 1);
+      
+      if (window.electronAPI) {
+        await window.electronAPI.invoke('api:updateProgresoFlashcard', { flashcardId: currentCard.id, estado: 'correcto' });
+      }
+
+      if (currentIndex < deck.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        setSessionCompleted(true);
+      }
+    });
+  };
+
+  const handleIncorrect = (e) => {
+    if (e) e.stopPropagation();
+    changeCardWithAnimation(async () => {
+      const currentCard = deck[currentIndex];
+      setErrores(prev => prev + 1);
+
+      if (window.electronAPI) {
+        await window.electronAPI.invoke('api:updateProgresoFlashcard', { flashcardId: currentCard.id, estado: 'incorrecto' });
+      }
+
+      const newDeck = [...deck, currentCard];
+      setDeck(newDeck);
+      setCurrentIndex(currentIndex + 1);
+    });
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (sessionCompleted || isAnimating || flashcards.length === 0) return;
+
+      switch(e.key) {
+        case 'ArrowLeft':
+          handlePrev();
+          break;
+        case 'ArrowRight':
+          handleNext();
+          break;
+        case 'Enter':
+          handleCorrect();
+          break;
+        case 'Backspace':
+          handleIncorrect();
+          break;
+        case ' ':
+        case 'Spacebar':
+          e.preventDefault();
+          if (!isAnimating) setIsFlipped(prev => !prev);
+          break;
+        default:
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentIndex, deck, isFlipped, sessionCompleted, isAnimating, flashcards]);
 
   if (flashcards.length === 0) {
     return (
-      <Layout>
+      <Layout title={temaNombre}>
         <h2 className="section-title">Glosario</h2>
         <p className="empty-state">No hay palabras configuradas para este tema.</p>
       </Layout>
@@ -69,13 +173,22 @@ const Glosario = () => {
 
   if (sessionCompleted) {
     return (
-      <Layout>
+      <Layout title={temaNombre}>
         <div style={{ textAlign: 'center', marginTop: '10vh' }}>
           <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎉 ¡Excelente!</h2>
           <p style={{ fontSize: '1.2rem', color: '#cbd5e1' }}>Has completado todas las tarjetas de esta sesión.</p>
-          <button className="btn-primary" style={{ marginTop: '2rem' }} onClick={() => {
+          <div style={{ margin: '2rem 0', display: 'flex', gap: '2rem', justifyContent: 'center', fontSize: '1.2rem' }}>
+            <span style={{ color: '#4ade80', fontWeight: 'bold' }}>Aciertos: {aciertos}</span>
+            <span style={{ color: '#ef4444', fontWeight: 'bold' }}>Errores: {errores}</span>
+          </div>
+          <button className="btn-primary" style={{ marginTop: '2rem' }} onClick={async () => {
+            if (window.electronAPI) {
+              await window.electronAPI.invoke('api:resetProgresoTema', parseInt(id));
+            }
             setDeck([...flashcards].sort(() => Math.random() - 0.5));
             setCurrentIndex(0);
+            setAciertos(0);
+            setErrores(0);
             setSessionCompleted(false);
           }}>Repasar de nuevo</button>
         </div>
@@ -86,36 +199,53 @@ const Glosario = () => {
   const currentCard = deck[currentIndex];
 
   return (
-    <Layout>
+    <Layout title={temaNombre}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h2 className="section-title">Flashcards</h2>
-        <span style={{ background: 'rgba(255,255,255,0.1)', padding: '0.5rem 1rem', borderRadius: '20px' }}>
-          Cartas restantes: {deck.length - currentIndex}
-        </span>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem' }}>
+          <span style={{ background: 'rgba(255,255,255,0.1)', padding: '0.5rem 1rem', borderRadius: '20px' }}>
+            Progreso: {flashcards.length - deck.length + currentIndex + 1} / {flashcards.length}
+          </span>
+          <div style={{ display: 'flex', gap: '1rem', fontSize: '0.9rem', padding: '0 1rem' }}>
+            <span style={{ color: '#4ade80', fontWeight: 'bold' }}>Aciertos: {aciertos}</span>
+            <span style={{ color: '#ef4444', fontWeight: 'bold' }}>Errores: {errores}</span>
+          </div>
+        </div>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '60vh', perspective: '1000px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2rem', height: '60vh', perspective: '1000px' }}>
+        
+        <button 
+          className="btn-icon" 
+          onClick={handlePrev} 
+          disabled={currentIndex === 0 || isAnimating}
+          style={{ opacity: currentIndex === 0 ? 0.3 : 1, transition: 'opacity 0.3s' }}
+        >
+          <ArrowLeft size={32} />
+        </button>
+
         <div 
-          onClick={() => setIsFlipped(!isFlipped)}
+          onClick={() => { if (!isAnimating) setIsFlipped(!isFlipped) }}
           style={{
-            width: '400px',
-            height: '250px',
+            width: '600px',
+            minHeight: '350px',
             position: 'relative',
             transformStyle: 'preserve-3d',
             transition: 'transform 0.6s',
             transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-            cursor: 'pointer'
+            cursor: isAnimating ? 'default' : 'pointer'
           }}
         >
           {/* Frente (Inglés) */}
           <div className="card glass-panel" style={{
             position: 'absolute', width: '100%', height: '100%', backfaceVisibility: 'hidden',
-            display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1rem'
+            display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1rem',
+            padding: '2rem', textAlign: 'center'
           }}>
             <button className="btn-icon" onClick={(e) => speak(e, currentCard.frente_ingles)} style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
               <Volume2 size={20} />
             </button>
-            <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>{currentCard.frente_ingles}</h1>
+            <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 'bold' }}>{currentCard.frente_ingles}</h1>
             <p style={{ color: '#94a3b8' }}>Toca para ver la respuesta</p>
           </div>
 
@@ -148,6 +278,15 @@ const Glosario = () => {
             </div>
           </div>
         </div>
+
+        <button 
+          className="btn-icon" 
+          onClick={handleNext} 
+          disabled={currentIndex === deck.length - 1 || isAnimating}
+          style={{ opacity: currentIndex === deck.length - 1 ? 0.3 : 1, transition: 'opacity 0.3s' }}
+        >
+          <ArrowRight size={32} />
+        </button>
       </div>
     </Layout>
   );

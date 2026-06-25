@@ -12,6 +12,15 @@ class TemasRepository {
     });
   }
 
+  getTemaById(id) {
+    if (!id) return Promise.reject(new Error("El ID es obligatorio"));
+    return new Promise((resolve, reject) => {
+      this.db.get('SELECT * FROM Temas WHERE id = ?', [id], (err, row) => {
+        if (err) reject(err); else resolve(row);
+      });
+    });
+  }
+
   createTema(nivelId, nombre, descripcion, orden = 0) {
     if (!nivelId || !nombre) return Promise.reject(new Error("El ID del nivel y el nombre son obligatorios"));
     return new Promise((resolve, reject) => {

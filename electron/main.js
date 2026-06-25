@@ -73,6 +73,7 @@ function setupIpcHandlers() {
     'api:deleteNivel': (_, id) => dbManager.niveles.deleteNivel(id),
 
     'api:getTemas': (_, nivelId) => dbManager.temas.getTemasPorNivel(nivelId),
+    'api:getTema': (_, id) => dbManager.temas.getTemaById(id),
     'api:createTema': (_, { nivelId, nombre, descripcion, orden }) => dbManager.temas.createTema(nivelId, nombre, descripcion, orden),
     'api:updateTema': (_, { id, nombre, descripcion, orden }) => dbManager.temas.updateTema(id, nombre, descripcion, orden),
     'api:deleteTema': (_, id) => dbManager.temas.deleteTema(id),
@@ -98,6 +99,10 @@ function setupIpcHandlers() {
 
     'api:updateProgresoEjercicio': (_, { temaId, aciertos, total }) => dbManager.ejercicios.updateProgresoEjercicio(temaId, aciertos, total),
     'api:getProgresoGeneral': () => dbManager.ejercicios.getProgresoGeneral(),
+
+    'api:getProgresoEjerciciosDetalle': (_, temaId) => dbManager.ejercicios.getProgresoEjerciciosDetalle(temaId),
+    'api:updateProgresoEjercicioDetalle': (_, { ejercicioId, estado }) => dbManager.ejercicios.updateProgresoEjercicioDetalle(ejercicioId, estado),
+    'api:resetProgresoEjerciciosTema': (_, temaId) => dbManager.ejercicios.resetProgresoEjerciciosTema(temaId),
     
     'api:exportNivel': async (event, nivelId) => {
       const { dialog } = require('electron');

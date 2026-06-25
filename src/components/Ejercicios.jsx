@@ -7,6 +7,7 @@ const Ejercicios = () => {
   const { id } = useParams(); // temaId
   const navigate = useNavigate();
   const [ejercicios, setEjercicios] = useState([]);
+  const [totalEjercicios, setTotalEjercicios] = useState(0);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [inputValue, setInputValue] = useState('');
   const [feedback, setFeedback] = useState(null); // 'correct' | 'incorrect' | null
@@ -18,9 +19,29 @@ const Ejercicios = () => {
       if (window.electronAPI) {
         const res = await window.electronAPI.invoke('api:getEjercicios', parseInt(id));
         if (res.success && res.data.length > 0) {
-          // Tomar hasta 15 aleatorios
-          const shuffled = res.data.sort(() => Math.random() - 0.5).slice(0, 15);
-          setEjercicios(shuffled);
+          const progresoRes = await window.electronAPI.invoke('api:getProgresoEjerciciosDetalle', parseInt(id));
+          let idsCompletados = new Set();
+          let aciertosPrevios = 0;
+
+          if (progresoRes.success) {
+            progresoRes.data.forEach(p => {
+              if (p.estado === 'correct') aciertosPrevios++;
+              if (p.estado === 'correct' || p.estado === 'incorrect') {
+                idsCompletados.add(p.ejercicio_id);
+              }
+            });
+          }
+
+          setScore(aciertosPrevios);
+          setTotalEjercicios(res.data.length);
+
+          const pendingEx = res.data.filter(e => !idsCompletados.has(e.id));
+
+          if (pendingEx.length === 0) {
+            setSessionCompleted(true);
+          } else {
+            setEjercicios(pendingEx);
+          }
         }
       }
     };
@@ -46,18 +67,25 @@ const Ejercicios = () => {
   };
 
   const nextEjercicio = async () => {
+    if (window.electronAPI && feedback) {
+      const currentEx = ejercicios[currentIdx];
+      await window.electronAPI.invoke('api:updateProgresoEjercicioDetalle', {
+        ejercicioId: currentEx.id,
+        estado: feedback
+      });
+    }
+
     setFeedback(null);
     setInputValue('');
     if (currentIdx < ejercicios.length - 1) {
       setCurrentIdx(currentIdx + 1);
     } else {
       setSessionCompleted(true);
-      // Guardar progreso RF-16
       if (window.electronAPI) {
         await window.electronAPI.invoke('api:updateProgresoEjercicio', {
           temaId: parseInt(id),
-          aciertos: score + (feedback === 'correct' ? 1 : 0),
-          total: ejercicios.length
+          aciertos: score,
+          total: totalEjercicios
         });
       }
     }
@@ -78,9 +106,17 @@ const Ejercicios = () => {
         <div style={{ textAlign: 'center', marginTop: '10vh' }}>
           <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Sesión Completada</h2>
           <p style={{ fontSize: '1.5rem', color: '#cbd5e1', marginBottom: '2rem' }}>
-            Tu puntaje: <strong style={{ color: '#818cf8', fontSize: '2rem' }}>{score} / {ejercicios.length}</strong>
+            Tu puntaje: <strong style={{ color: '#818cf8', fontSize: '2rem' }}>{score} / {totalEjercicios}</strong>
           </p>
-          <button className="btn-primary" onClick={() => navigate(-1)}>Volver al Menú</button>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+            <button className="btn-primary" onClick={async () => {
+              if (window.electronAPI) {
+                await window.electronAPI.invoke('api:resetProgresoEjerciciosTema', parseInt(id));
+              }
+              window.location.reload();
+            }}>Repasar de nuevo</button>
+            <button className="btn-secondary" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: 'none', padding: '0.8rem 1.5rem', borderRadius: '10px', fontSize: '1rem', cursor: 'pointer' }} onClick={() => navigate(-1)}>Volver al Menú</button>
+          </div>
         </div>
       </Layout>
     );
@@ -92,7 +128,7 @@ const Ejercicios = () => {
     <Layout>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h2 className="section-title">Ejercicios: {currentEx.tipo_ejercicio}</h2>
-        <span style={{ fontSize: '1.2rem', color: '#94a3b8' }}>{currentIdx + 1} / {ejercicios.length}</span>
+        <span style={{ fontSize: '1.2rem', color: '#94a3b8' }}>{totalEjercicios - ejercicios.length + currentIdx + 1} / {totalEjercicios}</span>
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '60vh' }}>

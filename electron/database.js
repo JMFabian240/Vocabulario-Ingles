@@ -108,7 +108,7 @@ class DatabaseManager {
         )
       `);
 
-      // 7. Progreso Ejercicios
+      // 7. Progreso Ejercicios (General por Tema)
       this.db.run(`
         CREATE TABLE IF NOT EXISTS Progreso_Ejercicios (
           id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -117,6 +117,17 @@ class DatabaseManager {
           total_ejercicios INTEGER NOT NULL,
           ultima_evaluacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
           FOREIGN KEY (tema_id) REFERENCES Temas(id) ON DELETE CASCADE
+        )
+      `);
+
+      // 8. Progreso Ejercicios (Detalle individual)
+      this.db.run(`
+        CREATE TABLE IF NOT EXISTS Progreso_Ejercicios_Detalle (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          ejercicio_id INTEGER UNIQUE NOT NULL,
+          estado VARCHAR(20) DEFAULT 'pendiente',
+          ultima_revision TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+          FOREIGN KEY (ejercicio_id) REFERENCES Ejercicios(id) ON DELETE CASCADE
         )
       `);
       

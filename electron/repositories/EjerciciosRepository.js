@@ -104,6 +104,44 @@ class EjerciciosRepository {
       });
     });
   }
+
+  getProgresoEjerciciosDetalle(temaId) {
+    if (!temaId) return Promise.reject(new Error("El ID del tema es obligatorio"));
+    return new Promise((resolve, reject) => {
+      this.db.all(`
+        SELECT p.* FROM Progreso_Ejercicios_Detalle p
+        JOIN Ejercicios e ON p.ejercicio_id = e.id
+        WHERE e.tema_id = ?
+      `, [temaId], (err, rows) => {
+        if (err) reject(err); else resolve(rows);
+      });
+    });
+  }
+
+  updateProgresoEjercicioDetalle(ejercicioId, estado) {
+    if (!ejercicioId || !estado) return Promise.reject(new Error("ID y estado son obligatorios"));
+    return new Promise((resolve, reject) => {
+      this.db.run(`
+        INSERT INTO Progreso_Ejercicios_Detalle (ejercicio_id, estado, ultima_revision) 
+        VALUES (?, ?, CURRENT_TIMESTAMP)
+        ON CONFLICT(ejercicio_id) DO UPDATE SET estado = excluded.estado, ultima_revision = CURRENT_TIMESTAMP
+      `, [ejercicioId, estado], function(err) {
+        if (err) reject(err); else resolve({ changes: this.changes });
+      });
+    });
+  }
+
+  resetProgresoEjerciciosTema(temaId) {
+    if (!temaId) return Promise.reject(new Error("El ID del tema es obligatorio"));
+    return new Promise((resolve, reject) => {
+      this.db.run(`
+        DELETE FROM Progreso_Ejercicios_Detalle 
+        WHERE ejercicio_id IN (SELECT id FROM Ejercicios WHERE tema_id = ?)
+      `, [temaId], function(err) {
+        if (err) reject(err); else resolve({ changes: this.changes });
+      });
+    });
+  }
 }
 
 module.exports = EjerciciosRepository;

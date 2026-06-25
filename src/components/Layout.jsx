@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Home, ArrowLeft, BookOpen } from 'lucide-react';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <header className="header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1 }}>
           <BookOpen className="icon" size={32} color="#818cf8" />
-          <h1>App de Repaso de Inglés</h1>
+          <h1>{title || 'App de Repaso de Inglés'}</h1>
         </div>
         
         <nav style={{ display: 'flex', gap: '1rem' }}>
