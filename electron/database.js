@@ -68,6 +68,7 @@ class DatabaseManager {
           frente_ingles VARCHAR(255) NOT NULL,
           reverso_espanol VARCHAR(255) NOT NULL,
           tipo_palabra VARCHAR(50) NOT NULL,
+          categoria VARCHAR(100),
           pasado_simple VARCHAR(100),
           participio VARCHAR(100),
           FOREIGN KEY (tema_id) REFERENCES Temas(id) ON DELETE CASCADE

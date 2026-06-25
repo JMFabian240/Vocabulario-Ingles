@@ -79,7 +79,7 @@ function setupIpcHandlers() {
     'api:deleteTema': (_, id) => dbManager.temas.deleteTema(id),
 
     'api:getGlosario': (_, temaId) => dbManager.glosario.getGlosarioPorTema(temaId),
-    'api:createFlashcard': (_, data) => dbManager.glosario.createFlashcard(data.temaId, data.frente, data.reverso, data.tipo, data.pasado, data.participio),
+    'api:createFlashcard': (_, data) => dbManager.glosario.createFlashcard(data.temaId, data.frente, data.reverso, data.tipo, data.pasado, data.participio, data.categoria),
     'api:updateFlashcard': (_, data) => dbManager.glosario.updateFlashcard(data.id, data.frente, data.reverso, data.tipo, data.pasado, data.participio),
     'api:deleteFlashcard': (_, id) => dbManager.glosario.deleteFlashcard(id),
 

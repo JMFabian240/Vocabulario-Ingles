@@ -1,0 +1,302 @@
+[
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "Where do you ___? (work)",
+    "respuesta_esperada": "Where do you work?"
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "What time do you ___ to school? (go)",
+    "respuesta_esperada": "What time do you go to school?"
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I ___ a student. (be)",
+    "respuesta_esperada": "I am a student."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "How often do you ___ exercise? (do)",
+    "respuesta_esperada": "How often do you do exercise?"
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "When do you ___ home? (get)",
+    "respuesta_esperada": "When do you get home?"
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I ___ at work early. (arrive)",
+    "respuesta_esperada": "I arrive at work early."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "She ___ always late. (be)",
+    "respuesta_esperada": "She is always late."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "He ___ all day. (teach)",
+    "respuesta_esperada": "He teaches all day."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "My father ___ home after midnight. (arrive)",
+    "respuesta_esperada": "My father arrives home after midnight."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "The class ___ at 7:00 O'clock. (start)",
+    "respuesta_esperada": "The class starts at 7:00 O'clock."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I ___ English every day. (study)",
+    "respuesta_esperada": "I study English every day."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I almost never ___ ice-cream. (eat)",
+    "respuesta_esperada": "I almost never eat ice-cream."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I always ___ a shower. (take)",
+    "respuesta_esperada": "I always take a shower."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "Paul frequently ___ his grandmother. (visit)",
+    "respuesta_esperada": "Paul frequently visits his grandmother."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I often ___ in my free time. (read)",
+    "respuesta_esperada": "I often read in my free time."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I seldom ___ junk food. (eat)",
+    "respuesta_esperada": "I seldom eat junk food."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I usually ___ my homework at home. (do)",
+    "respuesta_esperada": "I usually do my homework at home."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "She ___ beautifully. (dance)",
+    "respuesta_esperada": "She dances beautifully."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "My English teacher ___ quickly. (speak)",
+    "respuesta_esperada": "My English teacher speaks quickly."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I ___ fish every weekend. (cook)",
+    "respuesta_esperada": "I cook fish every weekend."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "My mom ___ exercises with me. (do)",
+    "respuesta_esperada": "My mom does exercises with me."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "She ___ jogging before her lunch. (go)",
+    "respuesta_esperada": "She goes jogging before her lunch."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "He ___ home at 9:00 pm. (get)",
+    "respuesta_esperada": "He gets home at 9:00 pm."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I ___ up at 6:00 a.m. every day. (get)",
+    "respuesta_esperada": "I get up at 6:00 a.m. every day."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "My children ___ healthy food. (eat)",
+    "respuesta_esperada": "My children eat healthy food."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "The baby ___ 8 hours. (sleep)",
+    "respuesta_esperada": "The baby sleeps 8 hours."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "She ___ a break after eating. (take)",
+    "respuesta_esperada": "She takes a break after eating."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "She ___ her face three times in a day. (wash)",
+    "respuesta_esperada": "She washes her face three times in a day."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "My father ___ in a hospital. (work)",
+    "respuesta_esperada": "My father works in a hospital."
+  },
+  {
+    "tipo_ejercicio": "completar",
+    "prompt": "I ___ not eat meat because I am a vegetarian. (do)",
+    "respuesta_esperada": "I do not eat meat because I am a vegetarian."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: you | Where | work? | do",
+    "respuesta_esperada": "Where do you work?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: to | go | school? | do | Where | you",
+    "respuesta_esperada": "Where do you go to school?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: do | you | What | do?",
+    "respuesta_esperada": "What do you do?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: do | you | usually | What | on | weekends? | do",
+    "respuesta_esperada": "What do you usually do on weekends?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: lunch? | Where | you | do | have",
+    "respuesta_esperada": "Where do you have lunch?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: get | How | work? | do | to | you",
+    "respuesta_esperada": "How do you get to work?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: go | on | to | school | foot. | I",
+    "respuesta_esperada": "I go to school on foot."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: teacher | arrives | on | time. | My",
+    "respuesta_esperada": "My teacher arrives on time."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: my | homework | at | do | night. | I",
+    "respuesta_esperada": "I do my homework at night."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: is | The | almost | always | open. | door",
+    "respuesta_esperada": "The door is almost always open."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: never | study | at | I | night.",
+    "respuesta_esperada": "I never study at night."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: Spanish | sometimes | in | speak | I | in | class. | my",
+    "respuesta_esperada": "I sometimes speak in Spanish in my class."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: very | often. | English | read | I | books",
+    "respuesta_esperada": "I read English books very often."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: very | go | gym. | rarely | to | They | the",
+    "respuesta_esperada": "They very rarely go to the gym."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: wake | early. | I | up",
+    "respuesta_esperada": "I wake up early."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: English | I | speak | slowly.",
+    "respuesta_esperada": "I speak English slowly."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: three | drink | liters | of | every | day. | water | I",
+    "respuesta_esperada": "I drink three liters of water every day."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: very | tired. | I'm",
+    "respuesta_esperada": "I'm very tired."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: a | have | meal | with | I | friends.",
+    "respuesta_esperada": "I have a meal with friends."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: one | rest | for | hour | parents | after | work. | My",
+    "respuesta_esperada": "My parents rest for one hour after work."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: tastes | It | good!",
+    "respuesta_esperada": "It tastes good!"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: morning | boulevard. | Every | walk | I | in | the",
+    "respuesta_esperada": "Every morning I walk in the boulevard."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: TV | at | watch | I | night.",
+    "respuesta_esperada": "I watch TV at night."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: is | my | wallet. | blue | This",
+    "respuesta_esperada": "This is my blue wallet."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: are | mashed | They | potatoes.",
+    "respuesta_esperada": "They are mashed potatoes."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: your | food? | favorite | What's",
+    "respuesta_esperada": "What's your favorite food?"
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: I | hours. | sleep | 8",
+    "respuesta_esperada": "I sleep 8 hours."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: litre | a | drink | day. | a | I",
+    "respuesta_esperada": "I drink a litre a day."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: prefer | water. | bottled | I",
+    "respuesta_esperada": "I prefer bottled water."
+  },
+  {
+    "tipo_ejercicio": "ordenar",
+    "prompt": "Ordena: food | is | Mexican | delicious.",
+    "respuesta_esperada": "Mexican food is delicious."
+  }
+]

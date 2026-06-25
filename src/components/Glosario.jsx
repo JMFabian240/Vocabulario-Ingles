@@ -7,6 +7,7 @@ const Glosario = () => {
   const { id } = useParams(); // temaId
   const [flashcards, setFlashcards] = useState([]);
   const [deck, setDeck] = useState([]);
+  const [mistakesDeck, setMistakesDeck] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [sessionCompleted, setSessionCompleted] = useState(false);
@@ -110,7 +111,13 @@ const Glosario = () => {
       if (currentIndex < deck.length - 1) {
         setCurrentIndex(currentIndex + 1);
       } else {
-        setSessionCompleted(true);
+        if (mistakesDeck.length > 0) {
+          setDeck([...mistakesDeck]);
+          setMistakesDeck([]);
+          setCurrentIndex(0);
+        } else {
+          setSessionCompleted(true);
+        }
       }
     });
   };
@@ -125,9 +132,16 @@ const Glosario = () => {
         await window.electronAPI.invoke('api:updateProgresoFlashcard', { flashcardId: currentCard.id, estado: 'incorrecto' });
       }
 
-      const newDeck = [...deck, currentCard];
-      setDeck(newDeck);
-      setCurrentIndex(currentIndex + 1);
+      const newMistakes = [...mistakesDeck, currentCard];
+      setMistakesDeck(newMistakes);
+
+      if (currentIndex < deck.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      } else {
+        setDeck([...newMistakes]);
+        setMistakesDeck([]);
+        setCurrentIndex(0);
+      }
     });
   };
 
@@ -186,6 +200,7 @@ const Glosario = () => {
               await window.electronAPI.invoke('api:resetProgresoTema', parseInt(id));
             }
             setDeck([...flashcards].sort(() => Math.random() - 0.5));
+            setMistakesDeck([]);
             setCurrentIndex(0);
             setAciertos(0);
             setErrores(0);
@@ -200,11 +215,20 @@ const Glosario = () => {
 
   return (
     <Layout title={temaNombre}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h2 className="section-title">Flashcards</h2>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+        <h2 className="section-title" style={{ margin: 0, flex: 1 }}>Flashcards</h2>
+        
+        <div style={{ flex: 2, textAlign: 'center' }}>
+          {currentCard?.categoria && (
+            <span style={{ background: 'rgba(99, 102, 241, 0.2)', padding: '0.5rem 1.5rem', borderRadius: '20px', color: '#818cf8', fontWeight: 'bold', fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              {currentCard.categoria}
+            </span>
+          )}
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem', flex: 1 }}>
           <span style={{ background: 'rgba(255,255,255,0.1)', padding: '0.5rem 1rem', borderRadius: '20px' }}>
-            Progreso: {flashcards.length - deck.length + currentIndex + 1} / {flashcards.length}
+            Progreso: {currentIndex + 1} / {deck.length}
           </span>
           <div style={{ display: 'flex', gap: '1rem', fontSize: '0.9rem', padding: '0 1rem' }}>
             <span style={{ color: '#4ade80', fontWeight: 'bold' }}>Aciertos: {aciertos}</span>
@@ -245,17 +269,17 @@ const Glosario = () => {
             <button className="btn-icon" onClick={(e) => speak(e, currentCard.frente_ingles)} style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
               <Volume2 size={20} />
             </button>
-            <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 'bold' }}>{currentCard.frente_ingles}</h1>
-            <p style={{ color: '#94a3b8' }}>Toca para ver la respuesta</p>
+            <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 'bold', margin: 0 }}>{currentCard.frente_ingles}</h1>
+            <p style={{ color: '#94a3b8', margin: 0 }}>Toca para ver la respuesta</p>
           </div>
 
           {/* Reverso (Español) */}
           <div className="card glass-panel" style={{
             position: 'absolute', width: '100%', height: '100%', backfaceVisibility: 'hidden',
             transform: 'rotateY(180deg)',
-            display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', padding: '2rem'
+            display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', padding: '2rem', textAlign: 'center'
           }}>
-            <div style={{ textAlign: 'center', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ textAlign: 'center', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
               <h2 style={{ fontSize: '2rem', color: '#818cf8', marginBottom: '0.5rem' }}>{currentCard.reverso_espanol}</h2>
               <span style={{ background: 'rgba(99, 102, 241, 0.2)', padding: '0.3rem 0.8rem', borderRadius: '15px', fontSize: '0.9rem', width: 'fit-content', margin: '0 auto' }}>
                 {currentCard.tipo_palabra}

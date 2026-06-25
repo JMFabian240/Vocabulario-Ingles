@@ -64,14 +64,28 @@ class RecursosSeeder {
       }
     }
 
-    // Poblar Glosarios de cada tema
+    // Poblar Glosarios y Ejercicios de cada tema
     for (const numero of Object.keys(temasCreados)) {
       const temaId = temasCreados[numero];
-      const glosarioFile = path.join(this.recursosPath, 'Glosario', `GlosarioTema${numero}.md`);
       
+      // 1. Cargar Glosario
+      const glosarioFile = path.join(this.recursosPath, 'Glosario', `GlosarioTema${numero}.md`);
       if (fs.existsSync(glosarioFile)) {
         const glosarioContent = fs.readFileSync(glosarioFile, 'utf-8');
         await this.parseGlosario(temaId, glosarioContent);
+      }
+
+      // 2. Cargar Ejercicios Prácticos
+      const practicaFile = path.join(this.recursosPath, 'practica', `practica_tema${numero}.json`);
+      if (fs.existsSync(practicaFile)) {
+        try {
+          const ejerciciosData = JSON.parse(fs.readFileSync(practicaFile, 'utf-8'));
+          for (const ej of ejerciciosData) {
+            await this.db.ejercicios.createEjercicio(temaId, ej.tipo_ejercicio, ej.prompt, ej.respuesta_esperada);
+          }
+        } catch (err) {
+          console.error(`Error parseando ${practicaFile}:`, err);
+        }
       }
     }
   }
@@ -80,9 +94,15 @@ class RecursosSeeder {
     const lines = content.split('\n');
     let inTable = false;
     let headers = [];
+    let currentCategoria = '';
 
     for (const line of lines) {
       const trimmed = line.trim();
+
+      if (trimmed.startsWith('## ')) {
+        currentCategoria = trimmed.substring(3).replace(/\[cite:.*?\]/g, '').replace(/\[cite_start\]/g, '').trim();
+      }
+
       if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
         const cells = trimmed.split('|').map(c => c.trim()).filter(c => c);
         
@@ -111,7 +131,7 @@ class RecursosSeeder {
         }
 
         if (frente && frente !== 'PALABRA' && frente !== 'VERBO' && !frente.toLowerCase().includes('traducci')) {
-          await this.db.glosario.createFlashcard(temaId, frente, reverso, tipo, pasado, participio);
+          await this.db.glosario.createFlashcard(temaId, frente, reverso, tipo, pasado, participio, currentCategoria);
         }
       } else {
         inTable = false;

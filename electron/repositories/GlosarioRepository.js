@@ -12,12 +12,12 @@ class GlosarioRepository {
     });
   }
 
-  createFlashcard(temaId, frente, reverso, tipo, pasado, participio) {
+  createFlashcard(temaId, frente, reverso, tipo, pasado, participio, categoria) {
     if (!temaId || !frente || !reverso || !tipo) return Promise.reject(new Error("Faltan campos obligatorios para crear la flashcard"));
     return new Promise((resolve, reject) => {
       this.db.run(
-        'INSERT INTO Glosario (tema_id, frente_ingles, reverso_espanol, tipo_palabra, pasado_simple, participio) VALUES (?, ?, ?, ?, ?, ?)', 
-        [temaId, frente, reverso, tipo, pasado, participio], 
+        'INSERT INTO Glosario (tema_id, frente_ingles, reverso_espanol, tipo_palabra, pasado_simple, participio, categoria) VALUES (?, ?, ?, ?, ?, ?, ?)', 
+        [temaId, frente, reverso, tipo, pasado, participio, categoria], 
         function(err) {
           if (err) reject(err); else resolve({ id: this.lastID });
         }
@@ -25,12 +25,12 @@ class GlosarioRepository {
     });
   }
 
-  updateFlashcard(id, frente, reverso, tipo, pasado, participio) {
+  updateFlashcard(id, frente, reverso, tipo, pasado, participio, categoria) {
     if (!id || !frente || !reverso || !tipo) return Promise.reject(new Error("Faltan campos obligatorios para actualizar la flashcard"));
     return new Promise((resolve, reject) => {
       this.db.run(
-        'UPDATE Glosario SET frente_ingles=?, reverso_espanol=?, tipo_palabra=?, pasado_simple=?, participio=? WHERE id=?', 
-        [frente, reverso, tipo, pasado, participio, id], 
+        'UPDATE Glosario SET frente_ingles=?, reverso_espanol=?, tipo_palabra=?, pasado_simple=?, participio=?, categoria=? WHERE id=?', 
+        [frente, reverso, tipo, pasado, participio, categoria, id], 
         function(err) {
           if (err) reject(err); else resolve({ changes: this.changes });
         }
