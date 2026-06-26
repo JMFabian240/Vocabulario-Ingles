@@ -8,6 +8,7 @@ const Glosario = () => {
   const [flashcards, setFlashcards] = useState([]);
   const [deck, setDeck] = useState([]);
   const [mistakesDeck, setMistakesDeck] = useState([]);
+  const [answeredCards, setAnsweredCards] = useState(new Set());
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [sessionCompleted, setSessionCompleted] = useState(false);
@@ -15,6 +16,7 @@ const Glosario = () => {
   const [temaNombre, setTemaNombre] = useState('');
   const [aciertos, setAciertos] = useState(0);
   const [errores, setErrores] = useState(0);
+  const [racha, setRacha] = useState(0);
 
   useEffect(() => {
     const fetchFlashcards = async () => {
@@ -100,9 +102,13 @@ const Glosario = () => {
 
   const handleCorrect = (e) => {
     if (e) e.stopPropagation();
+    const currentCard = deck[currentIndex];
+    if (answeredCards.has(currentCard.id)) return;
+
     changeCardWithAnimation(async () => {
-      const currentCard = deck[currentIndex];
       setAciertos(prev => prev + 1);
+      setRacha(prev => prev + 1);
+      setAnsweredCards(prev => new Set(prev).add(currentCard.id));
       
       if (window.electronAPI) {
         await window.electronAPI.invoke('api:updateProgresoFlashcard', { flashcardId: currentCard.id, estado: 'correcto' });
@@ -115,6 +121,7 @@ const Glosario = () => {
           setDeck([...mistakesDeck]);
           setMistakesDeck([]);
           setCurrentIndex(0);
+          setAnsweredCards(new Set());
         } else {
           setSessionCompleted(true);
         }
@@ -124,9 +131,13 @@ const Glosario = () => {
 
   const handleIncorrect = (e) => {
     if (e) e.stopPropagation();
+    const currentCard = deck[currentIndex];
+    if (answeredCards.has(currentCard.id)) return;
+
     changeCardWithAnimation(async () => {
-      const currentCard = deck[currentIndex];
       setErrores(prev => prev + 1);
+      setRacha(0);
+      setAnsweredCards(prev => new Set(prev).add(currentCard.id));
 
       if (window.electronAPI) {
         await window.electronAPI.invoke('api:updateProgresoFlashcard', { flashcardId: currentCard.id, estado: 'incorrecto' });
@@ -141,6 +152,7 @@ const Glosario = () => {
         setDeck([...newMistakes]);
         setMistakesDeck([]);
         setCurrentIndex(0);
+        setAnsweredCards(new Set());
       }
     });
   };
@@ -157,10 +169,10 @@ const Glosario = () => {
           handleNext();
           break;
         case 'Enter':
-          handleCorrect();
+          if (!answeredCards.has(deck[currentIndex]?.id)) handleCorrect();
           break;
         case 'Backspace':
-          handleIncorrect();
+          if (!answeredCards.has(deck[currentIndex]?.id)) handleIncorrect();
           break;
         case ' ':
         case 'Spacebar':
@@ -201,9 +213,11 @@ const Glosario = () => {
             }
             setDeck([...flashcards].sort(() => Math.random() - 0.5));
             setMistakesDeck([]);
+            setAnsweredCards(new Set());
             setCurrentIndex(0);
             setAciertos(0);
             setErrores(0);
+            setRacha(0);
             setSessionCompleted(false);
           }}>Repasar de nuevo</button>
         </div>
@@ -234,6 +248,13 @@ const Glosario = () => {
             <span style={{ color: '#4ade80', fontWeight: 'bold' }}>Aciertos: {aciertos}</span>
             <span style={{ color: '#ef4444', fontWeight: 'bold' }}>Errores: {errores}</span>
           </div>
+          {racha >= 2 && (
+            <div style={{ padding: '0 1rem', marginTop: '-0.2rem' }}>
+              <span style={{ color: '#fbbf24', fontWeight: 'bold', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                🔥 Racha: {racha}
+              </span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -263,14 +284,14 @@ const Glosario = () => {
           {/* Frente (Inglés) */}
           <div className="card glass-panel" style={{
             position: 'absolute', width: '100%', height: '100%', backfaceVisibility: 'hidden',
-            display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1rem',
+            display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
             padding: '2rem', textAlign: 'center'
           }}>
             <button className="btn-icon" onClick={(e) => speak(e, currentCard.frente_ingles)} style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
               <Volume2 size={20} />
             </button>
             <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 'bold', margin: 0 }}>{currentCard.frente_ingles}</h1>
-            <p style={{ color: '#94a3b8', margin: 0 }}>Toca para ver la respuesta</p>
+            <p style={{ position: 'absolute', bottom: '2rem', color: '#94a3b8', margin: 0 }}>Toca para ver la respuesta</p>
           </div>
 
           {/* Reverso (Español) */}
@@ -293,10 +314,18 @@ const Glosario = () => {
             </div>
 
             <div style={{ display: 'flex', gap: '2rem', width: '100%', justifyContent: 'center' }}>
-              <button onClick={handleIncorrect} style={{ background: '#ef4444', color: 'white', border: 'none', padding: '1rem', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '60px', height: '60px', boxShadow: '0 4px 15px rgba(239, 68, 68, 0.4)' }}>
+              <button 
+                onClick={handleIncorrect} 
+                disabled={answeredCards.has(currentCard.id)}
+                style={{ background: answeredCards.has(currentCard.id) ? '#7f1d1d' : '#ef4444', color: 'white', border: 'none', padding: '1rem', borderRadius: '50%', cursor: answeredCards.has(currentCard.id) ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '60px', height: '60px', boxShadow: answeredCards.has(currentCard.id) ? 'none' : '0 4px 15px rgba(239, 68, 68, 0.4)', opacity: answeredCards.has(currentCard.id) ? 0.5 : 1 }}
+              >
                 <X size={32} />
               </button>
-              <button onClick={handleCorrect} style={{ background: '#22c55e', color: 'white', border: 'none', padding: '1rem', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '60px', height: '60px', boxShadow: '0 4px 15px rgba(34, 197, 94, 0.4)' }}>
+              <button 
+                onClick={handleCorrect} 
+                disabled={answeredCards.has(currentCard.id)}
+                style={{ background: answeredCards.has(currentCard.id) ? '#14532d' : '#22c55e', color: 'white', border: 'none', padding: '1rem', borderRadius: '50%', cursor: answeredCards.has(currentCard.id) ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '60px', height: '60px', boxShadow: answeredCards.has(currentCard.id) ? 'none' : '0 4px 15px rgba(34, 197, 94, 0.4)', opacity: answeredCards.has(currentCard.id) ? 0.5 : 1 }}
+              >
                 <Check size={32} />
               </button>
             </div>
