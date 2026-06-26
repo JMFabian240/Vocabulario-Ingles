@@ -94,9 +94,12 @@ class DatabaseManager {
           tipo_ejercicio VARCHAR(50) NOT NULL,
           prompt TEXT NOT NULL,
           respuesta_esperada TEXT NOT NULL,
+          significado TEXT,
           FOREIGN KEY (tema_id) REFERENCES Temas(id) ON DELETE CASCADE
         )
       `);
+      // Agregar columna significado si no existe en una base de datos antigua
+      this.db.run("ALTER TABLE Ejercicios ADD COLUMN significado TEXT", () => {});
 
       // 6. Progreso Flashcards
       this.db.run(`

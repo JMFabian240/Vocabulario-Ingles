@@ -140,12 +140,14 @@ const Configuracion = () => {
   {
     "tipo_ejercicio": "Completar",
     "prompt": "I ___ a student. (be)",
-    "respuesta_esperada": "am"
+    "respuesta_esperada": "am",
+    "significado": "Yo soy un estudiante"
   },
   {
     "tipo_ejercicio": "Ordenar",
     "prompt": "you / how / are / ?",
-    "respuesta_esperada": "how are you?"
+    "respuesta_esperada": "how are you?",
+    "significado": "¿Cómo estás?"
   }
 ]`}
           </div>

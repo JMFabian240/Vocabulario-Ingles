@@ -5,181 +5,211 @@
         "id": 1,
         "tipo_ejercicio": "completar",
         "prompt": "___ there a bank near here? (Is)",
-        "respuesta_esperada": "Is there a bank near here?"
+        "respuesta_esperada": "Is there a bank near here?",
+        "significado": "¿Hay un banco cerca de aquí?"
       },
       {
         "id": 2,
         "tipo_ejercicio": "completar",
         "prompt": "Yes, there ___ one on University Street. (is)",
-        "respuesta_esperada": "Yes, there is one on University Street."
+        "respuesta_esperada": "Yes, there is one on University Street.",
+        "significado": "Sí, hay uno en la calle Universidad."
       },
       {
         "id": 3,
         "tipo_ejercicio": "completar",
         "prompt": "Are there ___ drugstores around here? (any)",
-        "respuesta_esperada": "Are there any drugstores around here?"
+        "respuesta_esperada": "Are there any drugstores around here?",
+        "significado": "¿Hay alguna farmacia por aquí?"
       },
       {
         "id": 4,
         "tipo_ejercicio": "completar",
         "prompt": "How do I ___ to the library? (get)",
-        "respuesta_esperada": "How do I get to the library?"
+        "respuesta_esperada": "How do I get to the library?",
+        "significado": "¿Cómo llego a la biblioteca?"
       },
       {
         "id": 5,
         "tipo_ejercicio": "completar",
         "prompt": "Can you ___ me how to get to the post office? (tell)",
-        "respuesta_esperada": "Can you tell me how to get to the post office?"
+        "respuesta_esperada": "Can you tell me how to get to the post office?",
+        "significado": "¿Puedes decirme cómo llegar a la oficina de correos?"
       },
       {
         "id": 6,
         "tipo_ejercicio": "completar",
         "prompt": "___ right on University avenue. (Turn)",
-        "respuesta_esperada": "Turn right on University avenue."
+        "respuesta_esperada": "Turn right on University avenue.",
+        "significado": "Gira a la derecha en la avenida Universidad."
       },
       {
         "id": 7,
         "tipo_ejercicio": "completar",
         "prompt": "The bank it's ___ the right. (on)",
-        "respuesta_esperada": "The bank it's on the right."
+        "respuesta_esperada": "The bank it's on the right.",
+        "significado": "El banco está a la derecha."
       },
       {
         "id": 8,
         "tipo_ejercicio": "completar",
         "prompt": "It's right ___ you. (behind)",
-        "respuesta_esperada": "It's right behind you."
+        "respuesta_esperada": "It's right behind you.",
+        "significado": "Está justo detrás de ti."
       },
       {
         "id": 9,
         "tipo_ejercicio": "completar",
         "prompt": "The hospital is ___ there. (over)",
-        "respuesta_esperada": "The hospital is over there."
+        "respuesta_esperada": "The hospital is over there.",
+        "significado": "El hospital está por allá."
       },
       {
         "id": 10,
         "tipo_ejercicio": "completar",
         "prompt": "The post office is ___ on Main street. (located)",
-        "respuesta_esperada": "The post office is located on Main street."
+        "respuesta_esperada": "The post office is located on Main street.",
+        "significado": "La oficina de correos está ubicada en la calle Principal."
       },
       {
         "id": 11,
         "tipo_ejercicio": "completar",
         "prompt": "We ___ at the airport at 8. (arrive)",
-        "respuesta_esperada": "We arrive at the airport at 8."
+        "respuesta_esperada": "We arrive at the airport at 8.",
+        "significado": "Llegamos al aeropuerto a las 8."
       },
       {
         "id": 12,
         "tipo_ejercicio": "completar",
         "prompt": "I can't ___ over the bridge. (cross)",
-        "respuesta_esperada": "I can't cross over the bridge."
+        "respuesta_esperada": "I can't cross over the bridge.",
+        "significado": "No puedo cruzar el puente."
       },
       {
         "id": 13,
         "tipo_ejercicio": "completar",
         "prompt": "England ___ beautiful castles. (has)",
-        "respuesta_esperada": "England has beautiful castles."
+        "respuesta_esperada": "England has beautiful castles.",
+        "significado": "Inglaterra tiene hermosos castillos."
       },
       {
         "id": 14,
         "tipo_ejercicio": "completar",
         "prompt": "I ___ to the City hall to pay some fines. (go)",
-        "respuesta_esperada": "I go to the City hall to pay some fines."
+        "respuesta_esperada": "I go to the City hall to pay some fines.",
+        "significado": "Voy al ayuntamiento a pagar unas multas."
       },
       {
         "id": 15,
         "tipo_ejercicio": "completar",
         "prompt": "Roxana ___ downtown yesterday. (went)",
-        "respuesta_esperada": "Roxana went downtown yesterday."
+        "respuesta_esperada": "Roxana went downtown yesterday.",
+        "significado": "Roxana fue al centro ayer."
       },
       {
         "id": 16,
         "tipo_ejercicio": "completar",
         "prompt": "You can ___ aspirin at a drugstore. (buy)",
-        "respuesta_esperada": "You can buy aspirin at a drugstore."
+        "respuesta_esperada": "You can buy aspirin at a drugstore.",
+        "significado": "Puedes comprar aspirinas en una farmacia."
       },
       {
         "id": 17,
         "tipo_ejercicio": "completar",
         "prompt": "He ___ for an important factory. (works)",
-        "respuesta_esperada": "He works for an important factory."
+        "respuesta_esperada": "He works for an important factory.",
+        "significado": "Él trabaja para una fábrica importante."
       },
       {
         "id": 18,
         "tipo_ejercicio": "completar",
         "prompt": "They went to the stadium to ___ the soccer game. (watch)",
-        "respuesta_esperada": "They went to the stadium to watch the soccer game."
+        "respuesta_esperada": "They went to the stadium to watch the soccer game.",
+        "significado": "Ellos fueron al estadio a ver el partido de fútbol."
       },
       {
         "id": 19,
         "tipo_ejercicio": "completar",
         "prompt": "You have to ___ up three blocks. (walk)",
-        "respuesta_esperada": "You have to walk up three blocks."
+        "respuesta_esperada": "You have to walk up three blocks.",
+        "significado": "Tienes que caminar tres cuadras."
       },
       {
         "id": 20,
         "tipo_ejercicio": "completar",
         "prompt": "Go to the corner ___ Juarez and Aldama. (of)",
-        "respuesta_esperada": "Go to the corner of Juarez and Aldama."
+        "respuesta_esperada": "Go to the corner of Juarez and Aldama.",
+        "significado": "Ve a la esquina de Juárez y Aldama."
       },
       {
         "id": 21,
         "tipo_ejercicio": "completar",
         "prompt": "Go straight ___ three blocks. (for)",
-        "respuesta_esperada": "Go straight for three blocks."
+        "respuesta_esperada": "Go straight for three blocks.",
+        "significado": "Sigue derecho por tres cuadras."
       },
       {
         "id": 22,
         "tipo_ejercicio": "completar",
         "prompt": "Go straight ahead ___ you get to Zaragoza Ave. (until)",
-        "respuesta_esperada": "Go straight ahead until you get to Zaragoza Ave."
+        "respuesta_esperada": "Go straight ahead until you get to Zaragoza Ave.",
+        "significado": "Sigue derecho hasta llegar a la avenida Zaragoza."
       },
       {
         "id": 23,
         "tipo_ejercicio": "completar",
         "prompt": "Go ___ Broadway and then turn right. (along)",
-        "respuesta_esperada": "Go along Broadway and then turn right."
+        "respuesta_esperada": "Go along Broadway and then turn right.",
+        "significado": "Ve a lo largo de Broadway y luego gira a la derecha."
       },
       {
         "id": 24,
         "tipo_ejercicio": "completar",
         "prompt": "Go ___ Sixth Avenue to get the coffee shop. (down)",
-        "respuesta_esperada": "Go down Sixth Avenue to get the coffee shop."
+        "respuesta_esperada": "Go down Sixth Avenue to get the coffee shop.",
+        "significado": "Baja por la Sexta Avenida para llegar a la cafetería."
       },
       {
         "id": 25,
         "tipo_ejercicio": "completar",
         "prompt": "Go ___ the post office. (past)",
-        "respuesta_esperada": "Go past the post office."
+        "respuesta_esperada": "Go past the post office.",
+        "significado": "Pasa la oficina de correos."
       },
       {
         "id": 26,
         "tipo_ejercicio": "completar",
         "prompt": "My husband will be home when I ___. (arrive)",
-        "respuesta_esperada": "My husband will be home when I arrive."
+        "respuesta_esperada": "My husband will be home when I arrive.",
+        "significado": "Mi esposo estará en casa cuando yo llegue."
       },
       {
         "id": 27,
         "tipo_ejercicio": "completar",
         "prompt": "The bus driver can ___ fast. (drive)",
-        "respuesta_esperada": "The bus driver can drive fast."
+        "respuesta_esperada": "The bus driver can drive fast.",
+        "significado": "El conductor del autobús puede manejar rápido."
       },
       {
         "id": 28,
         "tipo_ejercicio": "completar",
         "prompt": "___ Zaragoza avenue and walk two blocks. (Take)",
-        "respuesta_esperada": "Take Zaragoza avenue and walk two blocks."
+        "respuesta_esperada": "Take Zaragoza avenue and walk two blocks.",
+        "significado": "Toma la avenida Zaragoza y camina dos cuadras."
       },
       {
         "id": 29,
         "tipo_ejercicio": "completar",
         "prompt": "A new bakery opened recently ___ the corner. (around)",
-        "respuesta_esperada": "A new bakery opened recently around the corner."
+        "respuesta_esperada": "A new bakery opened recently around the corner.",
+        "significado": "Una nueva panadería abrió recientemente a la vuelta de la esquina."
       },
       {
         "id": 30,
         "tipo_ejercicio": "completar",
         "prompt": "The bus stop is ___ from the aquarium. (across)",
-        "respuesta_esperada": "The bus stop is across from the aquarium."
+        "respuesta_esperada": "The bus stop is across from the aquarium.",
+        "significado": "La parada de autobús está frente al acuario."
       }
     ],
     "ordenar": [
@@ -187,181 +217,211 @@
         "id": 31,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: bank | Is | here? | near | there | a",
-        "respuesta_esperada": "Is there a bank near here?"
+        "respuesta_esperada": "Is there a bank near here?",
+        "significado": "¿Hay un banco cerca de aquí?"
       },
       {
         "id": 32,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: there | cinema | No, | aren't | here. | any",
-        "respuesta_esperada": "No, there aren't any cinema here."
+        "respuesta_esperada": "No, there aren't any cinema here.",
+        "significado": "No, no hay ningún cine aquí."
       },
       {
         "id": 33,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: the | Where's | supermarket?",
-        "respuesta_esperada": "Where's the supermarket?"
+        "respuesta_esperada": "Where's the supermarket?",
+        "significado": "¿Dónde está el supermercado?"
       },
       {
         "id": 34,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: from | far | Is | here? | it",
-        "respuesta_esperada": "Is it far from here?"
+        "respuesta_esperada": "Is it far from here?",
+        "significado": "¿Está lejos de aquí?"
       },
       {
         "id": 35,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: get | the | I | How | to | library? | do",
-        "respuesta_esperada": "How do I get to the library?"
+        "respuesta_esperada": "How do I get to the library?",
+        "significado": "¿Cómo llego a la biblioteca?"
       },
       {
         "id": 36,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: right | Turn | on | avenue. | University",
-        "respuesta_esperada": "Turn right on University avenue."
+        "respuesta_esperada": "Turn right on University avenue.",
+        "significado": "Gira a la derecha en la avenida Universidad."
       },
       {
         "id": 37,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: straight. | Walk",
-        "respuesta_esperada": "Walk straight."
+        "respuesta_esperada": "Walk straight.",
+        "significado": "Camina derecho."
       },
       {
         "id": 38,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: park | on | see | You'll | right. | the | the",
-        "respuesta_esperada": "You'll see the park on the right."
+        "respuesta_esperada": "You'll see the park on the right.",
+        "significado": "Verás el parque a la derecha."
       },
       {
         "id": 39,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: hospital | over | is | The | there.",
-        "respuesta_esperada": "The hospital is over there."
+        "respuesta_esperada": "The hospital is over there.",
+        "significado": "El hospital está por allá."
       },
       {
         "id": 40,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: post | The | on | located | office | is | street. | Main",
-        "respuesta_esperada": "The post office is located on Main street."
+        "respuesta_esperada": "The post office is located on Main street.",
+        "significado": "La oficina de correos está ubicada en la calle Principal."
       },
       {
         "id": 41,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: can't | store | miss | department | right, | you | is | it! | The | on | the",
-        "respuesta_esperada": "The department store is on the right, you can't miss it!"
+        "respuesta_esperada": "The department store is on the right, you can't miss it!",
+        "significado": "La tienda departamental está a la derecha, ¡no tiene pierde!"
       },
       {
         "id": 42,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: airport | We | the | arrive | at | 8. | at",
-        "respuesta_esperada": "We arrive at the airport at 8."
+        "respuesta_esperada": "We arrive at the airport at 8.",
+        "significado": "Llegamos al aeropuerto a las 8."
       },
       {
         "id": 43,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: construction. | Empire | building | nice | State | a | The | is",
-        "respuesta_esperada": "The Empire State building is a nice construction."
+        "respuesta_esperada": "The Empire State building is a nice construction.",
+        "significado": "El edificio Empire State es una construcción bonita."
       },
       {
         "id": 44,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: beautiful | has | England | castles.",
-        "respuesta_esperada": "England has beautiful castles."
+        "respuesta_esperada": "England has beautiful castles.",
+        "significado": "Inglaterra tiene hermosos castillos."
       },
       {
         "id": 45,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: some | go | to | I | hall | City | fines. | the | pay | to",
-        "respuesta_esperada": "I go to the City hall to pay some fines."
+        "respuesta_esperada": "I go to the City hall to pay some fines.",
+        "significado": "Voy al ayuntamiento a pagar unas multas."
       },
       {
         "id": 46,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: went | Roxana | yesterday. | downtown",
-        "respuesta_esperada": "Roxana went downtown yesterday."
+        "respuesta_esperada": "Roxana went downtown yesterday.",
+        "significado": "Roxana fue al centro ayer."
       },
       {
         "id": 47,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: at | aspirin | can | drugstore. | buy | You | a",
-        "respuesta_esperada": "You can buy aspirin at a drugstore."
+        "respuesta_esperada": "You can buy aspirin at a drugstore.",
+        "significado": "Puedes comprar aspirinas en una farmacia."
       },
       {
         "id": 48,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: works | important | He | factory. | an | for",
-        "respuesta_esperada": "He works for an important factory."
+        "respuesta_esperada": "He works for an important factory.",
+        "significado": "Él trabaja para una fábrica importante."
       },
       {
         "id": 49,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: gasoline | buy | gas | can | a | station. | You | at",
-        "respuesta_esperada": "You can buy gasoline at a gas station."
+        "respuesta_esperada": "You can buy gasoline at a gas station.",
+        "significado": "Puedes comprar gasolina en una gasolinera."
       },
       {
         "id": 50,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: the | does | open? | What | movie | time | theater",
-        "respuesta_esperada": "What time does the movie theater open?"
+        "respuesta_esperada": "What time does the movie theater open?",
+        "significado": "¿A qué hora abre el cine?"
       },
       {
         "id": 51,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: watch | went | to | stadium | game. | the | the | soccer | They | to",
-        "respuesta_esperada": "They went to the stadium to watch the soccer game."
+        "respuesta_esperada": "They went to the stadium to watch the soccer game.",
+        "significado": "Fueron al estadio a ver el partido de fútbol."
       },
       {
         "id": 52,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: to | exit. | Go | the",
-        "respuesta_esperada": "Go to the exit."
+        "respuesta_esperada": "Go to the exit.",
+        "significado": "Ve a la salida."
       },
       {
         "id": 53,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: lives | on | town. | of | side | She | south | the",
-        "respuesta_esperada": "She lives on the south side of town."
+        "respuesta_esperada": "She lives on the south side of town.",
+        "significado": "Ella vive en el lado sur del pueblo."
       },
       {
         "id": 54,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: the | in | is | West. | Seattle",
-        "respuesta_esperada": "Seattle is in the West."
+        "respuesta_esperada": "Seattle is in the West.",
+        "significado": "Seattle está en el Oeste."
       },
       {
         "id": 55,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: corner | the | Juarez | of | to | Aldama. | Go | and",
-        "respuesta_esperada": "Go to the corner of Juarez and Aldama."
+        "respuesta_esperada": "Go to the corner of Juarez and Aldama.",
+        "significado": "Ve a la esquina de Juárez y Aldama."
       },
       {
         "id": 56,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: blocks. | straight | three | for | Go",
-        "respuesta_esperada": "Go straight for three blocks."
+        "respuesta_esperada": "Go straight for three blocks.",
+        "significado": "Ve derecho por tres cuadras."
       },
       {
         "id": 57,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: get | straight | until | you | Zaragoza | Ave. | Go | ahead | to",
-        "respuesta_esperada": "Go straight ahead until you get to Zaragoza Ave."
+        "respuesta_esperada": "Go straight ahead until you get to Zaragoza Ave.",
+        "significado": "Sigue derecho hasta que llegues a la avenida Zaragoza."
       },
       {
         "id": 58,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: the | Go | past | office. | post",
-        "respuesta_esperada": "Go past the post office."
+        "respuesta_esperada": "Go past the post office.",
+        "significado": "Pasa la oficina de correos."
       },
       {
         "id": 59,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: church | on | We | Sunday. | go | to",
-        "respuesta_esperada": "We go to church on Sunday."
+        "respuesta_esperada": "We go to church on Sunday.",
+        "significado": "Vamos a la iglesia el domingo."
       },
       {
         "id": 60,
         "tipo_ejercicio": "ordenar",
         "prompt": "Ordena: next | is | The | school. | mall | to | the",
-        "respuesta_esperada": "The mall is next to the school."
+        "respuesta_esperada": "The mall is next to the school.",
+        "significado": "El centro comercial está junto a la escuela."
       }
     ]
   }

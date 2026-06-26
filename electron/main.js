@@ -161,7 +161,7 @@ function setupIpcHandlers() {
             await dbManager.ejercicios.createRegla(newTemaId, r.titulo, r.contenido_markdown);
           }
           for (const e of tema.ejercicios || []) {
-            await dbManager.ejercicios.createEjercicio(newTemaId, e.tipo_ejercicio, e.prompt, e.respuesta_esperada);
+            await dbManager.ejercicios.createEjercicio(newTemaId, e.tipo_ejercicio, e.prompt, e.respuesta_esperada, e.significado || null);
           }
         }
         return { message: 'Importado correctamente' };
@@ -199,7 +199,7 @@ function setupIpcHandlers() {
             await dbManager.ejercicios.createRegla(temaId, r.titulo, r.contenido_markdown);
           }
           for (const e of data.ejercicios || []) {
-            await dbManager.ejercicios.createEjercicio(temaId, e.tipo_ejercicio, e.prompt, e.respuesta_esperada);
+            await dbManager.ejercicios.createEjercicio(temaId, e.tipo_ejercicio, e.prompt, e.respuesta_esperada, e.significado || null);
           }
           return { message: 'Datos JSON importados correctamente al tema' };
 
@@ -249,7 +249,7 @@ function setupIpcHandlers() {
         filters = [{ name: 'Markdown', extensions: ['md'] }];
       } else if (tipo === 'ejercicios') {
         defaultPath = 'plantilla_ejercicios.json';
-        content = '[\n  {\n    "tipo_ejercicio": "Completar",\n    "prompt": "I ___ a student. (be)",\n    "respuesta_esperada": "am"\n  },\n  {\n    "tipo_ejercicio": "Ordenar",\n    "prompt": "you / how / are / ?",\n    "respuesta_esperada": "how are you?"\n  }\n]';
+        content = '[\n  {\n    "tipo_ejercicio": "Completar",\n    "prompt": "I ___ a student. (be)",\n    "respuesta_esperada": "am",\n    "significado": "Yo soy un estudiante"\n  },\n  {\n    "tipo_ejercicio": "Ordenar",\n    "prompt": "you / how / are / ?",\n    "respuesta_esperada": "how are you?",\n    "significado": "¿Cómo estás?"\n  }\n]';
         filters = [{ name: 'JSON', extensions: ['json'] }];
       } else if (tipo === 'reglas') {
         defaultPath = 'plantilla_regla.md';

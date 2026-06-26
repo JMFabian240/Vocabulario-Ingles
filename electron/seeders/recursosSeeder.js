@@ -81,7 +81,7 @@ class RecursosSeeder {
         try {
           const ejerciciosData = JSON.parse(fs.readFileSync(practicaFile, 'utf-8'));
           for (const ej of ejerciciosData) {
-            await this.db.ejercicios.createEjercicio(temaId, ej.tipo_ejercicio, ej.prompt, ej.respuesta_esperada);
+            await this.db.ejercicios.createEjercicio(temaId, ej.tipo_ejercicio, ej.prompt, ej.respuesta_esperada, ej.significado || null);
           }
         } catch (err) {
           console.error(`Error parseando ${practicaFile}:`, err);

@@ -244,13 +244,15 @@ const Ejercicios = () => {
             ) : (
               <div className="animate-fade-in">
                 {feedback === 'correct' ? (
-                  <div style={{ color: '#4ade80', fontSize: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-                    <CheckCircle /> ¡Correcto!
+                  <div style={{ color: '#4ade80', fontSize: '1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle /> ¡Correcto!</div>
+                    {currentEx.significado && <span style={{ fontSize: '1.1rem', color: '#fbbf24', marginTop: '0.5rem' }}><strong>Significado:</strong> {currentEx.significado}</span>}
                   </div>
                 ) : (
                   <div style={{ color: '#f87171', fontSize: '1.2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><XCircle /> Incorrecto</div>
                     <span style={{ fontSize: '1rem', color: '#cbd5e1' }}>La respuesta correcta era: <strong>{currentEx.respuesta_esperada}</strong></span>
+                    {currentEx.significado && <span style={{ fontSize: '1.1rem', color: '#fbbf24', marginTop: '0.5rem' }}><strong>Significado:</strong> {currentEx.significado}</span>}
                   </div>
                 )}
                 <button type="button" className="btn-primary" onClick={nextEjercicio} style={{ width: '100%', fontSize: '1.2rem' }}>

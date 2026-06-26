@@ -52,21 +52,21 @@ class EjerciciosRepository {
     });
   }
 
-  createEjercicio(temaId, tipo, prompt, respuesta) {
+  createEjercicio(temaId, tipo, prompt, respuesta, significado = null) {
     if (!temaId || !tipo || !prompt || !respuesta) return Promise.reject(new Error("Faltan campos obligatorios"));
     return new Promise((resolve, reject) => {
-      this.db.run('INSERT INTO Ejercicios (tema_id, tipo_ejercicio, prompt, respuesta_esperada) VALUES (?, ?, ?, ?)', 
-        [temaId, tipo, prompt, respuesta], function(err) {
+      this.db.run('INSERT INTO Ejercicios (tema_id, tipo_ejercicio, prompt, respuesta_esperada, significado) VALUES (?, ?, ?, ?, ?)', 
+        [temaId, tipo, prompt, respuesta, significado], function(err) {
         if (err) reject(err); else resolve({ id: this.lastID });
       });
     });
   }
 
-  updateEjercicio(id, tipo, prompt, respuesta) {
+  updateEjercicio(id, tipo, prompt, respuesta, significado = null) {
     if (!id || !tipo || !prompt || !respuesta) return Promise.reject(new Error("Faltan campos obligatorios"));
     return new Promise((resolve, reject) => {
-      this.db.run('UPDATE Ejercicios SET tipo_ejercicio=?, prompt=?, respuesta_esperada=? WHERE id=?', 
-        [tipo, prompt, respuesta, id], function(err) {
+      this.db.run('UPDATE Ejercicios SET tipo_ejercicio=?, prompt=?, respuesta_esperada=?, significado=? WHERE id=?', 
+        [tipo, prompt, respuesta, significado, id], function(err) {
         if (err) reject(err); else resolve({ changes: this.changes });
       });
     });
