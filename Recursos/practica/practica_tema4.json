@@ -1,55 +1,325 @@
 {
   "ejercicios_tema_4": {
     "completar": [
-      { "id": 1, "tipo_ejercicio": "completar", "prompt": "How ___ money do you have? (much)", "respuesta_esperada": "How much money do you have?", "significado": "¿Cuánto dinero tienes?" },
-      { "id": 2, "tipo_ejercicio": "completar", "prompt": "There are a ___ apples in the fridge. (few)", "respuesta_esperada": "There are a few apples in the fridge.", "significado": "Hay unas cuantas manzanas en el refrigerador." },
-      { "id": 3, "tipo_ejercicio": "completar", "prompt": "___ you like some coffee? (Would)", "respuesta_esperada": "Would you like some coffee?", "significado": "¿Te gustaría un poco de café?" },
-      { "id": 4, "tipo_ejercicio": "completar", "prompt": "I would ___ a sandwich, please. (like)", "respuesta_esperada": "I would like a sandwich, please.", "significado": "Me gustaría un sándwich, por favor." },
-      { "id": 5, "tipo_ejercicio": "completar", "prompt": "___ shoes are very expensive. (These)", "respuesta_esperada": "These shoes are very expensive.", "significado": "Estos zapatos son muy caros." },
-      { "id": 6, "tipo_ejercicio": "completar", "prompt": "Look at ___ car over there! (that)", "respuesta_esperada": "Look at that car over there!", "significado": "¡Mira ese auto de allá!" },
-      { "id": 7, "tipo_ejercicio": "completar", "prompt": "___ one do you prefer? The red or the blue? (Which)", "respuesta_esperada": "Which one do you prefer? The red or the blue?", "significado": "¿Cuál prefieres? ¿El rojo o el azul?" },
-      { "id": 8, "tipo_ejercicio": "completar", "prompt": "I prefer the blue ___. (one)", "respuesta_esperada": "I prefer the blue one.", "significado": "Prefiero el azul." },
-      { "id": 9, "tipo_ejercicio": "completar", "prompt": "Do you need ___ help? (any)", "respuesta_esperada": "Do you need any help?", "significado": "¿Necesitas ayuda?" },
-      { "id": 10, "tipo_ejercicio": "completar", "prompt": "I have ___ milk for the cereal. (some)", "respuesta_esperada": "I have some milk for the cereal.", "significado": "Tengo un poco de leche para el cereal." },
-      { "id": 11, "tipo_ejercicio": "completar", "prompt": "How ___ dollars is this shirt? (many)", "respuesta_esperada": "How many dollars is this shirt?", "significado": "¿Cuántos dólares cuesta esta camisa?" },
-      { "id": 12, "tipo_ejercicio": "completar", "prompt": "I want a ___ of pizza. (slice)", "respuesta_esperada": "I want a slice of pizza.", "significado": "Quiero una rebanada de pizza." },
-      { "id": 13, "tipo_ejercicio": "completar", "prompt": "Can I have a ___ of water? (glass)", "respuesta_esperada": "Can I have a glass of water?", "significado": "¿Puedo pedir un vaso de agua?" },
-      { "id": 14, "tipo_ejercicio": "completar", "prompt": "___ is the fitting room? (Where)", "respuesta_esperada": "Where is the fitting room?", "significado": "¿Dónde está el probador?" },
-      { "id": 15, "tipo_ejercicio": "completar", "prompt": "It costs fifty ___. (pesos)", "respuesta_esperada": "It costs fifty pesos.", "significado": "Cuesta cincuenta pesos." }
+      {
+        "id": 1,
+        "tipo_ejercicio": "completar",
+        "prompt": "How ___ money do you have? (much)",
+        "respuesta_esperada": "How much money do you have?",
+        "significado": "¿Cuánto dinero tienes?"
+      },
+      {
+        "id": 2,
+        "tipo_ejercicio": "completar",
+        "prompt": "There are a ___ apples in the fridge. (few)",
+        "respuesta_esperada": "There are a few apples in the fridge.",
+        "significado": "Hay unas cuantas manzanas en el refrigerador."
+      },
+      {
+        "id": 3,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ you like some coffee? (Would)",
+        "respuesta_esperada": "Would you like some coffee?",
+        "significado": "¿Te gustaría un poco de café?"
+      },
+      {
+        "id": 4,
+        "tipo_ejercicio": "completar",
+        "prompt": "I would ___ a sandwich, please. (like)",
+        "respuesta_esperada": "I would like a sandwich, please.",
+        "significado": "Me gustaría un sándwich, por favor."
+      },
+      {
+        "id": 5,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ shoes are very expensive. (These)",
+        "respuesta_esperada": "These shoes are very expensive.",
+        "significado": "Estos zapatos son muy caros."
+      },
+      {
+        "id": 6,
+        "tipo_ejercicio": "completar",
+        "prompt": "Look at ___ car over there! (that)",
+        "respuesta_esperada": "Look at that car over there!",
+        "significado": "¡Mira ese auto de allá!"
+      },
+      {
+        "id": 7,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ one do you prefer? The red or the blue? (Which)",
+        "respuesta_esperada": "Which one do you prefer? The red or the blue?",
+        "significado": "¿Cuál prefieres? ¿El rojo o el azul?"
+      },
+      {
+        "id": 8,
+        "tipo_ejercicio": "completar",
+        "prompt": "I prefer the blue ___. (one)",
+        "respuesta_esperada": "I prefer the blue one.",
+        "significado": "Prefiero el azul."
+      },
+      {
+        "id": 9,
+        "tipo_ejercicio": "completar",
+        "prompt": "Do you need ___ help? (any)",
+        "respuesta_esperada": "Do you need any help?",
+        "significado": "¿Necesitas ayuda?"
+      },
+      {
+        "id": 10,
+        "tipo_ejercicio": "completar",
+        "prompt": "I have ___ milk for the cereal. (some)",
+        "respuesta_esperada": "I have some milk for the cereal.",
+        "significado": "Tengo un poco de leche para el cereal."
+      },
+      {
+        "id": 11,
+        "tipo_ejercicio": "completar",
+        "prompt": "How ___ dollars is this shirt? (many)",
+        "respuesta_esperada": "How many dollars is this shirt?",
+        "significado": "¿Cuántos dólares cuesta esta camisa?"
+      },
+      {
+        "id": 12,
+        "tipo_ejercicio": "completar",
+        "prompt": "I want a ___ of pizza. (slice)",
+        "respuesta_esperada": "I want a slice of pizza.",
+        "significado": "Quiero una rebanada de pizza."
+      },
+      {
+        "id": 13,
+        "tipo_ejercicio": "completar",
+        "prompt": "Can I have a ___ of water? (glass)",
+        "respuesta_esperada": "Can I have a glass of water?",
+        "significado": "¿Puedo pedir un vaso de agua?"
+      },
+      {
+        "id": 14,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ is the fitting room? (Where)",
+        "respuesta_esperada": "Where is the fitting room?",
+        "significado": "¿Dónde está el probador?"
+      },
+      {
+        "id": 15,
+        "tipo_ejercicio": "completar",
+        "prompt": "It costs fifty ___. (pesos)",
+        "respuesta_esperada": "It costs fifty pesos.",
+        "significado": "Cuesta cincuenta pesos."
+      }
     ],
     "ordenar": [
-      { "id": 16, "tipo_ejercicio": "ordenar", "prompt": "Ordena: like | I | some | please. | water, | would", "respuesta_esperada": "I would like some water, please.", "significado": "Me gustaría un poco de agua, por favor." },
-      { "id": 17, "tipo_ejercicio": "ordenar", "prompt": "Ordena: menu, | I | see | Can | the | please?", "respuesta_esperada": "Can I see the menu, please?", "significado": "¿Puedo ver el menú, por favor?" },
-      { "id": 18, "tipo_ejercicio": "ordenar", "prompt": "Ordena: much | is | shirt? | How | this", "respuesta_esperada": "How much is this shirt?", "significado": "¿Cuánto cuesta esta camisa?" },
-      { "id": 19, "tipo_ejercicio": "ordenar", "prompt": "Ordena: help | Can | you? | I", "respuesta_esperada": "Can I help you?", "significado": "¿Puedo ayudarte?" },
-      { "id": 20, "tipo_ejercicio": "ordenar", "prompt": "Ordena: prefer | one. | I | red | the", "respuesta_esperada": "I prefer the red one.", "significado": "Prefiero el rojo." },
-      { "id": 21, "tipo_ejercicio": "ordenar", "prompt": "Ordena: size | do | What | need? | you", "respuesta_esperada": "What size do you need?", "significado": "¿Qué talla necesitas?" },
-      { "id": 22, "tipo_ejercicio": "ordenar", "prompt": "Ordena: are | These | small. | too | pants", "respuesta_esperada": "These pants are too small.", "significado": "Estos pantalones son demasiado pequeños." },
-      { "id": 23, "tipo_ejercicio": "ordenar", "prompt": "Ordena: you | order? | Are | ready | to", "respuesta_esperada": "Are you ready to order?", "significado": "¿Estás listo para ordenar?" },
-      { "id": 24, "tipo_ejercicio": "ordenar", "prompt": "Ordena: check, | have | we | Can | the | please?", "respuesta_esperada": "Can we have the check, please?", "significado": "¿Podemos pedir la cuenta, por favor?" },
-      { "id": 25, "tipo_ejercicio": "ordenar", "prompt": "Ordena: looking | I | am | just | thanks.", "respuesta_esperada": "I am just looking thanks.", "significado": "Solo estoy mirando, gracias." },
-      { "id": 26, "tipo_ejercicio": "ordenar", "prompt": "Ordena: fitting | The | is | rooms | there. | over", "respuesta_esperada": "The fitting rooms is over there.", "significado": "Los probadores están allá." },
-      { "id": 27, "tipo_ejercicio": "ordenar", "prompt": "Ordena: one | Which | you | do | want?", "respuesta_esperada": "Which one do you want?", "significado": "¿Cuál quieres?" },
-      { "id": 28, "tipo_ejercicio": "ordenar", "prompt": "Ordena: kilo | of | a | need | I | apples.", "respuesta_esperada": "I need a kilo of apples.", "significado": "Necesito un kilo de manzanas." },
-      { "id": 29, "tipo_ejercicio": "ordenar", "prompt": "Ordena: would | What | to | you | drink? | like", "respuesta_esperada": "What would you like to drink?", "significado": "¿Qué te gustaría beber?" },
-      { "id": 30, "tipo_ejercicio": "ordenar", "prompt": "Ordena: any | Don't | have | We | money.", "respuesta_esperada": "We don't have any money.", "significado": "No tenemos dinero." }
+      {
+        "id": 16,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: like | I | some | please. | water, | would",
+        "respuesta_esperada": "I would like some water, please.",
+        "significado": "Me gustaría un poco de agua, por favor."
+      },
+      {
+        "id": 17,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: menu, | I | see | Can | the | please?",
+        "respuesta_esperada": "Can I see the menu, please?",
+        "significado": "¿Puedo ver el menú, por favor?"
+      },
+      {
+        "id": 18,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: much | is | shirt? | How | this",
+        "respuesta_esperada": "How much is this shirt?",
+        "significado": "¿Cuánto cuesta esta camisa?"
+      },
+      {
+        "id": 19,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: help | Can | you? | I",
+        "respuesta_esperada": "Can I help you?",
+        "significado": "¿Puedo ayudarte?"
+      },
+      {
+        "id": 20,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: prefer | one. | I | red | the",
+        "respuesta_esperada": "I prefer the red one.",
+        "significado": "Prefiero el rojo."
+      },
+      {
+        "id": 21,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: size | do | What | need? | you",
+        "respuesta_esperada": "What size do you need?",
+        "significado": "¿Qué talla necesitas?"
+      },
+      {
+        "id": 22,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: are | These | small. | too | pants",
+        "respuesta_esperada": "These pants are too small.",
+        "significado": "Estos pantalones son demasiado pequeños."
+      },
+      {
+        "id": 23,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: you | order? | Are | ready | to",
+        "respuesta_esperada": "Are you ready to order?",
+        "significado": "¿Estás listo para ordenar?"
+      },
+      {
+        "id": 24,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: check, | have | we | Can | the | please?",
+        "respuesta_esperada": "Can we have the check, please?",
+        "significado": "¿Podemos pedir la cuenta, por favor?"
+      },
+      {
+        "id": 25,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: looking | I | am | just | thanks.",
+        "respuesta_esperada": "I am just looking thanks.",
+        "significado": "Solo estoy mirando, gracias."
+      },
+      {
+        "id": 26,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: fitting | The | is | rooms | there. | over",
+        "respuesta_esperada": "The fitting rooms is over there.",
+        "significado": "Los probadores están allá."
+      },
+      {
+        "id": 27,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: one | Which | you | do | want?",
+        "respuesta_esperada": "Which one do you want?",
+        "significado": "¿Cuál quieres?"
+      },
+      {
+        "id": 28,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: kilo | of | a | need | I | apples.",
+        "respuesta_esperada": "I need a kilo of apples.",
+        "significado": "Necesito un kilo de manzanas."
+      },
+      {
+        "id": 29,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: would | What | to | you | drink? | like",
+        "respuesta_esperada": "What would you like to drink?",
+        "significado": "¿Qué te gustaría beber?"
+      },
+      {
+        "id": 30,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: any | Don't | have | We | money.",
+        "respuesta_esperada": "We don't have any money.",
+        "significado": "No tenemos dinero."
+      }
     ],
     "responder": [
-      { "id": 31, "tipo_ejercicio": "responder", "prompt": "Can I help you? (Solo estoy mirando)", "respuesta_esperada": "I am just looking", "significado": "Solo estoy mirando." },
-      { "id": 32, "tipo_ejercicio": "responder", "prompt": "What size do you need? (Mediana)", "respuesta_esperada": "Medium size", "significado": "Talla mediana." },
-      { "id": 33, "tipo_ejercicio": "responder", "prompt": "How much is this shirt? (Veinte dólares)", "respuesta_esperada": "Twenty dollars", "significado": "Veinte dólares." },
-      { "id": 34, "tipo_ejercicio": "responder", "prompt": "Would you like something to drink? (Agua, por favor)", "respuesta_esperada": "Water, please", "significado": "Agua, por favor." },
-      { "id": 35, "tipo_ejercicio": "responder", "prompt": "Are you ready to order? (Sí)", "respuesta_esperada": "Yes, I am", "significado": "Sí, lo estoy." },
-      { "id": 36, "tipo_ejercicio": "responder", "prompt": "Which one do you want? (El azul)", "respuesta_esperada": "The blue one", "significado": "El azul." },
-      { "id": 37, "tipo_ejercicio": "responder", "prompt": "Where are the fitting rooms? (Allá)", "respuesta_esperada": "Over there", "significado": "Allá." },
-      { "id": 38, "tipo_ejercicio": "responder", "prompt": "Do you have any apples? (Sí, tenemos algunas)", "respuesta_esperada": "Yes, we have some", "significado": "Sí, tenemos algunas." },
-      { "id": 39, "tipo_ejercicio": "responder", "prompt": "Is this too small? (No, está bien)", "respuesta_esperada": "No, it is fine", "significado": "No, está bien." },
-      { "id": 40, "tipo_ejercicio": "responder", "prompt": "Can I pay with credit card? (Sí, claro)", "respuesta_esperada": "Yes, of course", "significado": "Sí, claro." },
-      { "id": 41, "tipo_ejercicio": "responder", "prompt": "How many kilos do you need? (Dos kilos)", "respuesta_esperada": "Two kilos", "significado": "Dos kilos." },
-      { "id": 42, "tipo_ejercicio": "responder", "prompt": "Would you like dessert? (No, gracias)", "respuesta_esperada": "No, thank you", "significado": "No, gracias." },
-      { "id": 43, "tipo_ejercicio": "responder", "prompt": "Can we have the check, please? (Por supuesto)", "respuesta_esperada": "Of course", "significado": "Por supuesto." },
-      { "id": 44, "tipo_ejercicio": "responder", "prompt": "Are these pants expensive? (Sí, muy caros)", "respuesta_esperada": "Yes, very expensive", "significado": "Sí, muy caros." },
-      { "id": 45, "tipo_ejercicio": "responder", "prompt": "Do you need a bag? (Sí, por favor)", "respuesta_esperada": "Yes, please", "significado": "Sí, por favor." }
+      {
+        "id": 31,
+        "tipo_ejercicio": "responder",
+        "prompt": "Can I help you? (Solo estoy mirando)",
+        "respuesta_esperada": "I am just looking",
+        "significado": "¿Puedo ayudarte? - Solo estoy mirando."
+      },
+      {
+        "id": 32,
+        "tipo_ejercicio": "responder",
+        "prompt": "What size do you need? (Mediana)",
+        "respuesta_esperada": "Medium size",
+        "significado": "¿Qué talla necesitas? - Talla mediana."
+      },
+      {
+        "id": 33,
+        "tipo_ejercicio": "responder",
+        "prompt": "How much is this shirt? (Veinte dólares)",
+        "respuesta_esperada": "Twenty dollars",
+        "significado": "¿Cuánto cuesta esta camisa? - Veinte dólares."
+      },
+      {
+        "id": 34,
+        "tipo_ejercicio": "responder",
+        "prompt": "Would you like something to drink? (Agua, por favor)",
+        "respuesta_esperada": "Water, please",
+        "significado": "¿Te gustaría algo de beber? - Agua, por favor."
+      },
+      {
+        "id": 35,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are you ready to order? (Sí)",
+        "respuesta_esperada": "Yes, I am",
+        "significado": "¿Estás listo para ordenar? - Sí, lo estoy."
+      },
+      {
+        "id": 36,
+        "tipo_ejercicio": "responder",
+        "prompt": "Which one do you want? (El azul)",
+        "respuesta_esperada": "The blue one",
+        "significado": "¿Cuál quieres? - El azul."
+      },
+      {
+        "id": 37,
+        "tipo_ejercicio": "responder",
+        "prompt": "Where are the fitting rooms? (Allá)",
+        "respuesta_esperada": "Over there",
+        "significado": "¿Dónde están los probadores? - Allá."
+      },
+      {
+        "id": 38,
+        "tipo_ejercicio": "responder",
+        "prompt": "Do you have any apples? (Sí, tenemos algunas)",
+        "respuesta_esperada": "Yes, we have some",
+        "significado": "¿Tienes algunas manzanas? - Sí, tenemos algunas."
+      },
+      {
+        "id": 39,
+        "tipo_ejercicio": "responder",
+        "prompt": "Is this too small? (No, está bien)",
+        "respuesta_esperada": "No, it is fine",
+        "significado": "¿Es esto demasiado pequeño? - No, está bien."
+      },
+      {
+        "id": 40,
+        "tipo_ejercicio": "responder",
+        "prompt": "Can I pay with credit card? (Sí, claro)",
+        "respuesta_esperada": "Yes, of course",
+        "significado": "¿Puedo pagar con tarjeta de crédito? - Sí, claro."
+      },
+      {
+        "id": 41,
+        "tipo_ejercicio": "responder",
+        "prompt": "How many kilos do you need? (Dos kilos)",
+        "respuesta_esperada": "Two kilos",
+        "significado": "¿Cuántos kilos necesitas? - Dos kilos."
+      },
+      {
+        "id": 42,
+        "tipo_ejercicio": "responder",
+        "prompt": "Would you like dessert? (No, gracias)",
+        "respuesta_esperada": "No, thank you",
+        "significado": "¿Te gustaría postre? - No, gracias."
+      },
+      {
+        "id": 43,
+        "tipo_ejercicio": "responder",
+        "prompt": "Can we have the check, please? (Por supuesto)",
+        "respuesta_esperada": "Of course",
+        "significado": "¿Nos trae la cuenta, por favor? - Por supuesto."
+      },
+      {
+        "id": 44,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are these pants expensive? (Sí, muy caros)",
+        "respuesta_esperada": "Yes, very expensive",
+        "significado": "¿Son caros estos pantalones? - Sí, muy caros."
+      },
+      {
+        "id": 45,
+        "tipo_ejercicio": "responder",
+        "prompt": "Do you need a bag? (Sí, por favor)",
+        "respuesta_esperada": "Yes, please",
+        "significado": "¿Necesitas una bolsa? - Sí, por favor."
+      }
     ]
   }
 }

@@ -1,0 +1,135 @@
+1|31|Are you a student? (Respuesta afirmativa corta)|Sí, lo soy.
+1|32|Does she eat meat? (Respuesta negativa corta)|No, ella no lo hace.
+1|33|Do they work here? (Respuesta afirmativa corta)|Sí, ellos lo hacen.
+1|34|Is he a teacher? (Respuesta negativa corta)|No, no lo es.
+1|35|Do you like apples? (Respuesta afirmativa corta)|Sí, me gustan.
+1|36|Does it rain a lot here? (Respuesta afirmativa corta)|Sí, llueve mucho.
+1|37|Are we late? (Respuesta negativa corta)|No, no llegamos tarde.
+1|38|How many apples do you have? (Tres)|Tengo tres.
+1|39|How much water is there? (Mucha)|Mucha.
+1|40|What time is it? (Son las 7:00)|Son las 7 en punto.
+1|41|Where are you from? (México)|Soy de México.
+1|42|How old are you? (Veinte)|Tengo veinte años.
+1|43|What do you do? (Soy doctor)|Soy doctor.
+1|44|Do you often read? (Sí, siempre)|Sí, siempre.
+1|45|Is the food good? (Respuesta afirmativa corta)|Sí, lo es.
+2|31|Who is taller, the boy or the girl? (El niño)|El niño.
+2|32|Is the red car faster than the blue one? (Sí)|Sí, lo es.
+2|33|Are cats as intelligent as dogs? (Sí)|Sí, lo son.
+2|34|Which city is the most important? (Xalapa)|Xalapa.
+2|35|Who is the tallest boy? (Mike)|Mike.
+2|36|How big is your house? (Muy grande)|Muy grande.
+2|37|Is English easier than Math? (No)|No, no lo es.
+2|38|Which color is darker, black or grey? (Negro)|Negro.
+2|39|Is the floor wet? (Sí)|Sí, lo está.
+2|40|Is Peter afraid of ghosts? (No)|No, no le teme.
+2|41|How high is the building? (Es muy alto)|Es muy alto.
+2|42|What is the best soccer team? (Real Madrid)|Real Madrid.
+2|43|Is the TV cheap? (Sí)|Sí, lo es.
+2|44|Does your father like classical music? (Sí)|Sí, le gusta.
+2|45|Is your shirt clean? (Sí)|Sí, lo está.
+3|31|Is there a bank near here? (Sí, hay uno)|Sí, hay uno.
+3|32|Are there any restaurants? (No, no hay ninguno)|No, no hay.
+3|33|Where is the post office? (En la calle Main)|En la calle Principal.
+3|34|How do I get to the library? (Sigue derecho)|Sigue derecho.
+3|35|Is the hospital far from here? (No)|No, no lo está.
+3|36|What time does the bank open? (A las 9)|A las nueve.
+3|37|Where can I buy aspirin? (En una farmacia)|En una farmacia.
+3|38|Is the park on the right? (Sí)|Sí, lo está.
+3|39|Where is the exit? (A la izquierda)|A la izquierda.
+3|40|Is it located on University Avenue? (Sí)|Sí, lo está.
+3|41|Do I have to turn right? (No, gira a la izquierda)|No, gira a la izquierda.
+3|42|Where is the airport? (Al sur)|En el sur.
+3|43|Are we near the station? (Sí, estamos cerca)|Sí, estamos cerca.
+3|44|Can you tell me how to get to the mall? (Toma el autobús)|Toma el autobús.
+3|45|Is it behind the church? (Sí, justo detrás)|Sí, justo detrás.
+4|31|Can I help you? (Solo estoy mirando)|Solo estoy mirando.
+4|32|What size do you need? (Mediana)|Talla mediana.
+4|33|How much is this shirt? (Veinte dólares)|Veinte dólares.
+4|34|Would you like something to drink? (Agua, por favor)|Agua, por favor.
+4|35|Are you ready to order? (Sí)|Sí, lo estoy.
+4|36|Which one do you want? (El azul)|El azul.
+4|37|Where are the fitting rooms? (Allá)|Allá.
+4|38|Do you have any apples? (Sí, tenemos algunas)|Sí, tenemos algunas.
+4|39|Is this too small? (No, está bien)|No, está bien.
+4|40|Can I pay with credit card? (Sí, claro)|Sí, claro.
+4|41|How many kilos do you need? (Dos kilos)|Dos kilos.
+4|42|Would you like dessert? (No, gracias)|No, gracias.
+4|43|Can we have the check, please? (Por supuesto)|Por supuesto.
+4|44|Are these pants expensive? (Sí, muy caros)|Sí, muy caros.
+4|45|Do you need a bag? (Sí, por favor)|Sí, por favor.
+5|31|Were you at home yesterday? (Sí)|Sí, lo estuve.
+5|32|Did you go to the party? (No)|No, no fui.
+5|33|Was the food good? (Sí, estuvo deliciosa)|Sí, estuvo deliciosa.
+5|34|Where did you go? (Al cine)|Al cine.
+5|35|What did you eat? (Pizza)|Pizza.
+5|36|Did they win the game? (Sí)|Sí, ganaron.
+5|37|Was he born in Mexico? (No, en España)|No, en España.
+5|38|Who did you see? (A mi amigo)|A mi amigo.
+5|39|Did it rain yesterday? (Sí)|Sí, llovió.
+5|40|Were there many people? (No)|No, no hubo.
+5|41|How was your weekend? (Estuvo genial)|Estuvo genial.
+5|42|Did she like the gift? (Sí, le encantó)|Sí, le encantó.
+5|43|What time did you wake up? (A las ocho)|A las ocho.
+5|44|Did you study for the test? (No, no lo hice)|No, no lo hice.
+5|45|Where were you born? (En Londres)|En Londres.
+6|31|What's the matter? (Me duele la cabeza)|Tengo dolor de cabeza.
+6|32|Should I go to the doctor? (Sí, deberías)|Sí, deberías.
+6|33|Can you see me tomorrow? (Sí, a las 10)|Sí, a las diez.
+6|34|Does your leg hurt? (Sí, mucho)|Sí, mucho.
+6|35|Should he eat junk food? (No, no debería)|No, no debería.
+6|36|Do you feel better now? (Sí, gracias)|Sí, gracias.
+6|37|What should I do? (Tomar medicina)|Tomar medicina.
+6|38|Do you have a fever? (No, no tengo)|No, no tengo.
+6|39|Can I help you? (Sí, quiero hacer una cita)|Sí, quiero hacer una cita.
+6|40|Does your throat hurt? (Sí, tengo dolor de garganta)|Sí, tengo dolor de garganta.
+6|41|Should we rest? (Sí, es buena idea)|Sí, es buena idea.
+6|42|Are you sick? (Sí, estoy enfermo)|Sí, estoy enfermo.
+6|43|How do you feel? (Me siento mal)|Me siento mal.
+6|44|Should she drink more water? (Sí, debería)|Sí, debería.
+6|45|Is the doctor in? (Sí, lo está)|Sí, lo está.
+7|31|Are you going to study tonight? (Sí)|Sí, lo voy a hacer.
+7|32|What are you going to do? (Voy a dormir)|Voy a dormir.
+7|33|Is she going to travel? (No)|No, no lo va a hacer.
+7|34|How are you going to travel? (En tren)|En tren.
+7|35|When is he going to arrive? (Mañana)|Mañana.
+7|36|Are they going to buy a car? (Sí)|Sí, lo van a hacer.
+7|37|Where are we going to stay? (En un hotel)|En un hotel.
+7|38|Is it going to rain? (Sí, va a llover)|Sí, va a llover.
+7|39|Are you going to work on the first of May? (No, no voy a trabajar)|No, no lo voy a hacer.
+7|40|Who is going to cook? (Mi madre)|Mi madre.
+7|41|What time are you going to leave? (A las 5)|A las cinco.
+7|42|Is he going to take the bus? (Sí)|Sí, lo va a hacer.
+7|43|Are you going to invite them? (Sí, los voy a invitar)|Sí, lo haré.
+7|44|Where are they going to eat? (En el restaurante)|En el restaurante.
+7|45|When are you going to visit us? (La próxima semana)|La próxima semana.
+8|31|Can I smoke here? (No, no puedes)|No, no puedes.
+8|32|Do I have to clean my room? (Sí)|Sí, tienes que hacerlo.
+8|33|Can we use our phones? (No)|No, no podemos.
+8|34|Does she have to wear a uniform? (Sí)|Sí, ella tiene que hacerlo.
+8|35|Can I go to the bathroom? (Sí, puedes)|Sí, puedes.
+8|36|Do they have to pay? (Sí)|Sí, ellos tienen que hacerlo.
+8|37|What do I have to do first? (Lavar los platos)|Lavar los platos.
+8|38|Can you help me? (Sí)|Sí, puedo.
+8|39|Why do you have to study? (Porque tengo un examen)|Porque tengo un examen.
+8|40|Do we have to go now? (No, no tenemos que)|No, no tenemos que.
+8|41|Can I park here? (No)|No, no puedes.
+8|42|Who has to cook today? (Mi hermano)|Mi hermano.
+8|43|Does he have to wake up early? (Sí)|Sí, él tiene que hacerlo.
+8|44|Can she come with us? (Sí, puede)|Sí, ella puede.
+8|45|Do I have to finish it? (Sí)|Sí, tienes que hacerlo.
+9|31|Would you like to come? (Sí, me encantaría)|Sí, me encantaría.
+9|32|Can you go to the party? (No, no puedo)|No, no puedo.
+9|33|Why can't you go? (Tengo que estudiar)|Tengo que estudiar.
+9|34|Do you want to watch a movie? (Sí)|Sí, quiero.
+9|35|What do you want to do? (Quiero bailar)|Quiero bailar.
+9|36|Would you like some coffee? (No, gracias)|No, gracias.
+9|37|Can we go now? (Sí, podemos)|Sí, podemos.
+9|38|What time should we meet? (A las 8)|A las ocho.
+9|39|Let's go to the park. (Suena bien)|Suena bien.
+9|40|Do you have to work tonight? (Sí)|Sí, tengo que hacerlo.
+9|41|Would you like to join us? (Sí, me gustaría)|Sí, me gustaría.
+9|42|Are you busy? (No, no lo estoy)|No, no lo estoy.
+9|43|Can I invite my sister? (Sí, por supuesto)|Sí, por supuesto.
+9|44|Where do you want to eat? (En casa)|En casa.
+9|45|Do you want to play soccer? (No, quiero descansar)|No, quiero descansar.

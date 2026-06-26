@@ -1,55 +1,325 @@
 {
   "ejercicios_tema_7": {
     "completar": [
-      { "id": 1, "tipo_ejercicio": "completar", "prompt": "I am ___ to travel to Paris. (going)", "respuesta_esperada": "I am going to travel to Paris.", "significado": "Voy a viajar a París." },
-      { "id": 2, "tipo_ejercicio": "completar", "prompt": "She is going to ___ a new car. (buy)", "respuesta_esperada": "She is going to buy a new car.", "significado": "Ella va a comprar un auto nuevo." },
-      { "id": 3, "tipo_ejercicio": "completar", "prompt": "___ are you going to do tomorrow? (What)", "respuesta_esperada": "What are you going to do tomorrow?", "significado": "¿Qué vas a hacer mañana?" },
-      { "id": 4, "tipo_ejercicio": "completar", "prompt": "We are ___ going to stay home. (not)", "respuesta_esperada": "We are not going to stay home.", "significado": "No nos vamos a quedar en casa." },
-      { "id": 5, "tipo_ejercicio": "completar", "prompt": "Is he going to ___ the train? (take)", "respuesta_esperada": "Is he going to take the train?", "significado": "¿Él va a tomar el tren?" },
-      { "id": 6, "tipo_ejercicio": "completar", "prompt": "They are going to arrive on the ___ of May. (first)", "respuesta_esperada": "They are going to arrive on the first of May.", "significado": "Ellos van a llegar el primero de mayo." },
-      { "id": 7, "tipo_ejercicio": "completar", "prompt": "I am going to travel by ___. (plane)", "respuesta_esperada": "I am going to travel by plane.", "significado": "Voy a viajar en avión." },
-      { "id": 8, "tipo_ejercicio": "completar", "prompt": "Are you ___ to study tonight? (going)", "respuesta_esperada": "Are you going to study tonight?", "significado": "¿Vas a estudiar esta noche?" },
-      { "id": 9, "tipo_ejercicio": "completar", "prompt": "Where ___ she going to live? (is)", "respuesta_esperada": "Where is she going to live?", "significado": "¿Dónde va a vivir ella?" },
-      { "id": 10, "tipo_ejercicio": "completar", "prompt": "He is going to start his new job on the ___ day. (second)", "respuesta_esperada": "He is going to start his new job on the second day.", "significado": "Él va a empezar su nuevo trabajo en el segundo día." },
-      { "id": 11, "tipo_ejercicio": "completar", "prompt": "We are going to ___ a movie this weekend. (watch)", "respuesta_esperada": "We are going to watch a movie this weekend.", "significado": "Vamos a ver una película este fin de semana." },
-      { "id": 12, "tipo_ejercicio": "completar", "prompt": "They ___ going to have a party. (are)", "respuesta_esperada": "They are going to have a party.", "significado": "Ellos van a tener una fiesta." },
-      { "id": 13, "tipo_ejercicio": "completar", "prompt": "I am going to visit my grandparents ___ week. (next)", "respuesta_esperada": "I am going to visit my grandparents next week.", "significado": "Voy a visitar a mis abuelos la próxima semana." },
-      { "id": 14, "tipo_ejercicio": "completar", "prompt": "She is going to take the ___. (bus)", "respuesta_esperada": "She is going to take the bus.", "significado": "Ella va a tomar el autobús." },
-      { "id": 15, "tipo_ejercicio": "completar", "prompt": "When are you going to ___? (leave)", "respuesta_esperada": "When are you going to leave?", "significado": "¿Cuándo te vas a ir?" }
+      {
+        "id": 1,
+        "tipo_ejercicio": "completar",
+        "prompt": "I am ___ to travel to Paris. (going)",
+        "respuesta_esperada": "I am going to travel to Paris.",
+        "significado": "Voy a viajar a París."
+      },
+      {
+        "id": 2,
+        "tipo_ejercicio": "completar",
+        "prompt": "She is going to ___ a new car. (buy)",
+        "respuesta_esperada": "She is going to buy a new car.",
+        "significado": "Ella va a comprar un auto nuevo."
+      },
+      {
+        "id": 3,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ are you going to do tomorrow? (What)",
+        "respuesta_esperada": "What are you going to do tomorrow?",
+        "significado": "¿Qué vas a hacer mañana?"
+      },
+      {
+        "id": 4,
+        "tipo_ejercicio": "completar",
+        "prompt": "We are ___ going to stay home. (not)",
+        "respuesta_esperada": "We are not going to stay home.",
+        "significado": "No nos vamos a quedar en casa."
+      },
+      {
+        "id": 5,
+        "tipo_ejercicio": "completar",
+        "prompt": "Is he going to ___ the train? (take)",
+        "respuesta_esperada": "Is he going to take the train?",
+        "significado": "¿Él va a tomar el tren?"
+      },
+      {
+        "id": 6,
+        "tipo_ejercicio": "completar",
+        "prompt": "They are going to arrive on the ___ of May. (first)",
+        "respuesta_esperada": "They are going to arrive on the first of May.",
+        "significado": "Ellos van a llegar el primero de mayo."
+      },
+      {
+        "id": 7,
+        "tipo_ejercicio": "completar",
+        "prompt": "I am going to travel by ___. (plane)",
+        "respuesta_esperada": "I am going to travel by plane.",
+        "significado": "Voy a viajar en avión."
+      },
+      {
+        "id": 8,
+        "tipo_ejercicio": "completar",
+        "prompt": "Are you ___ to study tonight? (going)",
+        "respuesta_esperada": "Are you going to study tonight?",
+        "significado": "¿Vas a estudiar esta noche?"
+      },
+      {
+        "id": 9,
+        "tipo_ejercicio": "completar",
+        "prompt": "Where ___ she going to live? (is)",
+        "respuesta_esperada": "Where is she going to live?",
+        "significado": "¿Dónde va a vivir ella?"
+      },
+      {
+        "id": 10,
+        "tipo_ejercicio": "completar",
+        "prompt": "He is going to start his new job on the ___ day. (second)",
+        "respuesta_esperada": "He is going to start his new job on the second day.",
+        "significado": "Él va a empezar su nuevo trabajo en el segundo día."
+      },
+      {
+        "id": 11,
+        "tipo_ejercicio": "completar",
+        "prompt": "We are going to ___ a movie this weekend. (watch)",
+        "respuesta_esperada": "We are going to watch a movie this weekend.",
+        "significado": "Vamos a ver una película este fin de semana."
+      },
+      {
+        "id": 12,
+        "tipo_ejercicio": "completar",
+        "prompt": "They ___ going to have a party. (are)",
+        "respuesta_esperada": "They are going to have a party.",
+        "significado": "Ellos van a tener una fiesta."
+      },
+      {
+        "id": 13,
+        "tipo_ejercicio": "completar",
+        "prompt": "I am going to visit my grandparents ___ week. (next)",
+        "respuesta_esperada": "I am going to visit my grandparents next week.",
+        "significado": "Voy a visitar a mis abuelos la próxima semana."
+      },
+      {
+        "id": 14,
+        "tipo_ejercicio": "completar",
+        "prompt": "She is going to take the ___. (bus)",
+        "respuesta_esperada": "She is going to take the bus.",
+        "significado": "Ella va a tomar el autobús."
+      },
+      {
+        "id": 15,
+        "tipo_ejercicio": "completar",
+        "prompt": "When are you going to ___? (leave)",
+        "respuesta_esperada": "When are you going to leave?",
+        "significado": "¿Cuándo te vas a ir?"
+      }
     ],
     "ordenar": [
-      { "id": 16, "tipo_ejercicio": "ordenar", "prompt": "Ordena: am | study | going | to | I | tomorrow.", "respuesta_esperada": "I am going to study tomorrow.", "significado": "Voy a estudiar mañana." },
-      { "id": 17, "tipo_ejercicio": "ordenar", "prompt": "Ordena: going | What | to | you | are | do?", "respuesta_esperada": "What are you going to do?", "significado": "¿Qué vas a hacer?" },
-      { "id": 18, "tipo_ejercicio": "ordenar", "prompt": "Ordena: are | travel | They | to | going | plane. | by", "respuesta_esperada": "They are going to travel by plane.", "significado": "Ellos van a viajar en avión." },
-      { "id": 19, "tipo_ejercicio": "ordenar", "prompt": "Ordena: is | not | going | work. | to | He", "respuesta_esperada": "He is not going to work.", "significado": "Él no va a trabajar." },
-      { "id": 20, "tipo_ejercicio": "ordenar", "prompt": "Ordena: going | we | Are | to | win?", "respuesta_esperada": "Are we going to win?", "significado": "¿Vamos a ganar?" },
-      { "id": 21, "tipo_ejercicio": "ordenar", "prompt": "Ordena: the | arrive | will | on | third | We | day.", "respuesta_esperada": "We will arrive on the third day.", "significado": "Llegaremos en el tercer día." },
-      { "id": 22, "tipo_ejercicio": "ordenar", "prompt": "Ordena: buy | going | to | house. | a | I | am", "respuesta_esperada": "I am going to buy a house.", "significado": "Voy a comprar una casa." },
-      { "id": 23, "tipo_ejercicio": "ordenar", "prompt": "Ordena: she | going | Where | to | is | go?", "respuesta_esperada": "Where is she going to go?", "significado": "¿A dónde va a ir ella?" },
-      { "id": 24, "tipo_ejercicio": "ordenar", "prompt": "Ordena: train. | take | going | We | to | the | are", "respuesta_esperada": "We are going to take the train.", "significado": "Nosotros vamos a tomar el tren." },
-      { "id": 25, "tipo_ejercicio": "ordenar", "prompt": "Ordena: see | going | doctor | to | You | a | are | today.", "respuesta_esperada": "You are going to see a doctor today.", "significado": "Vas a ver a un médico hoy." },
-      { "id": 26, "tipo_ejercicio": "ordenar", "prompt": "Ordena: party | going | to | have | a | is | She", "respuesta_esperada": "She is going to have a party.", "significado": "Ella va a tener una fiesta." },
-      { "id": 27, "tipo_ejercicio": "ordenar", "prompt": "Ordena: are | move | to | going | They | York. | New | to", "respuesta_esperada": "They are going to move to New York.", "significado": "Ellos se van a mudar a Nueva York." },
-      { "id": 28, "tipo_ejercicio": "ordenar", "prompt": "Ordena: learn | going | to | am | English. | I", "respuesta_esperada": "I am going to learn English.", "significado": "Voy a aprender inglés." },
-      { "id": 29, "tipo_ejercicio": "ordenar", "prompt": "Ordena: When | start | going | you | to | are | project? | the", "respuesta_esperada": "When are you going to start the project?", "significado": "¿Cuándo vas a empezar el proyecto?" },
-      { "id": 30, "tipo_ejercicio": "ordenar", "prompt": "Ordena: going | not | am | I | stay | to | late.", "respuesta_esperada": "I am not going to stay late.", "significado": "No me voy a quedar hasta tarde." }
+      {
+        "id": 16,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: am | study | going | to | I | tomorrow.",
+        "respuesta_esperada": "I am going to study tomorrow.",
+        "significado": "Voy a estudiar mañana."
+      },
+      {
+        "id": 17,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: going | What | to | you | are | do?",
+        "respuesta_esperada": "What are you going to do?",
+        "significado": "¿Qué vas a hacer?"
+      },
+      {
+        "id": 18,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: are | travel | They | to | going | plane. | by",
+        "respuesta_esperada": "They are going to travel by plane.",
+        "significado": "Ellos van a viajar en avión."
+      },
+      {
+        "id": 19,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: is | not | going | work. | to | He",
+        "respuesta_esperada": "He is not going to work.",
+        "significado": "Él no va a trabajar."
+      },
+      {
+        "id": 20,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: going | we | Are | to | win?",
+        "respuesta_esperada": "Are we going to win?",
+        "significado": "¿Vamos a ganar?"
+      },
+      {
+        "id": 21,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: the | arrive | will | on | third | We | day.",
+        "respuesta_esperada": "We will arrive on the third day.",
+        "significado": "Llegaremos en el tercer día."
+      },
+      {
+        "id": 22,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: buy | going | to | house. | a | I | am",
+        "respuesta_esperada": "I am going to buy a house.",
+        "significado": "Voy a comprar una casa."
+      },
+      {
+        "id": 23,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: she | going | Where | to | is | go?",
+        "respuesta_esperada": "Where is she going to go?",
+        "significado": "¿A dónde va a ir ella?"
+      },
+      {
+        "id": 24,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: train. | take | going | We | to | the | are",
+        "respuesta_esperada": "We are going to take the train.",
+        "significado": "Nosotros vamos a tomar el tren."
+      },
+      {
+        "id": 25,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: see | going | doctor | to | You | a | are | today.",
+        "respuesta_esperada": "You are going to see a doctor today.",
+        "significado": "Vas a ver a un médico hoy."
+      },
+      {
+        "id": 26,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: party | going | to | have | a | is | She",
+        "respuesta_esperada": "She is going to have a party.",
+        "significado": "Ella va a tener una fiesta."
+      },
+      {
+        "id": 27,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: are | move | to | going | They | York. | New | to",
+        "respuesta_esperada": "They are going to move to New York.",
+        "significado": "Ellos se van a mudar a Nueva York."
+      },
+      {
+        "id": 28,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: learn | going | to | am | English. | I",
+        "respuesta_esperada": "I am going to learn English.",
+        "significado": "Voy a aprender inglés."
+      },
+      {
+        "id": 29,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: When | start | going | you | to | are | project? | the",
+        "respuesta_esperada": "When are you going to start the project?",
+        "significado": "¿Cuándo vas a empezar el proyecto?"
+      },
+      {
+        "id": 30,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: going | not | am | I | stay | to | late.",
+        "respuesta_esperada": "I am not going to stay late.",
+        "significado": "No me voy a quedar hasta tarde."
+      }
     ],
     "responder": [
-      { "id": 31, "tipo_ejercicio": "responder", "prompt": "Are you going to study tonight? (Sí)", "respuesta_esperada": "Yes, I am", "significado": "Sí, lo voy a hacer." },
-      { "id": 32, "tipo_ejercicio": "responder", "prompt": "What are you going to do? (Voy a dormir)", "respuesta_esperada": "I am going to sleep", "significado": "Voy a dormir." },
-      { "id": 33, "tipo_ejercicio": "responder", "prompt": "Is she going to travel? (No)", "respuesta_esperada": "No, she isn't", "significado": "No, no lo va a hacer." },
-      { "id": 34, "tipo_ejercicio": "responder", "prompt": "How are you going to travel? (En tren)", "respuesta_esperada": "By train", "significado": "En tren." },
-      { "id": 35, "tipo_ejercicio": "responder", "prompt": "When is he going to arrive? (Mañana)", "respuesta_esperada": "Tomorrow", "significado": "Mañana." },
-      { "id": 36, "tipo_ejercicio": "responder", "prompt": "Are they going to buy a car? (Sí)", "respuesta_esperada": "Yes, they are", "significado": "Sí, lo van a hacer." },
-      { "id": 37, "tipo_ejercicio": "responder", "prompt": "Where are we going to stay? (En un hotel)", "respuesta_esperada": "In a hotel", "significado": "En un hotel." },
-      { "id": 38, "tipo_ejercicio": "responder", "prompt": "Is it going to rain? (Sí, va a llover)", "respuesta_esperada": "Yes, it is", "significado": "Sí, va a llover." },
-      { "id": 39, "tipo_ejercicio": "responder", "prompt": "Are you going to work on the first of May? (No, no voy a trabajar)", "respuesta_esperada": "No, I am not", "significado": "No, no lo voy a hacer." },
-      { "id": 40, "tipo_ejercicio": "responder", "prompt": "Who is going to cook? (Mi madre)", "respuesta_esperada": "My mother", "significado": "Mi madre." },
-      { "id": 41, "tipo_ejercicio": "responder", "prompt": "What time are you going to leave? (A las 5)", "respuesta_esperada": "At five", "significado": "A las cinco." },
-      { "id": 42, "tipo_ejercicio": "responder", "prompt": "Is he going to take the bus? (Sí)", "respuesta_esperada": "Yes, he is", "significado": "Sí, lo va a hacer." },
-      { "id": 43, "tipo_ejercicio": "responder", "prompt": "Are you going to invite them? (Sí, los voy a invitar)", "respuesta_esperada": "Yes, I am", "significado": "Sí, lo haré." },
-      { "id": 44, "tipo_ejercicio": "responder", "prompt": "Where are they going to eat? (En el restaurante)", "respuesta_esperada": "At the restaurant", "significado": "En el restaurante." },
-      { "id": 45, "tipo_ejercicio": "responder", "prompt": "When are you going to visit us? (La próxima semana)", "respuesta_esperada": "Next week", "significado": "La próxima semana." }
+      {
+        "id": 31,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are you going to study tonight? (Sí)",
+        "respuesta_esperada": "Yes, I am",
+        "significado": "¿Vas a estudiar esta noche? - Sí, lo voy a hacer."
+      },
+      {
+        "id": 32,
+        "tipo_ejercicio": "responder",
+        "prompt": "What are you going to do? (Voy a dormir)",
+        "respuesta_esperada": "I am going to sleep",
+        "significado": "¿Qué vas a hacer? - Voy a dormir."
+      },
+      {
+        "id": 33,
+        "tipo_ejercicio": "responder",
+        "prompt": "Is she going to travel? (No)",
+        "respuesta_esperada": "No, she isn't",
+        "significado": "¿Ella va a viajar? - No, no lo va a hacer."
+      },
+      {
+        "id": 34,
+        "tipo_ejercicio": "responder",
+        "prompt": "How are you going to travel? (En tren)",
+        "respuesta_esperada": "By train",
+        "significado": "¿Cómo vas a viajar? - En tren."
+      },
+      {
+        "id": 35,
+        "tipo_ejercicio": "responder",
+        "prompt": "When is he going to arrive? (Mañana)",
+        "respuesta_esperada": "Tomorrow",
+        "significado": "¿Cuándo va a llegar él? - Mañana."
+      },
+      {
+        "id": 36,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are they going to buy a car? (Sí)",
+        "respuesta_esperada": "Yes, they are",
+        "significado": "¿Van a comprar un auto? - Sí, lo van a hacer."
+      },
+      {
+        "id": 37,
+        "tipo_ejercicio": "responder",
+        "prompt": "Where are we going to stay? (En un hotel)",
+        "respuesta_esperada": "In a hotel",
+        "significado": "¿Dónde nos vamos a quedar? - En un hotel."
+      },
+      {
+        "id": 38,
+        "tipo_ejercicio": "responder",
+        "prompt": "Is it going to rain? (Sí, va a llover)",
+        "respuesta_esperada": "Yes, it is",
+        "significado": "¿Va a llover? - Sí, va a llover."
+      },
+      {
+        "id": 39,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are you going to work on the first of May? (No, no voy a trabajar)",
+        "respuesta_esperada": "No, I am not",
+        "significado": "¿Vas a trabajar el primero de mayo? - No, no lo voy a hacer."
+      },
+      {
+        "id": 40,
+        "tipo_ejercicio": "responder",
+        "prompt": "Who is going to cook? (Mi madre)",
+        "respuesta_esperada": "My mother",
+        "significado": "¿Quién va a cocinar? - Mi madre."
+      },
+      {
+        "id": 41,
+        "tipo_ejercicio": "responder",
+        "prompt": "What time are you going to leave? (A las 5)",
+        "respuesta_esperada": "At five",
+        "significado": "¿A qué hora te vas a ir? - A las cinco."
+      },
+      {
+        "id": 42,
+        "tipo_ejercicio": "responder",
+        "prompt": "Is he going to take the bus? (Sí)",
+        "respuesta_esperada": "Yes, he is",
+        "significado": "¿Él va a tomar el autobús? - Sí, lo va a hacer."
+      },
+      {
+        "id": 43,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are you going to invite them? (Sí, los voy a invitar)",
+        "respuesta_esperada": "Yes, I am",
+        "significado": "¿Los vas a invitar? - Sí, lo haré."
+      },
+      {
+        "id": 44,
+        "tipo_ejercicio": "responder",
+        "prompt": "Where are they going to eat? (En el restaurante)",
+        "respuesta_esperada": "At the restaurant",
+        "significado": "¿Dónde van a comer? - En el restaurante."
+      },
+      {
+        "id": 45,
+        "tipo_ejercicio": "responder",
+        "prompt": "When are you going to visit us? (La próxima semana)",
+        "respuesta_esperada": "Next week",
+        "significado": "¿Cuándo vas a visitarnos? - La próxima semana."
+      }
     ]
   }
 }

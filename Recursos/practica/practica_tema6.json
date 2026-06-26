@@ -1,55 +1,325 @@
 {
   "ejercicios_tema_6": {
     "completar": [
-      { "id": 1, "tipo_ejercicio": "completar", "prompt": "You ___ go to the doctor. (should)", "respuesta_esperada": "You should go to the doctor.", "significado": "Deberías ir al médico." },
-      { "id": 2, "tipo_ejercicio": "completar", "prompt": "I have a ___ in my stomach. (pain)", "respuesta_esperada": "I have a pain in my stomach.", "significado": "Tengo un dolor en mi estómago." },
-      { "id": 3, "tipo_ejercicio": "completar", "prompt": "___ you help me make an appointment? (Can)", "respuesta_esperada": "Can you help me make an appointment?", "significado": "¿Puedes ayudarme a hacer una cita?" },
-      { "id": 4, "tipo_ejercicio": "completar", "prompt": "You shouldn't ___ so much junk food. (eat)", "respuesta_esperada": "You shouldn't eat so much junk food.", "significado": "No deberías comer tanta comida chatarra." },
-      { "id": 5, "tipo_ejercicio": "completar", "prompt": "I have a terrible ___. (headache)", "respuesta_esperada": "I have a terrible headache.", "significado": "Tengo un terrible dolor de cabeza." },
-      { "id": 6, "tipo_ejercicio": "completar", "prompt": "___ medicine and rest. (Take)", "respuesta_esperada": "Take medicine and rest.", "significado": "Toma medicina y descansa." },
-      { "id": 7, "tipo_ejercicio": "completar", "prompt": "What's the ___ with you? (matter)", "respuesta_esperada": "What's the matter with you?", "significado": "¿Qué te pasa?" },
-      { "id": 8, "tipo_ejercicio": "completar", "prompt": "My ___ hurts when I walk. (leg)", "respuesta_esperada": "My leg hurts when I walk.", "significado": "Me duele la pierna cuando camino." },
-      { "id": 9, "tipo_ejercicio": "completar", "prompt": "You should ___ more water. (drink)", "respuesta_esperada": "You should drink more water.", "significado": "Deberías beber más agua." },
-      { "id": 10, "tipo_ejercicio": "completar", "prompt": "I can't ___ properly, I have a cold. (breathe)", "respuesta_esperada": "I can't breathe properly, I have a cold.", "significado": "No puedo respirar bien, tengo un resfriado." },
-      { "id": 11, "tipo_ejercicio": "completar", "prompt": "I'd like to ___ an appointment with Dr. Smith. (make)", "respuesta_esperada": "I'd like to make an appointment with Dr. Smith.", "significado": "Me gustaría hacer una cita con el Dr. Smith." },
-      { "id": 12, "tipo_ejercicio": "completar", "prompt": "He should ___ in bed for a few days. (stay)", "respuesta_esperada": "He should stay in bed for a few days.", "significado": "Él debería quedarse en cama por unos días." },
-      { "id": 13, "tipo_ejercicio": "completar", "prompt": "Are you ___ okay? (feeling)", "respuesta_esperada": "Are you feeling okay?", "significado": "¿Te sientes bien?" },
-      { "id": 14, "tipo_ejercicio": "completar", "prompt": "Don't ___ heavy things. (lift)", "respuesta_esperada": "Don't lift heavy things.", "significado": "No levantes cosas pesadas." },
-      { "id": 15, "tipo_ejercicio": "completar", "prompt": "I have a ___ throat. (sore)", "respuesta_esperada": "I have a sore throat.", "significado": "Tengo dolor de garganta." }
+      {
+        "id": 1,
+        "tipo_ejercicio": "completar",
+        "prompt": "You ___ go to the doctor. (should)",
+        "respuesta_esperada": "You should go to the doctor.",
+        "significado": "Deberías ir al médico."
+      },
+      {
+        "id": 2,
+        "tipo_ejercicio": "completar",
+        "prompt": "I have a ___ in my stomach. (pain)",
+        "respuesta_esperada": "I have a pain in my stomach.",
+        "significado": "Tengo un dolor en mi estómago."
+      },
+      {
+        "id": 3,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ you help me make an appointment? (Can)",
+        "respuesta_esperada": "Can you help me make an appointment?",
+        "significado": "¿Puedes ayudarme a hacer una cita?"
+      },
+      {
+        "id": 4,
+        "tipo_ejercicio": "completar",
+        "prompt": "You shouldn't ___ so much junk food. (eat)",
+        "respuesta_esperada": "You shouldn't eat so much junk food.",
+        "significado": "No deberías comer tanta comida chatarra."
+      },
+      {
+        "id": 5,
+        "tipo_ejercicio": "completar",
+        "prompt": "I have a terrible ___. (headache)",
+        "respuesta_esperada": "I have a terrible headache.",
+        "significado": "Tengo un terrible dolor de cabeza."
+      },
+      {
+        "id": 6,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ medicine and rest. (Take)",
+        "respuesta_esperada": "Take medicine and rest.",
+        "significado": "Toma medicina y descansa."
+      },
+      {
+        "id": 7,
+        "tipo_ejercicio": "completar",
+        "prompt": "What's the ___ with you? (matter)",
+        "respuesta_esperada": "What's the matter with you?",
+        "significado": "¿Qué te pasa?"
+      },
+      {
+        "id": 8,
+        "tipo_ejercicio": "completar",
+        "prompt": "My ___ hurts when I walk. (leg)",
+        "respuesta_esperada": "My leg hurts when I walk.",
+        "significado": "Me duele la pierna cuando camino."
+      },
+      {
+        "id": 9,
+        "tipo_ejercicio": "completar",
+        "prompt": "You should ___ more water. (drink)",
+        "respuesta_esperada": "You should drink more water.",
+        "significado": "Deberías beber más agua."
+      },
+      {
+        "id": 10,
+        "tipo_ejercicio": "completar",
+        "prompt": "I can't ___ properly, I have a cold. (breathe)",
+        "respuesta_esperada": "I can't breathe properly, I have a cold.",
+        "significado": "No puedo respirar bien, tengo un resfriado."
+      },
+      {
+        "id": 11,
+        "tipo_ejercicio": "completar",
+        "prompt": "I'd like to ___ an appointment with Dr. Smith. (make)",
+        "respuesta_esperada": "I'd like to make an appointment with Dr. Smith.",
+        "significado": "Me gustaría hacer una cita con el Dr. Smith."
+      },
+      {
+        "id": 12,
+        "tipo_ejercicio": "completar",
+        "prompt": "He should ___ in bed for a few days. (stay)",
+        "respuesta_esperada": "He should stay in bed for a few days.",
+        "significado": "Él debería quedarse en cama por unos días."
+      },
+      {
+        "id": 13,
+        "tipo_ejercicio": "completar",
+        "prompt": "Are you ___ okay? (feeling)",
+        "respuesta_esperada": "Are you feeling okay?",
+        "significado": "¿Te sientes bien?"
+      },
+      {
+        "id": 14,
+        "tipo_ejercicio": "completar",
+        "prompt": "Don't ___ heavy things. (lift)",
+        "respuesta_esperada": "Don't lift heavy things.",
+        "significado": "No levantes cosas pesadas."
+      },
+      {
+        "id": 15,
+        "tipo_ejercicio": "completar",
+        "prompt": "I have a ___ throat. (sore)",
+        "respuesta_esperada": "I have a sore throat.",
+        "significado": "Tengo dolor de garganta."
+      }
     ],
     "ordenar": [
-      { "id": 16, "tipo_ejercicio": "ordenar", "prompt": "Ordena: to | should | the | go | You | dentist.", "respuesta_esperada": "You should go to the dentist.", "significado": "Deberías ir al dentista." },
-      { "id": 17, "tipo_ejercicio": "ordenar", "prompt": "Ordena: matter | What's | the | you? | with", "respuesta_esperada": "What's the matter with you?", "significado": "¿Qué te pasa?" },
-      { "id": 18, "tipo_ejercicio": "ordenar", "prompt": "Ordena: feel | don't | I | well.", "respuesta_esperada": "I don't feel well.", "significado": "No me siento bien." },
-      { "id": 19, "tipo_ejercicio": "ordenar", "prompt": "Ordena: have | I | fever. | a", "respuesta_esperada": "I have a fever.", "significado": "Tengo fiebre." },
-      { "id": 20, "tipo_ejercicio": "ordenar", "prompt": "Ordena: appointment | to | like | make | an | I'd | today.", "respuesta_esperada": "I'd like to make an appointment today.", "significado": "Me gustaría hacer una cita hoy." },
-      { "id": 21, "tipo_ejercicio": "ordenar", "prompt": "Ordena: eat | too | shouldn't | much | You | sugar.", "respuesta_esperada": "You shouldn't eat too much sugar.", "significado": "No deberías comer demasiada azúcar." },
-      { "id": 22, "tipo_ejercicio": "ordenar", "prompt": "Ordena: me | tell | Can | what | is | you | wrong?", "respuesta_esperada": "Can you tell me what is wrong?", "significado": "¿Puedes decirme qué te pasa?" },
-      { "id": 23, "tipo_ejercicio": "ordenar", "prompt": "Ordena: arm | My | hurts | a | lot.", "respuesta_esperada": "My arm hurts a lot.", "significado": "Me duele mucho el brazo." },
-      { "id": 24, "tipo_ejercicio": "ordenar", "prompt": "Ordena: this | medicine | Take | day. | every", "respuesta_esperada": "Take this medicine every day.", "significado": "Toma esta medicina cada día." },
-      { "id": 25, "tipo_ejercicio": "ordenar", "prompt": "Ordena: some | get | You | rest. | should", "respuesta_esperada": "You should get some rest.", "significado": "Deberías descansar un poco." },
-      { "id": 26, "tipo_ejercicio": "ordenar", "prompt": "Ordena: healthy | Eat | food. | more", "respuesta_esperada": "Eat more healthy food.", "significado": "Come comida más saludable." },
-      { "id": 27, "tipo_ejercicio": "ordenar", "prompt": "Ordena: better | Do | you | feel | now?", "respuesta_esperada": "Do you feel better now?", "significado": "¿Te sientes mejor ahora?" },
-      { "id": 28, "tipo_ejercicio": "ordenar", "prompt": "Ordena: you | see | I | Can | tomorrow?", "respuesta_esperada": "Can I see you tomorrow?", "significado": "¿Puedo verte mañana?" },
-      { "id": 29, "tipo_ejercicio": "ordenar", "prompt": "Ordena: cold. | caught | a | terrible | I", "respuesta_esperada": "I caught a terrible cold.", "significado": "Atrapé un resfriado terrible." },
-      { "id": 30, "tipo_ejercicio": "ordenar", "prompt": "Ordena: exercise | do | Try | to | some | daily.", "respuesta_esperada": "Try to do some exercise daily.", "significado": "Intenta hacer algo de ejercicio diariamente." }
+      {
+        "id": 16,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: to | should | the | go | You | dentist.",
+        "respuesta_esperada": "You should go to the dentist.",
+        "significado": "Deberías ir al dentista."
+      },
+      {
+        "id": 17,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: matter | What's | the | you? | with",
+        "respuesta_esperada": "What's the matter with you?",
+        "significado": "¿Qué te pasa?"
+      },
+      {
+        "id": 18,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: feel | don't | I | well.",
+        "respuesta_esperada": "I don't feel well.",
+        "significado": "No me siento bien."
+      },
+      {
+        "id": 19,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: have | I | fever. | a",
+        "respuesta_esperada": "I have a fever.",
+        "significado": "Tengo fiebre."
+      },
+      {
+        "id": 20,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: appointment | to | like | make | an | I'd | today.",
+        "respuesta_esperada": "I'd like to make an appointment today.",
+        "significado": "Me gustaría hacer una cita hoy."
+      },
+      {
+        "id": 21,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: eat | too | shouldn't | much | You | sugar.",
+        "respuesta_esperada": "You shouldn't eat too much sugar.",
+        "significado": "No deberías comer demasiada azúcar."
+      },
+      {
+        "id": 22,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: me | tell | Can | what | is | you | wrong?",
+        "respuesta_esperada": "Can you tell me what is wrong?",
+        "significado": "¿Puedes decirme qué te pasa?"
+      },
+      {
+        "id": 23,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: arm | My | hurts | a | lot.",
+        "respuesta_esperada": "My arm hurts a lot.",
+        "significado": "Me duele mucho el brazo."
+      },
+      {
+        "id": 24,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: this | medicine | Take | day. | every",
+        "respuesta_esperada": "Take this medicine every day.",
+        "significado": "Toma esta medicina cada día."
+      },
+      {
+        "id": 25,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: some | get | You | rest. | should",
+        "respuesta_esperada": "You should get some rest.",
+        "significado": "Deberías descansar un poco."
+      },
+      {
+        "id": 26,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: healthy | Eat | food. | more",
+        "respuesta_esperada": "Eat more healthy food.",
+        "significado": "Come comida más saludable."
+      },
+      {
+        "id": 27,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: better | Do | you | feel | now?",
+        "respuesta_esperada": "Do you feel better now?",
+        "significado": "¿Te sientes mejor ahora?"
+      },
+      {
+        "id": 28,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: you | see | I | Can | tomorrow?",
+        "respuesta_esperada": "Can I see you tomorrow?",
+        "significado": "¿Puedo verte mañana?"
+      },
+      {
+        "id": 29,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: cold. | caught | a | terrible | I",
+        "respuesta_esperada": "I caught a terrible cold.",
+        "significado": "Atrapé un resfriado terrible."
+      },
+      {
+        "id": 30,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: exercise | do | Try | to | some | daily.",
+        "respuesta_esperada": "Try to do some exercise daily.",
+        "significado": "Intenta hacer algo de ejercicio diariamente."
+      }
     ],
     "responder": [
-      { "id": 31, "tipo_ejercicio": "responder", "prompt": "What's the matter? (Me duele la cabeza)", "respuesta_esperada": "I have a headache", "significado": "Tengo dolor de cabeza." },
-      { "id": 32, "tipo_ejercicio": "responder", "prompt": "Should I go to the doctor? (Sí, deberías)", "respuesta_esperada": "Yes, you should", "significado": "Sí, deberías." },
-      { "id": 33, "tipo_ejercicio": "responder", "prompt": "Can you see me tomorrow? (Sí, a las 10)", "respuesta_esperada": "Yes, at ten", "significado": "Sí, a las diez." },
-      { "id": 34, "tipo_ejercicio": "responder", "prompt": "Does your leg hurt? (Sí, mucho)", "respuesta_esperada": "Yes, a lot", "significado": "Sí, mucho." },
-      { "id": 35, "tipo_ejercicio": "responder", "prompt": "Should he eat junk food? (No, no debería)", "respuesta_esperada": "No, he shouldn't", "significado": "No, no debería." },
-      { "id": 36, "tipo_ejercicio": "responder", "prompt": "Do you feel better now? (Sí, gracias)", "respuesta_esperada": "Yes, thank you", "significado": "Sí, gracias." },
-      { "id": 37, "tipo_ejercicio": "responder", "prompt": "What should I do? (Tomar medicina)", "respuesta_esperada": "Take medicine", "significado": "Tomar medicina." },
-      { "id": 38, "tipo_ejercicio": "responder", "prompt": "Do you have a fever? (No, no tengo)", "respuesta_esperada": "No, I don't", "significado": "No, no tengo." },
-      { "id": 39, "tipo_ejercicio": "responder", "prompt": "Can I help you? (Sí, quiero hacer una cita)", "respuesta_esperada": "Yes, I want to make an appointment", "significado": "Sí, quiero hacer una cita." },
-      { "id": 40, "tipo_ejercicio": "responder", "prompt": "Does your throat hurt? (Sí, tengo dolor de garganta)", "respuesta_esperada": "Yes, I have a sore throat", "significado": "Sí, tengo dolor de garganta." },
-      { "id": 41, "tipo_ejercicio": "responder", "prompt": "Should we rest? (Sí, es buena idea)", "respuesta_esperada": "Yes, it is a good idea", "significado": "Sí, es buena idea." },
-      { "id": 42, "tipo_ejercicio": "responder", "prompt": "Are you sick? (Sí, estoy enfermo)", "respuesta_esperada": "Yes, I am sick", "significado": "Sí, estoy enfermo." },
-      { "id": 43, "tipo_ejercicio": "responder", "prompt": "How do you feel? (Me siento mal)", "respuesta_esperada": "I feel bad", "significado": "Me siento mal." },
-      { "id": 44, "tipo_ejercicio": "responder", "prompt": "Should she drink more water? (Sí, debería)", "respuesta_esperada": "Yes, she should", "significado": "Sí, debería." },
-      { "id": 45, "tipo_ejercicio": "responder", "prompt": "Is the doctor in? (Sí, lo está)", "respuesta_esperada": "Yes, he is", "significado": "Sí, lo está." }
+      {
+        "id": 31,
+        "tipo_ejercicio": "responder",
+        "prompt": "What's the matter? (Me duele la cabeza)",
+        "respuesta_esperada": "I have a headache",
+        "significado": "¿Cuál es el problema? - Tengo dolor de cabeza."
+      },
+      {
+        "id": 32,
+        "tipo_ejercicio": "responder",
+        "prompt": "Should I go to the doctor? (Sí, deberías)",
+        "respuesta_esperada": "Yes, you should",
+        "significado": "¿Debería ir al doctor? - Sí, deberías."
+      },
+      {
+        "id": 33,
+        "tipo_ejercicio": "responder",
+        "prompt": "Can you see me tomorrow? (Sí, a las 10)",
+        "respuesta_esperada": "Yes, at ten",
+        "significado": "¿Puedes verme mañana? - Sí, a las diez."
+      },
+      {
+        "id": 34,
+        "tipo_ejercicio": "responder",
+        "prompt": "Does your leg hurt? (Sí, mucho)",
+        "respuesta_esperada": "Yes, a lot",
+        "significado": "¿Te duele la pierna? - Sí, mucho."
+      },
+      {
+        "id": 35,
+        "tipo_ejercicio": "responder",
+        "prompt": "Should he eat junk food? (No, no debería)",
+        "respuesta_esperada": "No, he shouldn't",
+        "significado": "¿Debería él comer comida chatarra? - No, no debería."
+      },
+      {
+        "id": 36,
+        "tipo_ejercicio": "responder",
+        "prompt": "Do you feel better now? (Sí, gracias)",
+        "respuesta_esperada": "Yes, thank you",
+        "significado": "¿Te sientes mejor ahora? - Sí, gracias."
+      },
+      {
+        "id": 37,
+        "tipo_ejercicio": "responder",
+        "prompt": "What should I do? (Tomar medicina)",
+        "respuesta_esperada": "Take medicine",
+        "significado": "¿Qué debería hacer? - Tomar medicina."
+      },
+      {
+        "id": 38,
+        "tipo_ejercicio": "responder",
+        "prompt": "Do you have a fever? (No, no tengo)",
+        "respuesta_esperada": "No, I don't",
+        "significado": "¿Tienes fiebre? - No, no tengo."
+      },
+      {
+        "id": 39,
+        "tipo_ejercicio": "responder",
+        "prompt": "Can I help you? (Sí, quiero hacer una cita)",
+        "respuesta_esperada": "Yes, I want to make an appointment",
+        "significado": "¿Puedo ayudarte? - Sí, quiero hacer una cita."
+      },
+      {
+        "id": 40,
+        "tipo_ejercicio": "responder",
+        "prompt": "Does your throat hurt? (Sí, tengo dolor de garganta)",
+        "respuesta_esperada": "Yes, I have a sore throat",
+        "significado": "¿Te duele la garganta? - Sí, tengo dolor de garganta."
+      },
+      {
+        "id": 41,
+        "tipo_ejercicio": "responder",
+        "prompt": "Should we rest? (Sí, es buena idea)",
+        "respuesta_esperada": "Yes, it is a good idea",
+        "significado": "¿Deberíamos descansar? - Sí, es buena idea."
+      },
+      {
+        "id": 42,
+        "tipo_ejercicio": "responder",
+        "prompt": "Are you sick? (Sí, estoy enfermo)",
+        "respuesta_esperada": "Yes, I am sick",
+        "significado": "¿Estás enfermo? - Sí, estoy enfermo."
+      },
+      {
+        "id": 43,
+        "tipo_ejercicio": "responder",
+        "prompt": "How do you feel? (Me siento mal)",
+        "respuesta_esperada": "I feel bad",
+        "significado": "¿Cómo te sientes? - Me siento mal."
+      },
+      {
+        "id": 44,
+        "tipo_ejercicio": "responder",
+        "prompt": "Should she drink more water? (Sí, debería)",
+        "respuesta_esperada": "Yes, she should",
+        "significado": "¿Debería ella beber más agua? - Sí, debería."
+      },
+      {
+        "id": 45,
+        "tipo_ejercicio": "responder",
+        "prompt": "Is the doctor in? (Sí, lo está)",
+        "respuesta_esperada": "Yes, he is",
+        "significado": "¿Está el doctor? - Sí, lo está."
+      }
     ]
   }
 }
