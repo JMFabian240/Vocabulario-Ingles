@@ -1,0 +1,55 @@
+{
+  "ejercicios_tema_5": {
+    "completar": [
+      { "id": 1, "tipo_ejercicio": "completar", "prompt": "I ___ very happy yesterday. (was)", "respuesta_esperada": "I was very happy yesterday.", "significado": "Yo estuve muy feliz ayer." },
+      { "id": 2, "tipo_ejercicio": "completar", "prompt": "They ___ at the park last weekend. (were)", "respuesta_esperada": "They were at the park last weekend.", "significado": "Ellos estuvieron en el parque el fin de semana pasado." },
+      { "id": 3, "tipo_ejercicio": "completar", "prompt": "___ there a party on Friday? (Was)", "respuesta_esperada": "Was there a party on Friday?", "significado": "¿Hubo una fiesta el viernes?" },
+      { "id": 4, "tipo_ejercicio": "completar", "prompt": "There ___ many people at the concert. (were)", "respuesta_esperada": "There were many people at the concert.", "significado": "Hubo muchas personas en el concierto." },
+      { "id": 5, "tipo_ejercicio": "completar", "prompt": "She ___ pizza for dinner last night. (ate)", "respuesta_esperada": "She ate pizza for dinner last night.", "significado": "Ella comió pizza en la cena anoche." },
+      { "id": 6, "tipo_ejercicio": "completar", "prompt": "We ___ to the beach last summer. (went)", "respuesta_esperada": "We went to the beach last summer.", "significado": "Nosotros fuimos a la playa el verano pasado." },
+      { "id": 7, "tipo_ejercicio": "completar", "prompt": "___ you watch the movie? (Did)", "respuesta_esperada": "Did you watch the movie?", "significado": "¿Viste la película?" },
+      { "id": 8, "tipo_ejercicio": "completar", "prompt": "I didn't ___ my homework. (do)", "respuesta_esperada": "I didn't do my homework.", "significado": "No hice mi tarea." },
+      { "id": 9, "tipo_ejercicio": "completar", "prompt": "Albert Einstein ___ a great scientist. (was)", "respuesta_esperada": "Albert Einstein was a great scientist.", "significado": "Albert Einstein fue un gran científico." },
+      { "id": 10, "tipo_ejercicio": "completar", "prompt": "He ___ in 1879. (was born)", "respuesta_esperada": "He was born in 1879.", "significado": "Él nació en 1879." },
+      { "id": 11, "tipo_ejercicio": "completar", "prompt": "Where ___ you yesterday? (were)", "respuesta_esperada": "Where were you yesterday?", "significado": "¿Dónde estuviste ayer?" },
+      { "id": 12, "tipo_ejercicio": "completar", "prompt": "I ___ a new car last year. (bought)", "respuesta_esperada": "I bought a new car last year.", "significado": "Compré un auto nuevo el año pasado." },
+      { "id": 13, "tipo_ejercicio": "completar", "prompt": "They didn't ___ the match. (win)", "respuesta_esperada": "They didn't win the match.", "significado": "Ellos no ganaron el partido." },
+      { "id": 14, "tipo_ejercicio": "completar", "prompt": "What did you ___ for breakfast? (have)", "respuesta_esperada": "What did you have for breakfast?", "significado": "¿Qué desayunaste?" },
+      { "id": 15, "tipo_ejercicio": "completar", "prompt": "The weather ___ terrible. (was)", "respuesta_esperada": "The weather was terrible.", "significado": "El clima estuvo terrible." }
+    ],
+    "ordenar": [
+      { "id": 16, "tipo_ejercicio": "ordenar", "prompt": "Ordena: I | born | Mexico. | in | was", "respuesta_esperada": "I was born in Mexico.", "significado": "Nací en México." },
+      { "id": 17, "tipo_ejercicio": "ordenar", "prompt": "Ordena: late | You | class. | for | were", "respuesta_esperada": "You were late for class.", "significado": "Llegaste tarde a clase." },
+      { "id": 18, "tipo_ejercicio": "ordenar", "prompt": "Ordena: the | was | How | party?", "respuesta_esperada": "How was the party?", "significado": "¿Cómo estuvo la fiesta?" },
+      { "id": 19, "tipo_ejercicio": "ordenar", "prompt": "Ordena: people. | were | There | of | lot | a", "respuesta_esperada": "There were a lot of people.", "significado": "Hubo mucha gente." },
+      { "id": 20, "tipo_ejercicio": "ordenar", "prompt": "Ordena: didn't | sleep | I | well.", "respuesta_esperada": "I didn't sleep well.", "significado": "No dormí bien." },
+      { "id": 21, "tipo_ejercicio": "ordenar", "prompt": "Ordena: vacation | Where | you | on | did | go?", "respuesta_esperada": "Where did you go on vacation?", "significado": "¿A dónde fuiste de vacaciones?" },
+      { "id": 22, "tipo_ejercicio": "ordenar", "prompt": "Ordena: brother | soccer | played | My | yesterday.", "respuesta_esperada": "My brother played soccer yesterday.", "significado": "Mi hermano jugó fútbol ayer." },
+      { "id": 23, "tipo_ejercicio": "ordenar", "prompt": "Ordena: see | did | you | Who | there?", "respuesta_esperada": "Who did you see there?", "significado": "¿A quién viste ahí?" },
+      { "id": 24, "tipo_ejercicio": "ordenar", "prompt": "Ordena: not | the | was | Food | good.", "respuesta_esperada": "Food was not good.", "significado": "La comida no estuvo buena." },
+      { "id": 25, "tipo_ejercicio": "ordenar", "prompt": "Ordena: book | read | a | He | interesting | very", "respuesta_esperada": "He read a very interesting book.", "significado": "Él leyó un libro muy interesante." },
+      { "id": 26, "tipo_ejercicio": "ordenar", "prompt": "Ordena: an | got | up | early. | We", "respuesta_esperada": "We got up early.", "significado": "Nos levantamos temprano." },
+      { "id": 27, "tipo_ejercicio": "ordenar", "prompt": "Ordena: an | excellent | wrote | She | poem.", "respuesta_esperada": "She wrote an excellent poem.", "significado": "Ella escribió un poema excelente." },
+      { "id": 28, "tipo_ejercicio": "ordenar", "prompt": "Ordena: any | weren't | problems. | There", "respuesta_esperada": "There weren't any problems.", "significado": "No hubo ningún problema." },
+      { "id": 29, "tipo_ejercicio": "ordenar", "prompt": "Ordena: Did | rain | yesterday? | it", "respuesta_esperada": "Did it rain yesterday?", "significado": "¿Llovió ayer?" },
+      { "id": 30, "tipo_ejercicio": "ordenar", "prompt": "Ordena: house. | bought | They | big | a", "respuesta_esperada": "They bought a big house.", "significado": "Compraron una casa grande." }
+    ],
+    "responder": [
+      { "id": 31, "tipo_ejercicio": "responder", "prompt": "Were you at home yesterday? (Sí)", "respuesta_esperada": "Yes, I was", "significado": "Sí, lo estuve." },
+      { "id": 32, "tipo_ejercicio": "responder", "prompt": "Did you go to the party? (No)", "respuesta_esperada": "No, I didn't", "significado": "No, no fui." },
+      { "id": 33, "tipo_ejercicio": "responder", "prompt": "Was the food good? (Sí, estuvo deliciosa)", "respuesta_esperada": "Yes, it was delicious", "significado": "Sí, estuvo deliciosa." },
+      { "id": 34, "tipo_ejercicio": "responder", "prompt": "Where did you go? (Al cine)", "respuesta_esperada": "To the cinema", "significado": "Al cine." },
+      { "id": 35, "tipo_ejercicio": "responder", "prompt": "What did you eat? (Pizza)", "respuesta_esperada": "Pizza", "significado": "Pizza." },
+      { "id": 36, "tipo_ejercicio": "responder", "prompt": "Did they win the game? (Sí)", "respuesta_esperada": "Yes, they did", "significado": "Sí, ganaron." },
+      { "id": 37, "tipo_ejercicio": "responder", "prompt": "Was he born in Mexico? (No, en España)", "respuesta_esperada": "No, in Spain", "significado": "No, en España." },
+      { "id": 38, "tipo_ejercicio": "responder", "prompt": "Who did you see? (A mi amigo)", "respuesta_esperada": "My friend", "significado": "A mi amigo." },
+      { "id": 39, "tipo_ejercicio": "responder", "prompt": "Did it rain yesterday? (Sí)", "respuesta_esperada": "Yes, it did", "significado": "Sí, llovió." },
+      { "id": 40, "tipo_ejercicio": "responder", "prompt": "Were there many people? (No)", "respuesta_esperada": "No, there weren't", "significado": "No, no hubo." },
+      { "id": 41, "tipo_ejercicio": "responder", "prompt": "How was your weekend? (Estuvo genial)", "respuesta_esperada": "It was great", "significado": "Estuvo genial." },
+      { "id": 42, "tipo_ejercicio": "responder", "prompt": "Did she like the gift? (Sí, le encantó)", "respuesta_esperada": "Yes, she loved it", "significado": "Sí, le encantó." },
+      { "id": 43, "tipo_ejercicio": "responder", "prompt": "What time did you wake up? (A las ocho)", "respuesta_esperada": "At eight", "significado": "A las ocho." },
+      { "id": 44, "tipo_ejercicio": "responder", "prompt": "Did you study for the test? (No, no lo hice)", "respuesta_esperada": "No, I didn't", "significado": "No, no lo hice." },
+      { "id": 45, "tipo_ejercicio": "responder", "prompt": "Where were you born? (En Londres)", "respuesta_esperada": "In London", "significado": "En Londres." }
+    ]
+  }
+}

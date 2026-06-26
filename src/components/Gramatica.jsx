@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Layout from './Layout';
 
 const Gramatica = () => {
@@ -63,7 +64,7 @@ const Gramatica = () => {
           {selectedRegla ? (
             <div className="markdown-body" style={{ color: '#f8fafc', lineHeight: 1.6 }}>
               <h1 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: '#818cf8' }}>{selectedRegla.titulo}</h1>
-              <ReactMarkdown>{selectedRegla.contenido_markdown}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{selectedRegla.contenido_markdown}</ReactMarkdown>
             </div>
           ) : (
             <p>Selecciona una lección para comenzar.</p>

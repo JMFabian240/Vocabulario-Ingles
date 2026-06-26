@@ -80,8 +80,20 @@ class RecursosSeeder {
       if (fs.existsSync(practicaFile)) {
         try {
           const ejerciciosData = JSON.parse(fs.readFileSync(practicaFile, 'utf-8'));
-          for (const ej of ejerciciosData) {
-            await this.db.ejercicios.createEjercicio(temaId, ej.tipo_ejercicio, ej.prompt, ej.respuesta_esperada, ej.significado || null);
+          const rootKey = `ejercicios_tema_${numero}`;
+          if (ejerciciosData[rootKey]) {
+            for (const tipo of ['completar', 'ordenar', 'responder']) {
+              if (ejerciciosData[rootKey][tipo]) {
+                for (const ej of ejerciciosData[rootKey][tipo]) {
+                  await this.db.ejercicios.createEjercicio(temaId, ej.tipo_ejercicio, ej.prompt, ej.respuesta_esperada, ej.significado || null);
+                }
+              }
+            }
+          } else if (Array.isArray(ejerciciosData)) {
+            // Fallback just in case some are flat arrays
+            for (const ej of ejerciciosData) {
+              await this.db.ejercicios.createEjercicio(temaId, ej.tipo_ejercicio, ej.prompt, ej.respuesta_esperada, ej.significado || null);
+            }
           }
         } catch (err) {
           console.error(`Error parseando ${practicaFile}:`, err);

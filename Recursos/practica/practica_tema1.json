@@ -1,428 +1,55 @@
 {
   "ejercicios_tema_1": {
     "completar": [
-      {
-        "id": 1,
-        "tipo_ejercicio": "completar",
-        "prompt": "Where do you ___? (work)",
-        "respuesta_esperada": "Where do you work?",
-        "significado": "¿Dónde trabajas?"
-      },
-      {
-        "id": 2,
-        "tipo_ejercicio": "completar",
-        "prompt": "What time do you ___ to school? (go)",
-        "respuesta_esperada": "What time do you go to school?",
-        "significado": "¿A qué hora vas a la escuela?"
-      },
-      {
-        "id": 3,
-        "tipo_ejercicio": "completar",
-        "prompt": "I ___ a student. (be)",
-        "respuesta_esperada": "I am a student.",
-        "significado": "Yo soy un estudiante."
-      },
-      {
-        "id": 4,
-        "tipo_ejercicio": "completar",
-        "prompt": "How often do you ___ exercise? (do)",
-        "respuesta_esperada": "How often do you do exercise?",
-        "significado": "¿Con qué frecuencia haces ejercicio?"
-      },
-      {
-        "id": 5,
-        "tipo_ejercicio": "completar",
-        "prompt": "When do you ___ home? (get)",
-        "respuesta_esperada": "When do you get home?",
-        "significado": "¿Cuándo llegas a casa?"
-      },
-      {
-        "id": 6,
-        "tipo_ejercicio": "completar",
-        "prompt": "I ___ at work early. (arrive)",
-        "respuesta_esperada": "I arrive at work early.",
-        "significado": "Llego temprano al trabajo."
-      },
-      {
-        "id": 7,
-        "tipo_ejercicio": "completar",
-        "prompt": "She ___ always late. (be)",
-        "respuesta_esperada": "She is always late.",
-        "significado": "Ella siempre llega tarde."
-      },
-      {
-        "id": 8,
-        "tipo_ejercicio": "completar",
-        "prompt": "He ___ all day. (teach)",
-        "respuesta_esperada": "He teaches all day.",
-        "significado": "Él enseña todo el día."
-      },
-      {
-        "id": 9,
-        "tipo_ejercicio": "completar",
-        "prompt": "The class ___ at 7:00 O'clock. (start)",
-        "respuesta_esperada": "The class starts at 7:00 O'clock.",
-        "significado": "La clase empieza a las 7:00 en punto."
-      },
-      {
-        "id": 10,
-        "tipo_ejercicio": "completar",
-        "prompt": "I almost never ___ ice-cream. (eat)",
-        "respuesta_esperada": "I almost never eat ice-cream.",
-        "significado": "Casi nunca como helado."
-      },
-      {
-        "id": 11,
-        "tipo_ejercicio": "completar",
-        "prompt": "I always ___ a shower. (take)",
-        "respuesta_esperada": "I always take a shower.",
-        "significado": "Siempre tomo una ducha."
-      },
-      {
-        "id": 12,
-        "tipo_ejercicio": "completar",
-        "prompt": "Paul frequently ___ his grandmother. (visit)",
-        "respuesta_esperada": "Paul frequently visits his grandmother.",
-        "significado": "Paul frecuentemente visita a su abuela."
-      },
-      {
-        "id": 13,
-        "tipo_ejercicio": "completar",
-        "prompt": "I often ___ in my free time. (read)",
-        "respuesta_esperada": "I often read in my free time.",
-        "significado": "A menudo leo en mi tiempo libre."
-      },
-      {
-        "id": 14,
-        "tipo_ejercicio": "completar",
-        "prompt": "I seldom ___ junk food. (eat)",
-        "respuesta_esperada": "I seldom eat junk food.",
-        "significado": "Rara vez como comida chatarra."
-      },
-      {
-        "id": 15,
-        "tipo_ejercicio": "completar",
-        "prompt": "She ___ beautifully. (dance)",
-        "respuesta_esperada": "She dances beautifully.",
-        "significado": "Ella baila maravillosamente."
-      },
-      {
-        "id": 16,
-        "tipo_ejercicio": "completar",
-        "prompt": "My English teacher ___ quickly. (speak)",
-        "respuesta_esperada": "My English teacher speaks quickly.",
-        "significado": "Mi profesor de inglés habla rápido."
-      },
-      {
-        "id": 17,
-        "tipo_ejercicio": "completar",
-        "prompt": "I ___ fish every weekend. (cook)",
-        "respuesta_esperada": "I cook fish every weekend.",
-        "significado": "Cocino pescado todos los fines de semana."
-      },
-      {
-        "id": 18,
-        "tipo_ejercicio": "completar",
-        "prompt": "My children ___ healthy food. (eat)",
-        "respuesta_esperada": "My children eat healthy food.",
-        "significado": "Mis hijos comen comida saludable."
-      },
-      {
-        "id": 19,
-        "tipo_ejercicio": "completar",
-        "prompt": "The baby ___ 8 hours. (sleep)",
-        "respuesta_esperada": "The baby sleeps 8 hours.",
-        "significado": "El bebé duerme 8 horas."
-      },
-      {
-        "id": 20,
-        "tipo_ejercicio": "completar",
-        "prompt": "I ___ not eat meat because I am a vegetarian. (do)",
-        "respuesta_esperada": "I do not eat meat because I am a vegetarian.",
-        "significado": "No como carne porque soy vegetariano."
-      },
-      {
-        "id": 21,
-        "tipo_ejercicio": "completar",
-        "prompt": "How ___ meals do you have in a day? (many)",
-        "respuesta_esperada": "How many meals do you have in a day?",
-        "significado": "¿Cuántas comidas haces al día?"
-      },
-      {
-        "id": 22,
-        "tipo_ejercicio": "completar",
-        "prompt": "How ___ do you sleep? (much)",
-        "respuesta_esperada": "How much do you sleep?",
-        "significado": "¿Cuánto duermes?"
-      },
-      {
-        "id": 23,
-        "tipo_ejercicio": "completar",
-        "prompt": "How ___ water do you drink? (much)",
-        "respuesta_esperada": "How much water do you drink?",
-        "significado": "¿Cuánta agua bebes?"
-      },
-      {
-        "id": 24,
-        "tipo_ejercicio": "completar",
-        "prompt": "How ___ bread do you eat? (much)",
-        "respuesta_esperada": "How much bread do you eat?",
-        "significado": "¿Cuánto pan comes?"
-      },
-      {
-        "id": 25,
-        "tipo_ejercicio": "completar",
-        "prompt": "I eat two ___ of bread. (pieces)",
-        "respuesta_esperada": "I eat two pieces of bread.",
-        "significado": "Como dos rebanadas de pan."
-      },
-      {
-        "id": 26,
-        "tipo_ejercicio": "completar",
-        "prompt": "I drink a ___ a day. (litre)",
-        "respuesta_esperada": "I drink a litre a day.",
-        "significado": "Bebo un litro al día."
-      },
-      {
-        "id": 27,
-        "tipo_ejercicio": "completar",
-        "prompt": "I drink three ___ of water every day. (liters)",
-        "respuesta_esperada": "I drink three liters of water every day.",
-        "significado": "Bebo tres litros de agua todos los días."
-      },
-      {
-        "id": 28,
-        "tipo_ejercicio": "completar",
-        "prompt": "Can I have a ___ of coffee? (cup)",
-        "respuesta_esperada": "Can I have a cup of coffee?",
-        "significado": "¿Me das una taza de café?"
-      },
-      {
-        "id": 29,
-        "tipo_ejercicio": "completar",
-        "prompt": "Would you like a ___ omelet? (meat)",
-        "respuesta_esperada": "Would you like a meat omelet?",
-        "significado": "¿Te gustaría un omelet de carne?"
-      },
-      {
-        "id": 30,
-        "tipo_ejercicio": "completar",
-        "prompt": "I'd like a ___ of chocolate cake. (slice)",
-        "respuesta_esperada": "I'd like a slice of chocolate cake.",
-        "significado": "Me gustaría una rebanada de pastel de chocolate."
-      }
+      { "id": 1, "tipo_ejercicio": "completar", "prompt": "Where do you ___? (work)", "respuesta_esperada": "Where do you work?", "significado": "¿Dónde trabajas?" },
+      { "id": 2, "tipo_ejercicio": "completar", "prompt": "What time do you ___ to school? (go)", "respuesta_esperada": "What time do you go to school?", "significado": "¿A qué hora vas a la escuela?" },
+      { "id": 3, "tipo_ejercicio": "completar", "prompt": "I ___ a student. (be)", "respuesta_esperada": "I am a student.", "significado": "Yo soy un estudiante." },
+      { "id": 4, "tipo_ejercicio": "completar", "prompt": "How often do you ___ exercise? (do)", "respuesta_esperada": "How often do you do exercise?", "significado": "¿Con qué frecuencia haces ejercicio?" },
+      { "id": 5, "tipo_ejercicio": "completar", "prompt": "When do you ___ home? (get)", "respuesta_esperada": "When do you get home?", "significado": "¿Cuándo llegas a casa?" },
+      { "id": 6, "tipo_ejercicio": "completar", "prompt": "I ___ at work early. (arrive)", "respuesta_esperada": "I arrive at work early.", "significado": "Llego temprano al trabajo." },
+      { "id": 7, "tipo_ejercicio": "completar", "prompt": "She ___ always late. (be)", "respuesta_esperada": "She is always late.", "significado": "Ella siempre llega tarde." },
+      { "id": 8, "tipo_ejercicio": "completar", "prompt": "He ___ all day. (teach)", "respuesta_esperada": "He teaches all day.", "significado": "Él enseña todo el día." },
+      { "id": 9, "tipo_ejercicio": "completar", "prompt": "The class ___ at 7:00. (start)", "respuesta_esperada": "The class starts at 7:00.", "significado": "La clase empieza a las 7:00." },
+      { "id": 10, "tipo_ejercicio": "completar", "prompt": "I almost never ___ ice-cream. (eat)", "respuesta_esperada": "I almost never eat ice-cream.", "significado": "Casi nunca como helado." },
+      { "id": 11, "tipo_ejercicio": "completar", "prompt": "I always ___ a shower. (take)", "respuesta_esperada": "I always take a shower.", "significado": "Siempre tomo una ducha." },
+      { "id": 12, "tipo_ejercicio": "completar", "prompt": "Paul frequently ___ his grandmother. (visit)", "respuesta_esperada": "Paul frequently visits his grandmother.", "significado": "Paul frecuentemente visita a su abuela." },
+      { "id": 13, "tipo_ejercicio": "completar", "prompt": "I often ___ in my free time. (read)", "respuesta_esperada": "I often read in my free time.", "significado": "A menudo leo en mi tiempo libre." },
+      { "id": 14, "tipo_ejercicio": "completar", "prompt": "I seldom ___ junk food. (eat)", "respuesta_esperada": "I seldom eat junk food.", "significado": "Rara vez como comida chatarra." },
+      { "id": 15, "tipo_ejercicio": "completar", "prompt": "She ___ beautifully. (dance)", "respuesta_esperada": "She dances beautifully.", "significado": "Ella baila maravillosamente." }
     ],
     "ordenar": [
-      {
-        "id": 31,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: you | Where | work? | do",
-        "respuesta_esperada": "Where do you work?",
-        "significado": "¿Dónde trabajas?"
-      },
-      {
-        "id": 32,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: to | go | school? | do | Where | you",
-        "respuesta_esperada": "Where do you go to school?",
-        "significado": "¿A dónde vas a la escuela?"
-      },
-      {
-        "id": 33,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: do | you | What | do?",
-        "respuesta_esperada": "What do you do?",
-        "significado": "¿A qué te dedicas?"
-      },
-      {
-        "id": 34,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: do | you | usually | What | on | weekends? | do",
-        "respuesta_esperada": "What do you usually do on weekends?",
-        "significado": "¿Qué haces usualmente los fines de semana?"
-      },
-      {
-        "id": 35,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: get | How | work? | do | to | you",
-        "respuesta_esperada": "How do you get to work?",
-        "significado": "¿Cómo llegas al trabajo?"
-      },
-      {
-        "id": 36,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: go | on | to | school | foot. | I",
-        "respuesta_esperada": "I go to school on foot.",
-        "significado": "Voy a la escuela a pie."
-      },
-      {
-        "id": 37,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: teacher | arrives | on | time. | My",
-        "respuesta_esperada": "My teacher arrives on time.",
-        "significado": "Mi maestro llega a tiempo."
-      },
-      {
-        "id": 38,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: is | The | almost | always | open. | door",
-        "respuesta_esperada": "The door is almost always open.",
-        "significado": "La puerta casi siempre está abierta."
-      },
-      {
-        "id": 39,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: Spanish | sometimes | in | speak | I | in | class. | my",
-        "respuesta_esperada": "I sometimes speak in Spanish in my class.",
-        "significado": "A veces hablo en español en mi clase."
-      },
-      {
-        "id": 40,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: very | go | gym. | rarely | to | They | the",
-        "respuesta_esperada": "They very rarely go to the gym.",
-        "significado": "Ellos van muy raramente al gimnasio."
-      },
-      {
-        "id": 41,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: wake | early. | I | up",
-        "respuesta_esperada": "I wake up early.",
-        "significado": "Me despierto temprano."
-      },
-      {
-        "id": 42,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: English | I | speak | slowly.",
-        "respuesta_esperada": "I speak English slowly.",
-        "significado": "Hablo inglés despacio."
-      },
-      {
-        "id": 43,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: a | have | meal | with | I | friends.",
-        "respuesta_esperada": "I have a meal with friends.",
-        "significado": "Tengo una comida con amigos."
-      },
-      {
-        "id": 44,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: one | rest | for | hour | parents | after | work. | My",
-        "respuesta_esperada": "My parents rest for one hour after work.",
-        "significado": "Mis padres descansan por una hora después del trabajo."
-      },
-      {
-        "id": 45,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: tastes | It | good!",
-        "respuesta_esperada": "It tastes good!",
-        "significado": "¡Sabe bien!"
-      },
-      {
-        "id": 46,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: morning | boulevard. | Every | walk | I | in | the",
-        "respuesta_esperada": "Every morning I walk in the boulevard.",
-        "significado": "Cada mañana camino por el bulevar."
-      },
-      {
-        "id": 47,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: are | mashed | They | potatoes.",
-        "respuesta_esperada": "They are mashed potatoes.",
-        "significado": "Son puré de papas."
-      },
-      {
-        "id": 48,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: your | food? | favorite | What's",
-        "respuesta_esperada": "What's your favorite food?",
-        "significado": "¿Cuál es tu comida favorita?"
-      },
-      {
-        "id": 49,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: prefer | water. | bottled | I",
-        "respuesta_esperada": "I prefer bottled water.",
-        "significado": "Prefiero el agua embotellada."
-      },
-      {
-        "id": 50,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: food | is | Mexican | delicious.",
-        "respuesta_esperada": "Mexican food is delicious.",
-        "significado": "La comida mexicana es deliciosa."
-      },
-      {
-        "id": 51,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: How | meals | do | you | have | in | a | day? | many",
-        "respuesta_esperada": "How many meals do you have in a day?",
-        "significado": "¿Cuántas comidas tienes en un día?"
-      },
-      {
-        "id": 52,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: much | How | do | sleep? | you",
-        "respuesta_esperada": "How much do you sleep?",
-        "significado": "¿Cuánto duermes?"
-      },
-      {
-        "id": 53,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: water | How | drink? | do | you | much",
-        "respuesta_esperada": "How much water do you drink?",
-        "significado": "¿Cuánta agua bebes?"
-      },
-      {
-        "id": 54,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: much | bread | eat? | you | do | How",
-        "respuesta_esperada": "How much bread do you eat?",
-        "significado": "¿Cuánto pan comes?"
-      },
-      {
-        "id": 55,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: eat | two | pieces | of | bread. | I",
-        "respuesta_esperada": "I eat two pieces of bread.",
-        "significado": "Como dos rebanadas de pan."
-      },
-      {
-        "id": 56,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: litre | drink | day. | a | a | I",
-        "respuesta_esperada": "I drink a litre a day.",
-        "significado": "Bebo un litro al día."
-      },
-      {
-        "id": 57,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: drink | liters | of | every | day. | water | three | I",
-        "respuesta_esperada": "I drink three liters of water every day.",
-        "significado": "Bebo tres litros de agua todos los días."
-      },
-      {
-        "id": 58,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: I | have | cup | of | coffee? | a | Can",
-        "respuesta_esperada": "Can I have a cup of coffee?",
-        "significado": "¿Me das una taza de café?"
-      },
-      {
-        "id": 59,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: like | meat | omelet? | Would | you | a",
-        "respuesta_esperada": "Would you like a meat omelet?",
-        "significado": "¿Te gustaría un omelet de carne?"
-      },
-      {
-        "id": 60,
-        "tipo_ejercicio": "ordenar",
-        "prompt": "Ordena: I'd | like | slice | of | chocolate | cake. | a",
-        "respuesta_esperada": "I'd like a slice of chocolate cake.",
-        "significado": "Me gustaría una rebanada de pastel de chocolate."
-      }
+      { "id": 16, "tipo_ejercicio": "ordenar", "prompt": "Ordena: you | Where | work? | do", "respuesta_esperada": "Where do you work?", "significado": "¿Dónde trabajas?" },
+      { "id": 17, "tipo_ejercicio": "ordenar", "prompt": "Ordena: to | go | school? | do | Where | you", "respuesta_esperada": "Where do you go to school?", "significado": "¿A dónde vas a la escuela?" },
+      { "id": 18, "tipo_ejercicio": "ordenar", "prompt": "Ordena: do | you | What | do?", "respuesta_esperada": "What do you do?", "significado": "¿A qué te dedicas?" },
+      { "id": 19, "tipo_ejercicio": "ordenar", "prompt": "Ordena: do | you | usually | What | on | weekends? | do", "respuesta_esperada": "What do you usually do on weekends?", "significado": "¿Qué haces usualmente los fines de semana?" },
+      { "id": 20, "tipo_ejercicio": "ordenar", "prompt": "Ordena: get | How | work? | do | to | you", "respuesta_esperada": "How do you get to work?", "significado": "¿Cómo llegas al trabajo?" },
+      { "id": 21, "tipo_ejercicio": "ordenar", "prompt": "Ordena: go | on | to | school | foot. | I", "respuesta_esperada": "I go to school on foot.", "significado": "Voy a la escuela a pie." },
+      { "id": 22, "tipo_ejercicio": "ordenar", "prompt": "Ordena: teacher | arrives | on | time. | My", "respuesta_esperada": "My teacher arrives on time.", "significado": "Mi maestro llega a tiempo." },
+      { "id": 23, "tipo_ejercicio": "ordenar", "prompt": "Ordena: is | The | almost | always | open. | door", "respuesta_esperada": "The door is almost always open.", "significado": "La puerta casi siempre está abierta." },
+      { "id": 24, "tipo_ejercicio": "ordenar", "prompt": "Ordena: Spanish | sometimes | in | speak | I | in | class. | my", "respuesta_esperada": "I sometimes speak in Spanish in my class.", "significado": "A veces hablo en español en mi clase." },
+      { "id": 25, "tipo_ejercicio": "ordenar", "prompt": "Ordena: very | go | gym. | rarely | to | They | the", "respuesta_esperada": "They very rarely go to the gym.", "significado": "Ellos van muy raramente al gimnasio." },
+      { "id": 26, "tipo_ejercicio": "ordenar", "prompt": "Ordena: wake | early. | I | up", "respuesta_esperada": "I wake up early.", "significado": "Me despierto temprano." },
+      { "id": 27, "tipo_ejercicio": "ordenar", "prompt": "Ordena: English | I | speak | slowly.", "respuesta_esperada": "I speak English slowly.", "significado": "Hablo inglés despacio." },
+      { "id": 28, "tipo_ejercicio": "ordenar", "prompt": "Ordena: a | have | meal | with | I | friends.", "respuesta_esperada": "I have a meal with friends.", "significado": "Tengo una comida con amigos." },
+      { "id": 29, "tipo_ejercicio": "ordenar", "prompt": "Ordena: tastes | It | good!", "respuesta_esperada": "It tastes good!", "significado": "¡Sabe bien!" },
+      { "id": 30, "tipo_ejercicio": "ordenar", "prompt": "Ordena: morning | boulevard. | Every | walk | I | in | the", "respuesta_esperada": "Every morning I walk in the boulevard.", "significado": "Cada mañana camino por el bulevar." }
+    ],
+    "responder": [
+      { "id": 31, "tipo_ejercicio": "responder", "prompt": "Are you a student? (Respuesta afirmativa corta)", "respuesta_esperada": "Yes, I am", "significado": "Sí, lo soy." },
+      { "id": 32, "tipo_ejercicio": "responder", "prompt": "Does she eat meat? (Respuesta negativa corta)", "respuesta_esperada": "No, she doesn't", "significado": "No, ella no lo hace." },
+      { "id": 33, "tipo_ejercicio": "responder", "prompt": "Do they work here? (Respuesta afirmativa corta)", "respuesta_esperada": "Yes, they do", "significado": "Sí, ellos lo hacen." },
+      { "id": 34, "tipo_ejercicio": "responder", "prompt": "Is he a teacher? (Respuesta negativa corta)", "respuesta_esperada": "No, he isn't", "significado": "No, no lo es." },
+      { "id": 35, "tipo_ejercicio": "responder", "prompt": "Do you like apples? (Respuesta afirmativa corta)", "respuesta_esperada": "Yes, I do", "significado": "Sí, me gustan." },
+      { "id": 36, "tipo_ejercicio": "responder", "prompt": "Does it rain a lot here? (Respuesta afirmativa corta)", "respuesta_esperada": "Yes, it does", "significado": "Sí, llueve mucho." },
+      { "id": 37, "tipo_ejercicio": "responder", "prompt": "Are we late? (Respuesta negativa corta)", "respuesta_esperada": "No, we aren't", "significado": "No, no llegamos tarde." },
+      { "id": 38, "tipo_ejercicio": "responder", "prompt": "How many apples do you have? (Tres)", "respuesta_esperada": "I have three", "significado": "Tengo tres." },
+      { "id": 39, "tipo_ejercicio": "responder", "prompt": "How much water is there? (Mucha)", "respuesta_esperada": "A lot", "significado": "Mucha." },
+      { "id": 40, "tipo_ejercicio": "responder", "prompt": "What time is it? (Son las 7:00)", "respuesta_esperada": "It's seven o'clock", "significado": "Son las 7 en punto." },
+      { "id": 41, "tipo_ejercicio": "responder", "prompt": "Where are you from? (México)", "respuesta_esperada": "I am from Mexico", "significado": "Soy de México." },
+      { "id": 42, "tipo_ejercicio": "responder", "prompt": "How old are you? (Veinte)", "respuesta_esperada": "I am twenty", "significado": "Tengo veinte años." },
+      { "id": 43, "tipo_ejercicio": "responder", "prompt": "What do you do? (Soy doctor)", "respuesta_esperada": "I am a doctor", "significado": "Soy doctor." },
+      { "id": 44, "tipo_ejercicio": "responder", "prompt": "Do you often read? (Sí, siempre)", "respuesta_esperada": "Yes, always", "significado": "Sí, siempre." },
+      { "id": 45, "tipo_ejercicio": "responder", "prompt": "Is the food good? (Respuesta afirmativa corta)", "respuesta_esperada": "Yes, it is", "significado": "Sí, lo es." }
     ]
   }
 }

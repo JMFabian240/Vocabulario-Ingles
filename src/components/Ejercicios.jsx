@@ -118,8 +118,9 @@ const Ejercicios = () => {
   }
 
   if (fullList.length > 0 && !selectedType && !sessionCompleted) {
-    const qtyCompletar = allEjercicios.filter(e => e.tipo_ejercicio === 'Completar').length;
-    const qtyOrdenar = allEjercicios.filter(e => e.tipo_ejercicio === 'Ordenar').length;
+    const qtyCompletar = allEjercicios.filter(e => e.tipo_ejercicio.toLowerCase() === 'completar').length;
+    const qtyOrdenar = allEjercicios.filter(e => e.tipo_ejercicio.toLowerCase() === 'ordenar').length;
+    const qtyResponder = allEjercicios.filter(e => e.tipo_ejercicio.toLowerCase() === 'responder').length;
 
     return (
       <Layout>
@@ -163,6 +164,25 @@ const Ejercicios = () => {
               }}
             >
               Ordenar
+            </button>
+            <button 
+              className="btn-primary" 
+              style={{ fontSize: '1.5rem', padding: '1.5rem 3rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+              onClick={() => {
+                const categoryAll = fullList.filter(e => e.tipo_ejercicio.toLowerCase() === 'responder');
+                const categoryPending = allEjercicios.filter(e => e.tipo_ejercicio.toLowerCase() === 'responder');
+                
+                if (categoryAll.length === 0) { alert('No hay ejercicios de Responder creados para este tema.'); return; }
+                
+                const filtered = categoryPending.length > 0 ? categoryPending : categoryAll;
+                setEjercicios(filtered);
+                setTotalEjercicios(filtered.length);
+                setSelectedType('Responder');
+                setScore(0);
+                setErrores(0);
+              }}
+            >
+              Responder
             </button>
           </div>
         </div>
@@ -208,7 +228,7 @@ const Ejercicios = () => {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.5rem', flex: 1 }}>
           <span style={{ background: 'rgba(255,255,255,0.1)', padding: '0.5rem 1rem', borderRadius: '20px' }}>
-            Progreso: {currentIdx + 1} / {totalEjercicios}
+            Restantes: {ejercicios.length - currentIdx + mistakesDeck.length}
           </span>
           <div style={{ display: 'flex', gap: '1rem', fontSize: '0.9rem', padding: '0 1rem' }}>
             <span style={{ color: '#4ade80', fontWeight: 'bold' }}>Aciertos: {score}</span>

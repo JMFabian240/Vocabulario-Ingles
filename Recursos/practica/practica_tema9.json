@@ -1,0 +1,55 @@
+{
+  "ejercicios_tema_9": {
+    "completar": [
+      { "id": 1, "tipo_ejercicio": "completar", "prompt": "___ you like to go to the movies? (Would)", "respuesta_esperada": "Would you like to go to the movies?", "significado": "¿Te gustaría ir al cine?" },
+      { "id": 2, "tipo_ejercicio": "completar", "prompt": "I ___ love to come to your party. (would)", "respuesta_esperada": "I would love to come to your party.", "significado": "Me encantaría ir a tu fiesta." },
+      { "id": 3, "tipo_ejercicio": "completar", "prompt": "I am sorry, but I ___ to study. (have)", "respuesta_esperada": "I am sorry, but I have to study.", "significado": "Lo siento, pero tengo que estudiar." },
+      { "id": 4, "tipo_ejercicio": "completar", "prompt": "Do you ___ to eat pizza? (want)", "respuesta_esperada": "Do you want to eat pizza?", "significado": "¿Quieres comer pizza?" },
+      { "id": 5, "tipo_ejercicio": "completar", "prompt": "I can't go because I have ___ work. (to)", "respuesta_esperada": "I can't go because I have to work.", "significado": "No puedo ir porque tengo que trabajar." },
+      { "id": 6, "tipo_ejercicio": "completar", "prompt": "___ we go to the concert? (Can)", "respuesta_esperada": "Can we go to the concert?", "significado": "¿Podemos ir al concierto?" },
+      { "id": 7, "tipo_ejercicio": "completar", "prompt": "I would ___ to invite you to dinner. (like)", "respuesta_esperada": "I would like to invite you to dinner.", "significado": "Me gustaría invitarte a cenar." },
+      { "id": 8, "tipo_ejercicio": "completar", "prompt": "That ___ great! (sounds)", "respuesta_esperada": "That sounds great!", "significado": "¡Suena genial!" },
+      { "id": 9, "tipo_ejercicio": "completar", "prompt": "What time do you want to ___? (meet)", "respuesta_esperada": "What time do you want to meet?", "significado": "¿A qué hora te quieres ver?" },
+      { "id": 10, "tipo_ejercicio": "completar", "prompt": "I want ___ celebrate my birthday. (to)", "respuesta_esperada": "I want to celebrate my birthday.", "significado": "Quiero celebrar mi cumpleaños." },
+      { "id": 11, "tipo_ejercicio": "completar", "prompt": "___ you come to my house? (Can)", "respuesta_esperada": "Can you come to my house?", "significado": "¿Puedes venir a mi casa?" },
+      { "id": 12, "tipo_ejercicio": "completar", "prompt": "I ___ to go, but I can't. (want)", "respuesta_esperada": "I want to go, but I can't.", "significado": "Quiero ir, pero no puedo." },
+      { "id": 13, "tipo_ejercicio": "completar", "prompt": "Would you like ___ dance? (to)", "respuesta_esperada": "Would you like to dance?", "significado": "¿Te gustaría bailar?" },
+      { "id": 14, "tipo_ejercicio": "completar", "prompt": "Let's ___ to the museum! (go)", "respuesta_esperada": "Let's go to the museum!", "significado": "¡Vamos al museo!" },
+      { "id": 15, "tipo_ejercicio": "completar", "prompt": "I'd love ___, thank you. (to)", "respuesta_esperada": "I'd love to, thank you.", "significado": "Me encantaría, gracias." }
+    ],
+    "ordenar": [
+      { "id": 16, "tipo_ejercicio": "ordenar", "prompt": "Ordena: like | Would | you | come? | to", "respuesta_esperada": "Would you like to come?", "significado": "¿Te gustaría venir?" },
+      { "id": 17, "tipo_ejercicio": "ordenar", "prompt": "Ordena: to | want | do | What | you | do?", "respuesta_esperada": "What do you want to do?", "significado": "¿Qué quieres hacer?" },
+      { "id": 18, "tipo_ejercicio": "ordenar", "prompt": "Ordena: would | love | I | that. | to | do", "respuesta_esperada": "I would love to do that.", "significado": "Me encantaría hacer eso." },
+      { "id": 19, "tipo_ejercicio": "ordenar", "prompt": "Ordena: can't | sorry, | I | I | am | go.", "respuesta_esperada": "I am sorry, I can't go.", "significado": "Lo siento, no puedo ir." },
+      { "id": 20, "tipo_ejercicio": "ordenar", "prompt": "Ordena: to | I | have | family. | visit | my", "respuesta_esperada": "I have to visit my family.", "significado": "Tengo que visitar a mi familia." },
+      { "id": 21, "tipo_ejercicio": "ordenar", "prompt": "Ordena: park. | to | Let's | the | go", "respuesta_esperada": "Let's go to the park.", "significado": "Vamos al parque." },
+      { "id": 22, "tipo_ejercicio": "ordenar", "prompt": "Ordena: Sounds | idea. | like | good | a", "respuesta_esperada": "Sounds like a good idea.", "significado": "Suena como una buena idea." },
+      { "id": 23, "tipo_ejercicio": "ordenar", "prompt": "Ordena: time | we | What | should | meet?", "respuesta_esperada": "What time should we meet?", "significado": "¿A qué hora nos vemos?" },
+      { "id": 24, "tipo_ejercicio": "ordenar", "prompt": "Ordena: want | watch | to | I | movie. | a", "respuesta_esperada": "I want to watch a movie.", "significado": "Quiero ver una película." },
+      { "id": 25, "tipo_ejercicio": "ordenar", "prompt": "Ordena: you | join | Can | us?", "respuesta_esperada": "Can you join us?", "significado": "¿Puedes unirte a nosotros?" },
+      { "id": 26, "tipo_ejercicio": "ordenar", "prompt": "Ordena: to | you | like | invite | I'd | dinner. | to", "respuesta_esperada": "I'd like to invite you to dinner.", "significado": "Me gustaría invitarte a cenar." },
+      { "id": 27, "tipo_ejercicio": "ordenar", "prompt": "Ordena: out | you | Do | to | want | tonight? | go", "respuesta_esperada": "Do you want to go out tonight?", "significado": "¿Quieres salir esta noche?" },
+      { "id": 28, "tipo_ejercicio": "ordenar", "prompt": "Ordena: can't | I | have | to | because | work. | I", "respuesta_esperada": "I can't because I have to work.", "significado": "No puedo porque tengo que trabajar." },
+      { "id": 29, "tipo_ejercicio": "ordenar", "prompt": "Ordena: great | That | be | would", "respuesta_esperada": "That would be great.", "significado": "Eso sería genial." },
+      { "id": 30, "tipo_ejercicio": "ordenar", "prompt": "Ordena: is | It | birthday. | my", "respuesta_esperada": "It is my birthday.", "significado": "Es mi cumpleaños." }
+    ],
+    "responder": [
+      { "id": 31, "tipo_ejercicio": "responder", "prompt": "Would you like to come? (Sí, me encantaría)", "respuesta_esperada": "Yes, I would love to", "significado": "Sí, me encantaría." },
+      { "id": 32, "tipo_ejercicio": "responder", "prompt": "Can you go to the party? (No, no puedo)", "respuesta_esperada": "No, I can't", "significado": "No, no puedo." },
+      { "id": 33, "tipo_ejercicio": "responder", "prompt": "Why can't you go? (Tengo que estudiar)", "respuesta_esperada": "I have to study", "significado": "Tengo que estudiar." },
+      { "id": 34, "tipo_ejercicio": "responder", "prompt": "Do you want to watch a movie? (Sí)", "respuesta_esperada": "Yes, I do", "significado": "Sí, quiero." },
+      { "id": 35, "tipo_ejercicio": "responder", "prompt": "What do you want to do? (Quiero bailar)", "respuesta_esperada": "I want to dance", "significado": "Quiero bailar." },
+      { "id": 36, "tipo_ejercicio": "responder", "prompt": "Would you like some coffee? (No, gracias)", "respuesta_esperada": "No, thank you", "significado": "No, gracias." },
+      { "id": 37, "tipo_ejercicio": "responder", "prompt": "Can we go now? (Sí, podemos)", "respuesta_esperada": "Yes, we can", "significado": "Sí, podemos." },
+      { "id": 38, "tipo_ejercicio": "responder", "prompt": "What time should we meet? (A las 8)", "respuesta_esperada": "At eight", "significado": "A las ocho." },
+      { "id": 39, "tipo_ejercicio": "responder", "prompt": "Let's go to the park. (Suena bien)", "respuesta_esperada": "Sounds good", "significado": "Suena bien." },
+      { "id": 40, "tipo_ejercicio": "responder", "prompt": "Do you have to work tonight? (Sí)", "respuesta_esperada": "Yes, I do", "significado": "Sí, tengo que hacerlo." },
+      { "id": 41, "tipo_ejercicio": "responder", "prompt": "Would you like to join us? (Sí, me gustaría)", "respuesta_esperada": "Yes, I would like to", "significado": "Sí, me gustaría." },
+      { "id": 42, "tipo_ejercicio": "responder", "prompt": "Are you busy? (No, no lo estoy)", "respuesta_esperada": "No, I am not", "significado": "No, no lo estoy." },
+      { "id": 43, "tipo_ejercicio": "responder", "prompt": "Can I invite my sister? (Sí, por supuesto)", "respuesta_esperada": "Yes, of course", "significado": "Sí, por supuesto." },
+      { "id": 44, "tipo_ejercicio": "responder", "prompt": "Where do you want to eat? (En casa)", "respuesta_esperada": "At home", "significado": "En casa." },
+      { "id": 45, "tipo_ejercicio": "responder", "prompt": "Do you want to play soccer? (No, quiero descansar)", "respuesta_esperada": "No, I want to rest", "significado": "No, quiero descansar." }
+    ]
+  }
+}

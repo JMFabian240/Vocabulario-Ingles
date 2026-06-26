@@ -2,16 +2,16 @@
 **Proyecto:** Consolidación de Glosarios de Inglés
 **Autor:** José Manuel Fabian Hernández
 
-## TEMA 1: Estilos de Vida[cite: 10]
+## TEMA 1: Estilos de Vida
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
-| **Presente Simple (Afirmativo)** | Sujeto + Verbo(s/es) + Complemento | *He teaches all day.*[cite: 1] |
-| **Presente Simple (Negativo)** | Sujeto + do/does + not + Verbo(base) + Comp. | *I do not eat meat.*[cite: 8] |
-| **Presente Simple (Pregunta)** | (Wh-) + do/does + Sujeto + Verbo(base) + Comp. | *Where do you work?*[cite: 1] |
-| **Verbo TO BE (Afirmativo)** | Sujeto + am/is/are + Complemento | *She is always late.*[cite: 1] |
-| **Uso de Frecuencia** | Sujeto + Adverbio de Frecuencia + Verbo + Comp. | *I always take a shower.*[cite: 2] |
+| **Presente Simple (Afirmativo)** | Sujeto + Verbo(s/es) + Complemento | *He teaches all day.* |
+| **Presente Simple (Negativo)** | Sujeto + do/does + not + Verbo(base) + Comp. | *I do not eat meat.* |
+| **Presente Simple (Pregunta)** | (Wh-) + do/does + Sujeto + Verbo(base) + Comp. | *Where do you work?* |
+| **Verbo TO BE (Afirmativo)** | Sujeto + am/is/are + Complemento | *She is always late.* |
+| **Uso de Frecuencia** | Sujeto + Adverbio de Frecuencia + Verbo + Comp. | *I always take a shower.* |
 
-## TEMA 2: Comparaciones[cite: 10]
+## TEMA 2: Comparaciones
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Comparativo (Adjetivos Cortos)** | Sujeto + verbo + Adj+er + than + Objeto | *The boy is taller than the girl.* |
@@ -20,7 +20,7 @@
 | **Igualdad** | Sujeto + verbo + as + Adj + as + Objeto | *Cats are as intelligent as dogs.* |
 | **Preguntas de Grado** | How + adjetivo (big/tall/high) + verbo TO BE + Sujeto?| *How big is your house?* |
 
-## TEMA 3: Dirección de Lugares[cite: 10]
+## TEMA 3: Dirección de Lugares
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Imperativo (Dar direcciones)** | Verbo(base) + (Preposición) + Complemento | *Turn right on University avenue.* |
@@ -28,7 +28,7 @@
 | **Preguntar por Direcciones** | How do I get to + lugar? | *How do I get to the library?* |
 | **Ubicación (Preposiciones)** | Sujeto + verbo TO BE + preposición de lugar + Comp. | *The mall is next to the school.* |
 
-## TEMA 4: Tiendas y Restaurantes[cite: 10]
+## TEMA 4: Tiendas y Restaurantes
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Ofrecimientos (Would)** | Would you like + to verbo / sustantivo? | *Would you like to drink some water?* |
@@ -36,7 +36,7 @@
 | **Preguntar Cantidad** | How many + Sustantivo Contable + do you want? | *How many hamburgers do you want?* |
 | **Decisiones de Compra (I'll)** | Sujeto (I) + will ('ll) + verbo(base) + Comp. | *I'll take the red one.* |
 
-## TEMA 5: Eventos Pasados[cite: 10]
+## TEMA 5: Eventos Pasados
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Pasado Simple (Afirmativo)** | Sujeto + Verbo(pasado: -ed / irregular) + Comp. | *I went to the museum yesterday.* |
@@ -44,7 +44,7 @@
 | **Verbo TO BE en Pasado** | Sujeto + was/were + Complemento | *When I was a child...* |
 | **Existencia en Pasado** | There + was/were + (any/many) + Sustantivo + Comp.| *There was a party at the beach.* |
 
-## TEMA 6: Salud, Malestares y Recomendaciones[cite: 10]
+## TEMA 6: Salud, Malestares y Recomendaciones
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Expresar Dolencia** | Sujeto (I) + have a + problema de salud | *I have a headache.* |
@@ -52,21 +52,21 @@
 | **Citas (Can)** | Can I + Verbo(base) + Complemento? | *Can I make an appointment?* |
 | **Imperativos Médicos** | Verbo(base) + Complemento / Don't + Verbo(base) | *See a doctor!* / *Don't rub your eyes!* |
 
-## TEMA 7: Futuro para Planes y Proyectos[cite: 10]
+## TEMA 7: Futuro para Planes y Proyectos
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Planes (Going to Afirmativo)**| Sujeto + am/is/are + going to + Verbo(base) + Comp.| *I am going to watch TV.* |
 | **Planes (Going to Negativo)** | Sujeto + am/is/are + not + going to + Verbo(base) | *No, I'm not going to...* |
 | **Preguntas de Planes** | (Wh-) + am/is/are + Sujeto + going to + Verbo(base)? | *Where are you going to study?* |
 
-## TEMA 8: Obligaciones y Reglas[cite: 10]
+## TEMA 8: Obligaciones y Reglas
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Obligación (Have to)** | Sujeto + have to/has to + Verbo(base) + Comp. | *I have to wear a uniform for work.* |
 | **Necesidad (Need to)** | Sujeto + need to/needs to + Verbo(base) + Comp. | *You need to cut my hair.* |
 | **Falta de Obligación** | Sujeto + don't/doesn't have to + Verbo(base) + Comp.| *I don't have to stop smoking.* |
 
-## TEMA 9: Invitaciones y Proyectos[cite: 10]
+## TEMA 9: Invitaciones y Proyectos
 | Estructura | Fórmula Sintáctica | Ejemplo de Referencia |
 | :--- | :--- | :--- |
 | **Expresar Deseos (Want to)** | Sujeto + want to + Verbo(base) + Complemento | *I want to rest some minutes.* |
