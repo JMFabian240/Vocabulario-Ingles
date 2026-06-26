@@ -94,6 +94,83 @@ const Configuracion = () => {
           </div>
         ))}
       </div>
+
+      <div style={{ marginTop: '4rem' }}>
+        <h2 className="section-title">Formatos de Importación</h2>
+        <p style={{ color: '#94a3b8', marginBottom: '2rem' }}>A continuación, te mostramos las plantillas y formatos requeridos para cargar contenido en la aplicación correctamente.</p>
+
+        <div className="card" style={{ marginBottom: '1.5rem', background: 'rgba(0,0,0,0.2)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3 style={{ color: '#60a5fa', margin: 0 }}>1. Vocabulario y Verbos (Glosario)</h3>
+            <button className="btn-primary" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem' }} onClick={() => window.electronAPI?.invoke('api:exportPlantilla', 'glosario')}>
+              Descargar Plantilla
+            </button>
+          </div>
+          <p style={{ marginBottom: '1rem' }}>
+            <strong>Tipo de archivo:</strong> <code>.md</code> o <code>.csv</code><br />
+            <strong>Descripción:</strong> Se debe cargar un archivo que contenga tablas en formato Markdown. El sistema ignorará cualquier línea que no sea parte de una tabla. Si deseas establecer una categoría, coloca un título de nivel 2 (<code>## Categoría</code>) antes de las tablas.
+          </p>
+          <div style={{ background: '#0f172a', padding: '1rem', borderRadius: '8px', overflowX: 'auto', fontFamily: 'monospace', color: '#e2e8f0', whiteSpace: 'pre' }}>
+{`## Frutas
+| Inglés | Español |
+|---|---|
+| Apple | Manzana |
+| Banana | Plátano |
+
+## Verbos
+| Verbo | Pasado | Participio | Traducción |
+|---|---|---|---|
+| Go | Went | Gone | Ir |`}
+          </div>
+        </div>
+
+        <div className="card" style={{ marginBottom: '1.5rem', background: 'rgba(0,0,0,0.2)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3 style={{ color: '#60a5fa', margin: 0 }}>2. Ejercicios Prácticos</h3>
+            <button className="btn-primary" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem' }} onClick={() => window.electronAPI?.invoke('api:exportPlantilla', 'ejercicios')}>
+              Descargar Plantilla
+            </button>
+          </div>
+          <p style={{ marginBottom: '1rem' }}>
+            <strong>Tipo de archivo:</strong> <code>.json</code><br />
+            <strong>Descripción:</strong> Un arreglo de objetos JSON. Cada objeto representa un ejercicio. Los tipos de ejercicio soportados son <code>Completar</code> y <code>Ordenar</code>.
+          </p>
+          <div style={{ background: '#0f172a', padding: '1rem', borderRadius: '8px', overflowX: 'auto', fontFamily: 'monospace', color: '#e2e8f0', whiteSpace: 'pre' }}>
+{`[
+  {
+    "tipo_ejercicio": "Completar",
+    "prompt": "I ___ a student. (be)",
+    "respuesta_esperada": "am"
+  },
+  {
+    "tipo_ejercicio": "Ordenar",
+    "prompt": "you / how / are / ?",
+    "respuesta_esperada": "how are you?"
+  }
+]`}
+          </div>
+        </div>
+
+        <div className="card" style={{ marginBottom: '1.5rem', background: 'rgba(0,0,0,0.2)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3 style={{ color: '#60a5fa', margin: 0 }}>3. Reglas Gramaticales</h3>
+            <button className="btn-primary" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem' }} onClick={() => window.electronAPI?.invoke('api:exportPlantilla', 'reglas')}>
+              Descargar Plantilla
+            </button>
+          </div>
+          <p style={{ marginBottom: '1rem' }}>
+            <strong>Tipo de archivo:</strong> <code>.md</code><br />
+            <strong>Descripción:</strong> Un archivo de texto en Markdown clásico que <strong>no contenga</strong> tablas de glosario (sin <code>|---|---|</code>). Todo el contenido se renderizará como la explicación o teoría del tema. El nombre del archivo se usará como título.
+          </p>
+          <div style={{ background: '#0f172a', padding: '1rem', borderRadius: '8px', overflowX: 'auto', fontFamily: 'monospace', color: '#e2e8f0', whiteSpace: 'pre' }}>
+{`### El Verbo To Be
+El verbo *to be* significa ser o estar.
+- I am
+- You are
+- He is`}
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

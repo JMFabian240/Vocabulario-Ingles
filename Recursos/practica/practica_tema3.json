@@ -1,0 +1,368 @@
+{
+  "ejercicios_tema_3": {
+    "completar": [
+      {
+        "id": 1,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ there a bank near here? (Is)",
+        "respuesta_esperada": "Is there a bank near here?"
+      },
+      {
+        "id": 2,
+        "tipo_ejercicio": "completar",
+        "prompt": "Yes, there ___ one on University Street. (is)",
+        "respuesta_esperada": "Yes, there is one on University Street."
+      },
+      {
+        "id": 3,
+        "tipo_ejercicio": "completar",
+        "prompt": "Are there ___ drugstores around here? (any)",
+        "respuesta_esperada": "Are there any drugstores around here?"
+      },
+      {
+        "id": 4,
+        "tipo_ejercicio": "completar",
+        "prompt": "How do I ___ to the library? (get)",
+        "respuesta_esperada": "How do I get to the library?"
+      },
+      {
+        "id": 5,
+        "tipo_ejercicio": "completar",
+        "prompt": "Can you ___ me how to get to the post office? (tell)",
+        "respuesta_esperada": "Can you tell me how to get to the post office?"
+      },
+      {
+        "id": 6,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ right on University avenue. (Turn)",
+        "respuesta_esperada": "Turn right on University avenue."
+      },
+      {
+        "id": 7,
+        "tipo_ejercicio": "completar",
+        "prompt": "The bank it's ___ the right. (on)",
+        "respuesta_esperada": "The bank it's on the right."
+      },
+      {
+        "id": 8,
+        "tipo_ejercicio": "completar",
+        "prompt": "It's right ___ you. (behind)",
+        "respuesta_esperada": "It's right behind you."
+      },
+      {
+        "id": 9,
+        "tipo_ejercicio": "completar",
+        "prompt": "The hospital is ___ there. (over)",
+        "respuesta_esperada": "The hospital is over there."
+      },
+      {
+        "id": 10,
+        "tipo_ejercicio": "completar",
+        "prompt": "The post office is ___ on Main street. (located)",
+        "respuesta_esperada": "The post office is located on Main street."
+      },
+      {
+        "id": 11,
+        "tipo_ejercicio": "completar",
+        "prompt": "We ___ at the airport at 8. (arrive)",
+        "respuesta_esperada": "We arrive at the airport at 8."
+      },
+      {
+        "id": 12,
+        "tipo_ejercicio": "completar",
+        "prompt": "I can't ___ over the bridge. (cross)",
+        "respuesta_esperada": "I can't cross over the bridge."
+      },
+      {
+        "id": 13,
+        "tipo_ejercicio": "completar",
+        "prompt": "England ___ beautiful castles. (has)",
+        "respuesta_esperada": "England has beautiful castles."
+      },
+      {
+        "id": 14,
+        "tipo_ejercicio": "completar",
+        "prompt": "I ___ to the City hall to pay some fines. (go)",
+        "respuesta_esperada": "I go to the City hall to pay some fines."
+      },
+      {
+        "id": 15,
+        "tipo_ejercicio": "completar",
+        "prompt": "Roxana ___ downtown yesterday. (went)",
+        "respuesta_esperada": "Roxana went downtown yesterday."
+      },
+      {
+        "id": 16,
+        "tipo_ejercicio": "completar",
+        "prompt": "You can ___ aspirin at a drugstore. (buy)",
+        "respuesta_esperada": "You can buy aspirin at a drugstore."
+      },
+      {
+        "id": 17,
+        "tipo_ejercicio": "completar",
+        "prompt": "He ___ for an important factory. (works)",
+        "respuesta_esperada": "He works for an important factory."
+      },
+      {
+        "id": 18,
+        "tipo_ejercicio": "completar",
+        "prompt": "They went to the stadium to ___ the soccer game. (watch)",
+        "respuesta_esperada": "They went to the stadium to watch the soccer game."
+      },
+      {
+        "id": 19,
+        "tipo_ejercicio": "completar",
+        "prompt": "You have to ___ up three blocks. (walk)",
+        "respuesta_esperada": "You have to walk up three blocks."
+      },
+      {
+        "id": 20,
+        "tipo_ejercicio": "completar",
+        "prompt": "Go to the corner ___ Juarez and Aldama. (of)",
+        "respuesta_esperada": "Go to the corner of Juarez and Aldama."
+      },
+      {
+        "id": 21,
+        "tipo_ejercicio": "completar",
+        "prompt": "Go straight ___ three blocks. (for)",
+        "respuesta_esperada": "Go straight for three blocks."
+      },
+      {
+        "id": 22,
+        "tipo_ejercicio": "completar",
+        "prompt": "Go straight ahead ___ you get to Zaragoza Ave. (until)",
+        "respuesta_esperada": "Go straight ahead until you get to Zaragoza Ave."
+      },
+      {
+        "id": 23,
+        "tipo_ejercicio": "completar",
+        "prompt": "Go ___ Broadway and then turn right. (along)",
+        "respuesta_esperada": "Go along Broadway and then turn right."
+      },
+      {
+        "id": 24,
+        "tipo_ejercicio": "completar",
+        "prompt": "Go ___ Sixth Avenue to get the coffee shop. (down)",
+        "respuesta_esperada": "Go down Sixth Avenue to get the coffee shop."
+      },
+      {
+        "id": 25,
+        "tipo_ejercicio": "completar",
+        "prompt": "Go ___ the post office. (past)",
+        "respuesta_esperada": "Go past the post office."
+      },
+      {
+        "id": 26,
+        "tipo_ejercicio": "completar",
+        "prompt": "My husband will be home when I ___. (arrive)",
+        "respuesta_esperada": "My husband will be home when I arrive."
+      },
+      {
+        "id": 27,
+        "tipo_ejercicio": "completar",
+        "prompt": "The bus driver can ___ fast. (drive)",
+        "respuesta_esperada": "The bus driver can drive fast."
+      },
+      {
+        "id": 28,
+        "tipo_ejercicio": "completar",
+        "prompt": "___ Zaragoza avenue and walk two blocks. (Take)",
+        "respuesta_esperada": "Take Zaragoza avenue and walk two blocks."
+      },
+      {
+        "id": 29,
+        "tipo_ejercicio": "completar",
+        "prompt": "A new bakery opened recently ___ the corner. (around)",
+        "respuesta_esperada": "A new bakery opened recently around the corner."
+      },
+      {
+        "id": 30,
+        "tipo_ejercicio": "completar",
+        "prompt": "The bus stop is ___ from the aquarium. (across)",
+        "respuesta_esperada": "The bus stop is across from the aquarium."
+      }
+    ],
+    "ordenar": [
+      {
+        "id": 31,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: bank | Is | here? | near | there | a",
+        "respuesta_esperada": "Is there a bank near here?"
+      },
+      {
+        "id": 32,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: there | cinema | No, | aren't | here. | any",
+        "respuesta_esperada": "No, there aren't any cinema here."
+      },
+      {
+        "id": 33,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: the | Where's | supermarket?",
+        "respuesta_esperada": "Where's the supermarket?"
+      },
+      {
+        "id": 34,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: from | far | Is | here? | it",
+        "respuesta_esperada": "Is it far from here?"
+      },
+      {
+        "id": 35,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: get | the | I | How | to | library? | do",
+        "respuesta_esperada": "How do I get to the library?"
+      },
+      {
+        "id": 36,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: right | Turn | on | avenue. | University",
+        "respuesta_esperada": "Turn right on University avenue."
+      },
+      {
+        "id": 37,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: straight. | Walk",
+        "respuesta_esperada": "Walk straight."
+      },
+      {
+        "id": 38,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: park | on | see | You'll | right. | the | the",
+        "respuesta_esperada": "You'll see the park on the right."
+      },
+      {
+        "id": 39,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: hospital | over | is | The | there.",
+        "respuesta_esperada": "The hospital is over there."
+      },
+      {
+        "id": 40,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: post | The | on | located | office | is | street. | Main",
+        "respuesta_esperada": "The post office is located on Main street."
+      },
+      {
+        "id": 41,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: can't | store | miss | department | right, | you | is | it! | The | on | the",
+        "respuesta_esperada": "The department store is on the right, you can't miss it!"
+      },
+      {
+        "id": 42,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: airport | We | the | arrive | at | 8. | at",
+        "respuesta_esperada": "We arrive at the airport at 8."
+      },
+      {
+        "id": 43,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: construction. | Empire | building | nice | State | a | The | is",
+        "respuesta_esperada": "The Empire State building is a nice construction."
+      },
+      {
+        "id": 44,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: beautiful | has | England | castles.",
+        "respuesta_esperada": "England has beautiful castles."
+      },
+      {
+        "id": 45,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: some | go | to | I | hall | City | fines. | the | pay | to",
+        "respuesta_esperada": "I go to the City hall to pay some fines."
+      },
+      {
+        "id": 46,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: went | Roxana | yesterday. | downtown",
+        "respuesta_esperada": "Roxana went downtown yesterday."
+      },
+      {
+        "id": 47,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: at | aspirin | can | drugstore. | buy | You | a",
+        "respuesta_esperada": "You can buy aspirin at a drugstore."
+      },
+      {
+        "id": 48,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: works | important | He | factory. | an | for",
+        "respuesta_esperada": "He works for an important factory."
+      },
+      {
+        "id": 49,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: gasoline | buy | gas | can | a | station. | You | at",
+        "respuesta_esperada": "You can buy gasoline at a gas station."
+      },
+      {
+        "id": 50,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: the | does | open? | What | movie | time | theater",
+        "respuesta_esperada": "What time does the movie theater open?"
+      },
+      {
+        "id": 51,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: watch | went | to | stadium | game. | the | the | soccer | They | to",
+        "respuesta_esperada": "They went to the stadium to watch the soccer game."
+      },
+      {
+        "id": 52,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: to | exit. | Go | the",
+        "respuesta_esperada": "Go to the exit."
+      },
+      {
+        "id": 53,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: lives | on | town. | of | side | She | south | the",
+        "respuesta_esperada": "She lives on the south side of town."
+      },
+      {
+        "id": 54,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: the | in | is | West. | Seattle",
+        "respuesta_esperada": "Seattle is in the West."
+      },
+      {
+        "id": 55,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: corner | the | Juarez | of | to | Aldama. | Go | and",
+        "respuesta_esperada": "Go to the corner of Juarez and Aldama."
+      },
+      {
+        "id": 56,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: blocks. | straight | three | for | Go",
+        "respuesta_esperada": "Go straight for three blocks."
+      },
+      {
+        "id": 57,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: get | straight | until | you | Zaragoza | Ave. | Go | ahead | to",
+        "respuesta_esperada": "Go straight ahead until you get to Zaragoza Ave."
+      },
+      {
+        "id": 58,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: the | Go | past | office. | post",
+        "respuesta_esperada": "Go past the post office."
+      },
+      {
+        "id": 59,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: church | on | We | Sunday. | go | to",
+        "respuesta_esperada": "We go to church on Sunday."
+      },
+      {
+        "id": 60,
+        "tipo_ejercicio": "ordenar",
+        "prompt": "Ordena: next | is | The | school. | mall | to | the",
+        "respuesta_esperada": "The mall is next to the school."
+      }
+    ]
+  }
+}

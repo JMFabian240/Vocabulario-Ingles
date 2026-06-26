@@ -233,6 +233,41 @@ function setupIpcHandlers() {
         }
       }
       return { message: 'Cancelado' };
+    },
+
+    'api:exportPlantilla': async (event, tipo) => {
+      const { dialog } = require('electron');
+      const fs = require('fs');
+      
+      let defaultPath = '';
+      let content = '';
+      let filters = [];
+
+      if (tipo === 'glosario') {
+        defaultPath = 'plantilla_glosario.md';
+        content = '## Categoria Ejemplo\n| Inglés | Español |\n|---|---|\n| Apple | Manzana |\n| Banana | Plátano |\n\n## Verbos\n| Verbo | Pasado | Participio | Traducción |\n|---|---|---|---|\n| Go | Went | Gone | Ir |';
+        filters = [{ name: 'Markdown', extensions: ['md'] }];
+      } else if (tipo === 'ejercicios') {
+        defaultPath = 'plantilla_ejercicios.json';
+        content = '[\n  {\n    "tipo_ejercicio": "Completar",\n    "prompt": "I ___ a student. (be)",\n    "respuesta_esperada": "am"\n  },\n  {\n    "tipo_ejercicio": "Ordenar",\n    "prompt": "you / how / are / ?",\n    "respuesta_esperada": "how are you?"\n  }\n]';
+        filters = [{ name: 'JSON', extensions: ['json'] }];
+      } else if (tipo === 'reglas') {
+        defaultPath = 'plantilla_regla.md';
+        content = '### El Verbo To Be\nEl verbo *to be* significa ser o estar.\n- I am\n- You are\n- He is';
+        filters = [{ name: 'Markdown', extensions: ['md'] }];
+      }
+
+      const { filePath } = await dialog.showSaveDialog({
+        title: 'Guardar Plantilla',
+        defaultPath: defaultPath,
+        filters: filters
+      });
+
+      if (filePath) {
+        fs.writeFileSync(filePath, content, 'utf-8');
+        return { message: 'Plantilla exportada correctamente' };
+      }
+      return { message: 'Cancelado' };
     }
   };
 

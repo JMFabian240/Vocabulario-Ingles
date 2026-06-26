@@ -9,7 +9,7 @@ const validChannels = [
   'api:getEjercicios', 'api:createEjercicio', 'api:updateEjercicio', 'api:deleteEjercicio',
   'api:updateProgresoEjercicio', 'api:getProgresoGeneral',
   'api:getProgresoEjerciciosDetalle', 'api:updateProgresoEjercicioDetalle', 'api:resetProgresoEjerciciosTema',
-  'api:exportNivel', 'api:importNivel', 'api:importarTemaDatos'
+  'api:exportNivel', 'api:importNivel', 'api:importarTemaDatos', 'api:exportPlantilla'
 ];
 
 contextBridge.exposeInMainWorld('electronAPI', {

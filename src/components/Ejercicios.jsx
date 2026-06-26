@@ -8,6 +8,8 @@ const Ejercicios = () => {
   const navigate = useNavigate();
   const [ejercicios, setEjercicios] = useState([]);
   const [allEjercicios, setAllEjercicios] = useState([]);
+  const [fullList, setFullList] = useState([]);
+  const [mistakesDeck, setMistakesDeck] = useState([]);
   const [selectedType, setSelectedType] = useState(null);
   const [totalEjercicios, setTotalEjercicios] = useState(0);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -38,6 +40,7 @@ const Ejercicios = () => {
 
           setScore(aciertosPrevios);
           setTotalEjercicios(res.data.length);
+          setFullList(res.data);
 
           const pendingEx = res.data.filter(e => !idsCompletados.has(e.id));
 
@@ -70,6 +73,7 @@ const Ejercicios = () => {
       setFeedback('incorrect');
       setErrores(errores + 1);
       setRacha(0);
+      setMistakesDeck(prev => [...prev, currentEx]);
     }
   };
 
@@ -87,18 +91,24 @@ const Ejercicios = () => {
     if (currentIdx < ejercicios.length - 1) {
       setCurrentIdx(currentIdx + 1);
     } else {
-      setSessionCompleted(true);
-      if (window.electronAPI) {
-        await window.electronAPI.invoke('api:updateProgresoEjercicio', {
-          temaId: parseInt(id),
-          aciertos: score,
-          total: totalEjercicios
-        });
+      if (mistakesDeck.length > 0) {
+        setEjercicios([...mistakesDeck]);
+        setMistakesDeck([]);
+        setCurrentIdx(0);
+      } else {
+        setSessionCompleted(true);
+        if (window.electronAPI) {
+          await window.electronAPI.invoke('api:updateProgresoEjercicio', {
+            temaId: parseInt(id),
+            aciertos: score,
+            total: totalEjercicios
+          });
+        }
       }
     }
   };
 
-  if (allEjercicios.length === 0 && !sessionCompleted) {
+  if (fullList.length === 0 && !sessionCompleted) {
     return (
       <Layout>
         <h2 className="section-title">Práctica</h2>
@@ -107,7 +117,7 @@ const Ejercicios = () => {
     );
   }
 
-  if (allEjercicios.length > 0 && !selectedType) {
+  if (fullList.length > 0 && !selectedType && !sessionCompleted) {
     const qtyCompletar = allEjercicios.filter(e => e.tipo_ejercicio === 'Completar').length;
     const qtyOrdenar = allEjercicios.filter(e => e.tipo_ejercicio === 'Ordenar').length;
 
@@ -120,29 +130,39 @@ const Ejercicios = () => {
               className="btn-primary" 
               style={{ fontSize: '1.5rem', padding: '1.5rem 3rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
               onClick={() => {
-                if (qtyCompletar === 0) { alert('No hay ejercicios de Completar pendientes.'); return; }
-                const filtered = allEjercicios.filter(e => e.tipo_ejercicio === 'Completar');
+                const categoryAll = fullList.filter(e => e.tipo_ejercicio.toLowerCase() === 'completar');
+                const categoryPending = allEjercicios.filter(e => e.tipo_ejercicio.toLowerCase() === 'completar');
+                
+                if (categoryAll.length === 0) { alert('No hay ejercicios de Completar creados para este tema.'); return; }
+                
+                const filtered = categoryPending.length > 0 ? categoryPending : categoryAll;
                 setEjercicios(filtered);
                 setTotalEjercicios(filtered.length);
                 setSelectedType('Completar');
+                setScore(0);
+                setErrores(0);
               }}
             >
               Completar
-              <span style={{ fontSize: '1rem', marginTop: '0.5rem', opacity: 0.8 }}>{qtyCompletar} pendientes</span>
             </button>
             <button 
               className="btn-primary" 
               style={{ fontSize: '1.5rem', padding: '1.5rem 3rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
               onClick={() => {
-                if (qtyOrdenar === 0) { alert('No hay ejercicios de Ordenar pendientes.'); return; }
-                const filtered = allEjercicios.filter(e => e.tipo_ejercicio === 'Ordenar');
+                const categoryAll = fullList.filter(e => e.tipo_ejercicio.toLowerCase() === 'ordenar');
+                const categoryPending = allEjercicios.filter(e => e.tipo_ejercicio.toLowerCase() === 'ordenar');
+                
+                if (categoryAll.length === 0) { alert('No hay ejercicios de Ordenar creados para este tema.'); return; }
+                
+                const filtered = categoryPending.length > 0 ? categoryPending : categoryAll;
                 setEjercicios(filtered);
                 setTotalEjercicios(filtered.length);
                 setSelectedType('Ordenar');
+                setScore(0);
+                setErrores(0);
               }}
             >
               Ordenar
-              <span style={{ fontSize: '1rem', marginTop: '0.5rem', opacity: 0.8 }}>{qtyOrdenar} pendientes</span>
             </button>
           </div>
         </div>
