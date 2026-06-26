@@ -99,6 +99,27 @@ class RecursosSeeder {
           console.error(`Error parseando ${practicaFile}:`, err);
         }
       }
+
+      // 3. Cargar Reglas Gramaticales detalladas
+      const gramaticaDir = path.join(this.recursosPath, 'gramatica', `tema_${numero}`);
+      if (fs.existsSync(gramaticaDir)) {
+        try {
+          const gramaticaFiles = fs.readdirSync(gramaticaDir);
+          for (const file of gramaticaFiles) {
+            if (file.endsWith('.md')) {
+              const fileContent = fs.readFileSync(path.join(gramaticaDir, file), 'utf-8');
+              const fileLines = fileContent.split('\n');
+              let titulo = file.replace('.md', '').replace(/_/g, ' ');
+              if (fileLines.length > 0 && fileLines[0].startsWith('# ')) {
+                titulo = fileLines[0].substring(2).trim();
+              }
+              await this.db.ejercicios.createRegla(temaId, titulo, fileContent);
+            }
+          }
+        } catch (err) {
+          console.error(`Error leyendo gramatica para tema ${numero}:`, err);
+        }
+      }
     }
   }
 
